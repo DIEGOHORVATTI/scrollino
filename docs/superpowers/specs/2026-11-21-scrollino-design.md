@@ -1,4 +1,4 @@
-# Rolo — design
+# Scrollino — design
 
 Data: 2026-11-21
 
@@ -39,7 +39,7 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
 - Stack idêntica ao FakeTraveler/Scale: Expo 57, Expo Router, NativeWind 5,
   zustand, AsyncStorage, oxlint + oxfmt, `bun test`, código e commits sem
   comentários e sem menção ao Claude.
-- Pacote `com.diegohorvatti.rolo`, owner EAS `diegohorvatti`, `runtimeVersion`
+- Pacote `com.diegohorvatti.scrollino`, owner EAS `diegohorvatti`, `runtimeVersion`
   por fingerprint, OTA no canal `production`.
 - minSdk 26 (o original também), targetSdk o do Expo 57.
 - Política da Play para AccessibilityService em app que não é ferramenta de
@@ -72,7 +72,7 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
 - Para sozinho após 60 min; tela acesa (wake lock com timeout) enquanto rola;
   pausa quando a tela apaga ou quando o app em primeiro plano não é permitido,
   e retoma ao voltar.
-- Não rola dentro do próprio Rolo (exceto na prévia) nem com a gaveta de
+- Não rola dentro do próprio Scrollino (exceto na prévia) nem com a gaveta de
   notificações aberta.
 
 ### Botão flutuante (Kotlin, overlay `TYPE_ACCESSIBILITY_OVERLAY`)
@@ -119,9 +119,9 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
   EXPO_TOKEN) quem configura é o usuário.
 - `PRIVACY.md` (nada coletado, nada enviado), textos da loja nos idiomas,
   texto da declaração de acessibilidade e roteiro do vídeo exigido.
-- Repo novo `DIEGOHORVATTI/rolo`, **público**, no GitHub. A política de
+- Repo novo `DIEGOHORVATTI/scrollino`, **público**, no GitHub. A política de
   privacidade é o `PRIVACY.md` do repo, linkada na tela Sobre e na loja:
-  `https://github.com/DIEGOHORVATTI/rolo/blob/main/PRIVACY.md`.
+  `https://github.com/DIEGOHORVATTI/scrollino/blob/main/PRIVACY.md`.
 
 ## Deixado ao construtor
 

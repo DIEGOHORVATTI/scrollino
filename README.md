@@ -1,6 +1,6 @@
-# Rolo
+# Scrollino
 
-Leitura sem as mãos: o Rolo rola a tela sozinho, em velocidade constante, dentro de qualquer app de leitura (e-books, PDFs, artigos, mangá, cifras).
+Leitura sem as mãos: o Scrollino rola a tela sozinho, em velocidade constante, dentro de qualquer app de leitura (e-books, PDFs, artigos, mangá, cifras).
 
 - Velocidade de 3 a 60 segundos por tela, com atalhos Lento, Padrão e Rápido
 - Botão flutuante: toque inicia ou pausa, segurar abre o ajuste de velocidade, arrastar move

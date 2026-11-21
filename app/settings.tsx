@@ -5,8 +5,8 @@ import { Card } from '@/src/components/ui/card'
 import { LanguageField, ThemeField } from '@/src/features/preferences/components/preference-fields'
 import { t } from '@/src/i18n'
 
-const PRIVACY_URL = 'https://github.com/DIEGOHORVATTI/rolo/blob/main/PRIVACY.md'
-const SOURCE_URL = 'https://github.com/DIEGOHORVATTI/rolo'
+const PRIVACY_URL = 'https://github.com/DIEGOHORVATTI/scrollino/blob/main/PRIVACY.md'
+const SOURCE_URL = 'https://github.com/DIEGOHORVATTI/scrollino'
 
 export default function SettingsScreen() {
   return (

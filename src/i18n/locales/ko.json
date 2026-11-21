@@ -14,7 +14,7 @@
   "apps": "앱",
   "appsAll": "모든 앱",
   "appsSome": "{n}개 선택됨",
-  "appsHint": "Rolo는 선택한 앱 안에서만 스크롤합니다. 비워 두면 모든 곳에서 스크롤합니다.",
+  "appsHint": "Scrollino는 선택한 앱 안에서만 스크롤합니다. 비워 두면 모든 곳에서 스크롤합니다.",
   "appsSearch": "앱 검색",
   "appsClear": "선택 해제",
   "appsLoading": "앱을 불러오는 중…",
@@ -24,11 +24,11 @@
   "tip": "팁: 플로팅 버튼을 길게 누르면 책을 떠나지 않고 속도를 바꿀 수 있습니다.",
   "buttonHint": "탭하여 시작 또는 일시중지, 길게 눌러 속도 변경, 드래그하여 이동",
   "buttonDescription": "스크롤 시작 또는 일시중지",
-  "autoStopped": "Rolo가 60분 후에 중지되었습니다",
-  "disclosureTitle": "Rolo를 켜기 전에",
-  "disclosureWhy": "Rolo는 Android 접근성 서비스를 사용해 대신 스크롤합니다. 전자책이나 PDF 리더처럼 다른 앱의 화면을 움직일 수 있는 유일한 방법입니다.",
+  "autoStopped": "Scrollino가 60분 후에 중지되었습니다",
+  "disclosureTitle": "Scrollino를 켜기 전에",
+  "disclosureWhy": "Scrollino는 Android 접근성 서비스를 사용해 대신 스크롤합니다. 전자책이나 PDF 리더처럼 다른 앱의 화면을 움직일 수 있는 유일한 방법입니다.",
   "disclosureDoes": "하는 일: 스크롤이 켜져 있는 동안에만, 선택한 속도로 천천히 위로 스와이프하는 동작을 만들어 냅니다.",
-  "disclosureDoesNot": "하지 않는 일: 화면에 있는 어떤 내용도 읽거나 수집, 저장, 공유하지 않습니다. Rolo는 인터넷에 접근하지 않습니다.",
+  "disclosureDoesNot": "하지 않는 일: 화면에 있는 어떤 내용도 읽거나 수집, 저장, 공유하지 않습니다. Scrollino는 인터넷에 접근하지 않습니다.",
   "disclosureRestricted": "스위치가 회색으로 표시되면 앱 정보를 열고 ⋮ 를 탭한 다음 제한된 설정 허용을 선택하고 다시 시도하세요.",
   "agree": "동의하고 설정 열기",
   "notNow": "나중에",
@@ -46,5 +46,5 @@
   "version": "버전",
   "credits": "스크롤 엔진은 XiuXianInk의 auto-scroll-android를 기반으로 하며 MIT 라이선스를 따릅니다.",
   "privacy": "개인정보처리방침",
-  "license": "Rolo는 무료 오픈소스입니다."
+  "license": "Scrollino는 무료 오픈소스입니다."
 }

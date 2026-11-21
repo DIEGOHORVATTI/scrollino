@@ -14,7 +14,7 @@
   "apps": "App",
   "appsAll": "Tutte le app",
   "appsSome": "{n} selezionate",
-  "appsHint": "Rolo scorre solo nelle app che scegli. Lascia vuoto per scorrere ovunque.",
+  "appsHint": "Scrollino scorre solo nelle app che scegli. Lascia vuoto per scorrere ovunque.",
   "appsSearch": "Cerca app",
   "appsClear": "Cancella selezione",
   "appsLoading": "Caricamento app…",
@@ -24,11 +24,11 @@
   "tip": "Suggerimento: tieni premuto il pulsante flottante per cambiare velocità senza uscire dal libro.",
   "buttonHint": "Tocca per avviare o mettere in pausa, tieni premuto per cambiare velocità, trascina per spostare",
   "buttonDescription": "Avvia o metti in pausa lo scorrimento",
-  "autoStopped": "Rolo si è fermato dopo 60 minuti",
-  "disclosureTitle": "Prima di attivare Rolo",
-  "disclosureWhy": "Rolo usa il servizio di accessibilità di Android per scorrere al posto tuo. È l'unico modo in cui un'app può muovere lo schermo di un'altra app, come il tuo lettore di e-book o PDF.",
+  "autoStopped": "Scrollino si è fermato dopo 60 minuti",
+  "disclosureTitle": "Prima di attivare Scrollino",
+  "disclosureWhy": "Scrollino usa il servizio di accessibilità di Android per scorrere al posto tuo. È l'unico modo in cui un'app può muovere lo schermo di un'altra app, come il tuo lettore di e-book o PDF.",
   "disclosureDoes": "Cosa fa: simula uno scorrimento lento verso l'alto, alla velocità che scegli, solo mentre lo scorrimento è attivo.",
-  "disclosureDoesNot": "Cosa non fa: non legge, non raccoglie, non memorizza e non condivide nulla dello schermo. Rolo non ha accesso a internet.",
+  "disclosureDoesNot": "Cosa non fa: non legge, non raccoglie, non memorizza e non condivide nulla dello schermo. Scrollino non ha accesso a internet.",
   "disclosureRestricted": "Se l'interruttore è disattivato, apri Info app, tocca ⋮ e scegli Consenti impostazioni con limitazioni, poi riprova.",
   "agree": "Accetto, apri impostazioni",
   "notNow": "Non ora",
@@ -46,5 +46,5 @@
   "version": "Versione",
   "credits": "Motore di scorrimento basato su auto-scroll-android di XiuXianInk, licenza MIT.",
   "privacy": "Informativa sulla privacy",
-  "license": "Rolo è gratuito e open source."
+  "license": "Scrollino è gratuito e open source."
 }

@@ -1,4 +1,4 @@
-# Rolo Implementation Plan
+# Scrollino Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -10,11 +10,11 @@ local `modules/scroll-engine` (AccessibilityService + botão em
 
 **Tech Stack:** Expo 57, RN 0.86, NativeWind 5, zustand, AsyncStorage, oxlint, oxfmt, bun test, Kotlin.
 
-**Spec:** `docs/superpowers/specs/2026-11-21-rolo-design.md`
+**Spec:** `docs/superpowers/specs/2026-11-21-scrollino-design.md`
 
 ## Global Constraints
 
-- Pacote `com.diegohorvatti.rolo`, nome "Rolo", owner EAS `diegohorvatti`, minSdk 26.
+- Pacote `com.diegohorvatti.scrollino`, nome "Scrollino", owner EAS `diegohorvatti`, minSdk 26.
 - Velocidade 3–60 s/tela, padrão 15; atalhos 20/15/10; para após 60 min.
 - `canRetrieveWindowContent="false"`, `isAccessibilityTool` falso, sem `SYSTEM_ALERT_WINDOW`, sem `INTERNET`.
 - Código sem comentários; commits sem menção ao Claude.
@@ -69,4 +69,4 @@ local `modules/scroll-engine` (AccessibilityService + botão em
 ### Task 6: Publicação
 
 - [ ] Workflows (`ci`, `build-apk`, `build-aab`, `ota-update`), `PRIVACY.md`, `LICENSE`, `THIRD_PARTY.md`, `store/` (textos + declaração + roteiro do vídeo), README, ícones.
-- [ ] Repo público `DIEGOHORVATTI/rolo`, push, APK pelo CI, instalar via adb e testar no Redmi.
+- [ ] Repo público `DIEGOHORVATTI/scrollino`, push, APK pelo CI, instalar via adb e testar no Redmi.

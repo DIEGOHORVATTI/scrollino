@@ -14,7 +14,7 @@
   "apps": "Apps",
   "appsAll": "Todos os apps",
   "appsSome": "{n} selecionados",
-  "appsHint": "O Rolo só rola dentro dos apps que você escolher. Deixe vazio para rolar em todos.",
+  "appsHint": "O Scrollino só rola dentro dos apps que você escolher. Deixe vazio para rolar em todos.",
   "appsSearch": "Buscar apps",
   "appsClear": "Limpar seleção",
   "appsLoading": "Carregando apps…",
@@ -24,11 +24,11 @@
   "tip": "Dica: segure o botão flutuante para mudar a velocidade sem sair do livro.",
   "buttonHint": "Toque para iniciar ou pausar, segure para mudar a velocidade, arraste para mover",
   "buttonDescription": "Iniciar ou pausar a rolagem",
-  "autoStopped": "O Rolo parou depois de 60 minutos",
-  "disclosureTitle": "Antes de ativar o Rolo",
-  "disclosureWhy": "O Rolo usa o serviço de acessibilidade do Android para rolar por você. É o único jeito de um app mover a tela de outro app, como o seu leitor de e-book ou de PDF.",
+  "autoStopped": "O Scrollino parou depois de 60 minutos",
+  "disclosureTitle": "Antes de ativar o Scrollino",
+  "disclosureWhy": "O Scrollino usa o serviço de acessibilidade do Android para rolar por você. É o único jeito de um app mover a tela de outro app, como o seu leitor de e-book ou de PDF.",
   "disclosureDoes": "O que ele faz: simula um deslize lento para cima, na velocidade que você escolher, só enquanto a rolagem está ligada.",
-  "disclosureDoesNot": "O que ele não faz: não lê, não coleta, não guarda e não compartilha nada da sua tela. O Rolo não tem acesso à internet.",
+  "disclosureDoesNot": "O que ele não faz: não lê, não coleta, não guarda e não compartilha nada da sua tela. O Scrollino não tem acesso à internet.",
   "disclosureRestricted": "Se a chave estiver cinza, abra Informações do app, toque em ⋮ e escolha Permitir configurações restritas. Depois tente de novo.",
   "agree": "Concordo, abrir configurações",
   "notNow": "Agora não",
@@ -46,5 +46,5 @@
   "version": "Versão",
   "credits": "Motor de rolagem baseado no auto-scroll-android, de XiuXianInk, licença MIT.",
   "privacy": "Política de privacidade",
-  "license": "O Rolo é livre e de código aberto."
+  "license": "O Scrollino é livre e de código aberto."
 }

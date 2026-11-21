@@ -14,7 +14,7 @@
   "apps": "Uygulamalar",
   "appsAll": "Tüm uygulamalar",
   "appsSome": "{n} seçildi",
-  "appsHint": "Rolo yalnızca seçtiğiniz uygulamaların içinde kaydırır. Her yerde kaydırmak için boş bırakın.",
+  "appsHint": "Scrollino yalnızca seçtiğiniz uygulamaların içinde kaydırır. Her yerde kaydırmak için boş bırakın.",
   "appsSearch": "Uygulama ara",
   "appsClear": "Seçimi temizle",
   "appsLoading": "Uygulamalar yükleniyor…",
@@ -24,11 +24,11 @@
   "tip": "İpucu: kitabınızdan çıkmadan hızı değiştirmek için kayan düğmeye basılı tutun.",
   "buttonHint": "Başlatmak veya duraklatmak için dokunun, hızı değiştirmek için basılı tutun, taşımak için sürükleyin",
   "buttonDescription": "Kaydırmayı başlat veya duraklat",
-  "autoStopped": "Rolo 60 dakika sonra durdu",
-  "disclosureTitle": "Rolo'yu açmadan önce",
-  "disclosureWhy": "Rolo, sizin yerinize kaydırmak için Android erişilebilirlik hizmetini kullanır. Bir uygulamanın, e-kitap veya PDF okuyucunuz gibi başka bir uygulamanın ekranını hareket ettirmesinin tek yolu budur.",
+  "autoStopped": "Scrollino 60 dakika sonra durdu",
+  "disclosureTitle": "Scrollino'yu açmadan önce",
+  "disclosureWhy": "Scrollino, sizin yerinize kaydırmak için Android erişilebilirlik hizmetini kullanır. Bir uygulamanın, e-kitap veya PDF okuyucunuz gibi başka bir uygulamanın ekranını hareket ettirmesinin tek yolu budur.",
   "disclosureDoes": "Ne yapar: yalnızca kaydırma açıkken, seçtiğiniz hızda yukarı doğru yavaş bir kaydırma hareketi taklit eder.",
-  "disclosureDoesNot": "Ne yapmaz: ekranınızdaki hiçbir şeyi okumaz, toplamaz, saklamaz veya paylaşmaz. Rolo'nun internet erişimi yoktur.",
+  "disclosureDoesNot": "Ne yapmaz: ekranınızdaki hiçbir şeyi okumaz, toplamaz, saklamaz veya paylaşmaz. Scrollino'nun internet erişimi yoktur.",
   "disclosureRestricted": "Anahtar gri görünüyorsa Uygulama bilgisi'ni açın, ⋮ simgesine dokunun ve Kısıtlanmış ayarlara izin ver'i seçin, ardından tekrar deneyin.",
   "agree": "Kabul ediyorum, ayarları aç",
   "notNow": "Şimdi değil",
@@ -46,5 +46,5 @@
   "version": "Sürüm",
   "credits": "Kaydırma motoru, XiuXianInk'in auto-scroll-android projesine dayanır, MIT lisansı.",
   "privacy": "Gizlilik politikası",
-  "license": "Rolo ücretsiz ve açık kaynaklıdır."
+  "license": "Scrollino ücretsiz ve açık kaynaklıdır."
 }

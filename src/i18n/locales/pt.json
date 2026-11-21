@@ -14,7 +14,7 @@
   "apps": "Apps",
   "appsAll": "Todas as apps",
   "appsSome": "{n} selecionadas",
-  "appsHint": "O Rolo só se desloca dentro das apps que escolher. Deixe vazio para se deslocar em todas.",
+  "appsHint": "O Scrollino só se desloca dentro das apps que escolher. Deixe vazio para se deslocar em todas.",
   "appsSearch": "Pesquisar apps",
   "appsClear": "Limpar seleção",
   "appsLoading": "A carregar apps…",
@@ -24,11 +24,11 @@
   "tip": "Dica: mantenha premido o botão flutuante para mudar a velocidade sem sair do livro.",
   "buttonHint": "Toque para iniciar ou pausar, mantenha premido para mudar a velocidade, arraste para mover",
   "buttonDescription": "Iniciar ou pausar o deslocamento",
-  "autoStopped": "O Rolo parou ao fim de 60 minutos",
-  "disclosureTitle": "Antes de ativar o Rolo",
-  "disclosureWhy": "O Rolo usa o serviço de acessibilidade do Android para se deslocar por si. É a única forma de uma app mover o ecrã de outra app, como o seu leitor de e-books ou de PDF.",
+  "autoStopped": "O Scrollino parou ao fim de 60 minutos",
+  "disclosureTitle": "Antes de ativar o Scrollino",
+  "disclosureWhy": "O Scrollino usa o serviço de acessibilidade do Android para se deslocar por si. É a única forma de uma app mover o ecrã de outra app, como o seu leitor de e-books ou de PDF.",
   "disclosureDoes": "O que faz: simula um deslize lento para cima, à velocidade que escolher, apenas enquanto o deslocamento está ligado.",
-  "disclosureDoesNot": "O que não faz: não lê, não recolhe, não guarda nem partilha nada do seu ecrã. O Rolo não tem acesso à internet.",
+  "disclosureDoesNot": "O que não faz: não lê, não recolhe, não guarda nem partilha nada do seu ecrã. O Scrollino não tem acesso à internet.",
   "disclosureRestricted": "Se o interruptor estiver acinzentado, abra Informações da app, toque em ⋮ e escolha Permitir definições restritas. Depois tente novamente.",
   "agree": "Concordo, abrir definições",
   "notNow": "Agora não",
@@ -46,5 +46,5 @@
   "version": "Versão",
   "credits": "Motor de deslocamento baseado no auto-scroll-android, de XiuXianInk, licença MIT.",
   "privacy": "Política de privacidade",
-  "license": "O Rolo é livre e de código aberto."
+  "license": "O Scrollino é livre e de código aberto."
 }

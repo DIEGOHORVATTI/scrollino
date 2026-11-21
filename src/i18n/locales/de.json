@@ -14,7 +14,7 @@
   "apps": "Apps",
   "appsAll": "Alle Apps",
   "appsSome": "{n} ausgewählt",
-  "appsHint": "Rolo scrollt nur in den Apps, die du auswählst. Leer lassen, um überall zu scrollen.",
+  "appsHint": "Scrollino scrollt nur in den Apps, die du auswählst. Leer lassen, um überall zu scrollen.",
   "appsSearch": "Apps suchen",
   "appsClear": "Auswahl löschen",
   "appsLoading": "Apps werden geladen…",
@@ -24,11 +24,11 @@
   "tip": "Tipp: Halte die schwebende Schaltfläche gedrückt, um die Geschwindigkeit zu ändern, ohne dein Buch zu verlassen.",
   "buttonHint": "Tippen zum Starten oder Pausieren, halten zum Ändern der Geschwindigkeit, ziehen zum Verschieben",
   "buttonDescription": "Scrollen starten oder pausieren",
-  "autoStopped": "Rolo wurde nach 60 Minuten gestoppt",
-  "disclosureTitle": "Bevor du Rolo aktivierst",
-  "disclosureWhy": "Rolo nutzt den Bedienungshilfen-Dienst von Android, um für dich zu scrollen. Nur so kann eine App den Bildschirm einer anderen App bewegen, etwa deines E-Book- oder PDF-Readers.",
-  "disclosureDoes": "Was Rolo tut: Es simuliert ein langsames Wischen nach oben, in der gewählten Geschwindigkeit, nur solange das Scrollen aktiv ist.",
-  "disclosureDoesNot": "Was Rolo nicht tut: Es liest, sammelt, speichert oder teilt nichts von deinem Bildschirm. Rolo hat keinen Internetzugriff.",
+  "autoStopped": "Scrollino wurde nach 60 Minuten gestoppt",
+  "disclosureTitle": "Bevor du Scrollino aktivierst",
+  "disclosureWhy": "Scrollino nutzt den Bedienungshilfen-Dienst von Android, um für dich zu scrollen. Nur so kann eine App den Bildschirm einer anderen App bewegen, etwa deines E-Book- oder PDF-Readers.",
+  "disclosureDoes": "Was Scrollino tut: Es simuliert ein langsames Wischen nach oben, in der gewählten Geschwindigkeit, nur solange das Scrollen aktiv ist.",
+  "disclosureDoesNot": "Was Scrollino nicht tut: Es liest, sammelt, speichert oder teilt nichts von deinem Bildschirm. Scrollino hat keinen Internetzugriff.",
   "disclosureRestricted": "Wenn der Schalter ausgegraut ist, öffne App-Info, tippe auf ⋮ und wähle Eingeschränkte Einstellungen zulassen. Versuche es dann erneut.",
   "agree": "Ich stimme zu, Einstellungen öffnen",
   "notNow": "Jetzt nicht",
@@ -46,5 +46,5 @@
   "version": "Version",
   "credits": "Scroll-Engine auf Basis von auto-scroll-android von XiuXianInk, MIT-Lizenz.",
   "privacy": "Datenschutzerklärung",
-  "license": "Rolo ist kostenlos und Open Source."
+  "license": "Scrollino ist kostenlos und Open Source."
 }

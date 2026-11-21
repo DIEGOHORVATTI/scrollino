@@ -14,7 +14,7 @@
   "apps": "Apps",
   "appsAll": "Alle apps",
   "appsSome": "{n} valgt",
-  "appsHint": "Rolo ruller kun i de apps, du vælger. Lad feltet være tomt for at rulle overalt.",
+  "appsHint": "Scrollino ruller kun i de apps, du vælger. Lad feltet være tomt for at rulle overalt.",
   "appsSearch": "Søg efter apps",
   "appsClear": "Ryd valg",
   "appsLoading": "Indlæser apps…",
@@ -24,11 +24,11 @@
   "tip": "Tip: Hold den flydende knap nede for at ændre hastigheden uden at forlade din bog.",
   "buttonHint": "Tryk for at starte eller pause, hold for at ændre hastighed, træk for at flytte",
   "buttonDescription": "Start eller sæt rulning på pause",
-  "autoStopped": "Rolo stoppede efter 60 minutter",
-  "disclosureTitle": "Før du aktiverer Rolo",
-  "disclosureWhy": "Rolo bruger Androids tilgængelighedstjeneste til at rulle for dig. Det er den eneste måde, en app kan flytte en anden apps skærm på, f.eks. din e-bogs- eller PDF-læser.",
+  "autoStopped": "Scrollino stoppede efter 60 minutter",
+  "disclosureTitle": "Før du aktiverer Scrollino",
+  "disclosureWhy": "Scrollino bruger Androids tilgængelighedstjeneste til at rulle for dig. Det er den eneste måde, en app kan flytte en anden apps skærm på, f.eks. din e-bogs- eller PDF-læser.",
   "disclosureDoes": "Hvad den gør: simulerer et langsomt stryg opad med den hastighed, du vælger, kun mens rulning er slået til.",
-  "disclosureDoesNot": "Hvad den ikke gør: den læser, indsamler, gemmer eller deler intet fra din skærm. Rolo har ikke adgang til internettet.",
+  "disclosureDoesNot": "Hvad den ikke gør: den læser, indsamler, gemmer eller deler intet fra din skærm. Scrollino har ikke adgang til internettet.",
   "disclosureRestricted": "Hvis kontakten er nedtonet, skal du åbne Appoplysninger, trykke på ⋮ og vælge Tillad begrænsede indstillinger og derefter prøve igen.",
   "agree": "Jeg accepterer, åbn indstillinger",
   "notNow": "Ikke nu",
@@ -46,5 +46,5 @@
   "version": "Version",
   "credits": "Rulningsmotor baseret på auto-scroll-android af XiuXianInk, MIT-licens.",
   "privacy": "Privatlivspolitik",
-  "license": "Rolo er gratis og open source."
+  "license": "Scrollino er gratis og open source."
 }

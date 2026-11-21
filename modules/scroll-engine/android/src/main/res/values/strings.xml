@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="rolo_service_label">Rolo</string>
-    <string name="rolo_service_description">Scrolls the screen at a steady speed so you can read hands-free. Rolo only simulates a slow upward swipe. It does not read, store or send anything that is on your screen.</string>
+    <string name="scrollino_service_label">Scrollino</string>
+    <string name="scrollino_service_description">Scrolls the screen at a steady speed so you can read hands-free. Scrollino only simulates a slow upward swipe. It does not read, store or send anything that is on your screen.</string>
 </resources>

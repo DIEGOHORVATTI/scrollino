@@ -14,7 +14,7 @@
   "apps": "Aplicaciones",
   "appsAll": "Todas las aplicaciones",
   "appsSome": "{n} seleccionadas",
-  "appsHint": "Rolo solo se desplaza dentro de las aplicaciones que elijas. Déjalo vacío para desplazarte en todas.",
+  "appsHint": "Scrollino solo se desplaza dentro de las aplicaciones que elijas. Déjalo vacío para desplazarte en todas.",
   "appsSearch": "Buscar aplicaciones",
   "appsClear": "Borrar selección",
   "appsLoading": "Cargando aplicaciones…",
@@ -24,11 +24,11 @@
   "tip": "Consejo: mantén pulsado el botón flotante para cambiar la velocidad sin salir de tu libro.",
   "buttonHint": "Toca para iniciar o pausar, mantén pulsado para cambiar la velocidad, arrastra para mover",
   "buttonDescription": "Iniciar o pausar el desplazamiento",
-  "autoStopped": "Rolo se detuvo tras 60 minutos",
-  "disclosureTitle": "Antes de activar Rolo",
-  "disclosureWhy": "Rolo usa el servicio de accesibilidad de Android para desplazarse por ti. Es la única forma en que una aplicación puede mover la pantalla de otra, como tu lector de libros electrónicos o de PDF.",
+  "autoStopped": "Scrollino se detuvo tras 60 minutos",
+  "disclosureTitle": "Antes de activar Scrollino",
+  "disclosureWhy": "Scrollino usa el servicio de accesibilidad de Android para desplazarse por ti. Es la única forma en que una aplicación puede mover la pantalla de otra, como tu lector de libros electrónicos o de PDF.",
   "disclosureDoes": "Qué hace: simula un deslizamiento lento hacia arriba, a la velocidad que elijas, solo mientras el desplazamiento está activo.",
-  "disclosureDoesNot": "Qué no hace: no lee, recopila, almacena ni comparte nada de tu pantalla. Rolo no tiene acceso a internet.",
+  "disclosureDoesNot": "Qué no hace: no lee, recopila, almacena ni comparte nada de tu pantalla. Scrollino no tiene acceso a internet.",
   "disclosureRestricted": "Si el interruptor aparece atenuado, abre Información de la aplicación, toca ⋮ y elige Permitir ajustes restringidos. Luego vuelve a intentarlo.",
   "agree": "Acepto, abrir ajustes",
   "notNow": "Ahora no",
@@ -46,5 +46,5 @@
   "version": "Versión",
   "credits": "Motor de desplazamiento basado en auto-scroll-android de XiuXianInk, licencia MIT.",
   "privacy": "Política de privacidad",
-  "license": "Rolo es gratuito y de código abierto."
+  "license": "Scrollino es gratuito y de código abierto."
 }

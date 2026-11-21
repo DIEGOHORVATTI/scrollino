@@ -14,7 +14,7 @@
   "apps": "Applis",
   "appsAll": "Toutes les applis",
   "appsSome": "{n} sélectionnées",
-  "appsHint": "Rolo ne défile que dans les applis que vous choisissez. Laissez vide pour défiler partout.",
+  "appsHint": "Scrollino ne défile que dans les applis que vous choisissez. Laissez vide pour défiler partout.",
   "appsSearch": "Rechercher des applis",
   "appsClear": "Effacer la sélection",
   "appsLoading": "Chargement des applis…",
@@ -24,11 +24,11 @@
   "tip": "Astuce : maintenez le bouton flottant pour changer la vitesse sans quitter votre livre.",
   "buttonHint": "Appuyez pour démarrer ou mettre en pause, maintenez pour changer la vitesse, faites glisser pour déplacer",
   "buttonDescription": "Démarrer ou mettre en pause le défilement",
-  "autoStopped": "Rolo s'est arrêté après 60 minutes",
-  "disclosureTitle": "Avant d'activer Rolo",
-  "disclosureWhy": "Rolo utilise le service d'accessibilité d'Android pour faire défiler à votre place. C'est le seul moyen pour une appli de déplacer l'écran d'une autre appli, comme votre lecteur d'e-books ou de PDF.",
+  "autoStopped": "Scrollino s'est arrêté après 60 minutes",
+  "disclosureTitle": "Avant d'activer Scrollino",
+  "disclosureWhy": "Scrollino utilise le service d'accessibilité d'Android pour faire défiler à votre place. C'est le seul moyen pour une appli de déplacer l'écran d'une autre appli, comme votre lecteur d'e-books ou de PDF.",
   "disclosureDoes": "Ce qu'il fait : simule un lent balayage vers le haut, à la vitesse que vous choisissez, uniquement lorsque le défilement est activé.",
-  "disclosureDoesNot": "Ce qu'il ne fait pas : il ne lit, ne collecte, ne stocke et ne partage rien de ce qui s'affiche à l'écran. Rolo n'a pas accès à internet.",
+  "disclosureDoesNot": "Ce qu'il ne fait pas : il ne lit, ne collecte, ne stocke et ne partage rien de ce qui s'affiche à l'écran. Scrollino n'a pas accès à internet.",
   "disclosureRestricted": "Si le commutateur est grisé, ouvrez Infos sur l'appli, appuyez sur ⋮ et choisissez Autoriser les paramètres restreints, puis réessayez.",
   "agree": "J'accepte, ouvrir les paramètres",
   "notNow": "Pas maintenant",
@@ -46,5 +46,5 @@
   "version": "Version",
   "credits": "Moteur de défilement basé sur auto-scroll-android de XiuXianInk, licence MIT.",
   "privacy": "Politique de confidentialité",
-  "license": "Rolo est gratuit et open source."
+  "license": "Scrollino est gratuit et open source."
 }

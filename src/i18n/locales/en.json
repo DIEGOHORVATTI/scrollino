@@ -14,7 +14,7 @@
   "apps": "Apps",
   "appsAll": "All apps",
   "appsSome": "{n} selected",
-  "appsHint": "Rolo only scrolls inside the apps you pick. Leave it empty to scroll everywhere.",
+  "appsHint": "Scrollino only scrolls inside the apps you pick. Leave it empty to scroll everywhere.",
   "appsSearch": "Search apps",
   "appsClear": "Clear selection",
   "appsLoading": "Loading apps…",
@@ -24,11 +24,11 @@
   "tip": "Tip: hold the floating button to change the speed without leaving your book.",
   "buttonHint": "Tap to start or pause, hold to change speed, drag to move",
   "buttonDescription": "Start or pause scrolling",
-  "autoStopped": "Rolo stopped after 60 minutes",
-  "disclosureTitle": "Before you turn on Rolo",
-  "disclosureWhy": "Rolo uses the Android accessibility service to scroll for you. It is the only way an app can move the screen of another app, like your e-book or PDF reader.",
+  "autoStopped": "Scrollino stopped after 60 minutes",
+  "disclosureTitle": "Before you turn on Scrollino",
+  "disclosureWhy": "Scrollino uses the Android accessibility service to scroll for you. It is the only way an app can move the screen of another app, like your e-book or PDF reader.",
   "disclosureDoes": "What it does: simulates a slow upward swipe, at the speed you choose, only while scrolling is on.",
-  "disclosureDoesNot": "What it does not do: it does not read, collect, store or share anything on your screen. Rolo has no internet access.",
+  "disclosureDoesNot": "What it does not do: it does not read, collect, store or share anything on your screen. Scrollino has no internet access.",
   "disclosureRestricted": "If the switch is greyed out, open App info, tap ⋮ and choose Allow restricted settings, then try again.",
   "agree": "I agree, open settings",
   "notNow": "Not now",
@@ -46,5 +46,5 @@
   "version": "Version",
   "credits": "Scrolling engine based on auto-scroll-android by XiuXianInk, MIT license.",
   "privacy": "Privacy policy",
-  "license": "Rolo is free and open source."
+  "license": "Scrollino is free and open source."
 }

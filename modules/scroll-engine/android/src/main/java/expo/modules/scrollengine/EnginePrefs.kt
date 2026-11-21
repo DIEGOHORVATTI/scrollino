@@ -3,7 +3,7 @@ package expo.modules.scrollengine
 import android.content.Context
 
 object EnginePrefs {
-  private const val FILE = "rolo_engine"
+  private const val FILE = "scrollino_engine"
   private const val SECS = "secs"
   private const val ALLOWED = "allowed"
   private const val BUTTON_X = "button_x"

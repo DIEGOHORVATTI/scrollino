@@ -14,7 +14,7 @@
   "apps": "Appar",
   "appsAll": "Alla appar",
   "appsSome": "{n} valda",
-  "appsHint": "Rolo rullar bara i de appar du väljer. Lämna tomt för att rulla överallt.",
+  "appsHint": "Scrollino rullar bara i de appar du väljer. Lämna tomt för att rulla överallt.",
   "appsSearch": "Sök appar",
   "appsClear": "Rensa val",
   "appsLoading": "Läser in appar…",
@@ -24,11 +24,11 @@
   "tip": "Tips: håll in den flytande knappen för att ändra hastighet utan att lämna din bok.",
   "buttonHint": "Tryck för att starta eller pausa, håll in för att ändra hastighet, dra för att flytta",
   "buttonDescription": "Starta eller pausa rullning",
-  "autoStopped": "Rolo stannade efter 60 minuter",
-  "disclosureTitle": "Innan du aktiverar Rolo",
-  "disclosureWhy": "Rolo använder Androids tillgänglighetstjänst för att rulla åt dig. Det är det enda sättet för en app att flytta en annan apps skärm, till exempel din e-boks- eller PDF-läsare.",
+  "autoStopped": "Scrollino stannade efter 60 minuter",
+  "disclosureTitle": "Innan du aktiverar Scrollino",
+  "disclosureWhy": "Scrollino använder Androids tillgänglighetstjänst för att rulla åt dig. Det är det enda sättet för en app att flytta en annan apps skärm, till exempel din e-boks- eller PDF-läsare.",
   "disclosureDoes": "Vad den gör: simulerar en långsam svepning uppåt, i den hastighet du väljer, bara medan rullningen är på.",
-  "disclosureDoesNot": "Vad den inte gör: den läser, samlar in, lagrar eller delar ingenting från din skärm. Rolo har ingen internetåtkomst.",
+  "disclosureDoesNot": "Vad den inte gör: den läser, samlar in, lagrar eller delar ingenting från din skärm. Scrollino har ingen internetåtkomst.",
   "disclosureRestricted": "Om reglaget är nedtonat öppnar du Appinfo, trycker på ⋮ och väljer Tillåt begränsade inställningar och försöker sedan igen.",
   "agree": "Jag godkänner, öppna inställningar",
   "notNow": "Inte nu",
@@ -46,5 +46,5 @@
   "version": "Version",
   "credits": "Rullningsmotor baserad på auto-scroll-android av XiuXianInk, MIT-licens.",
   "privacy": "Integritetspolicy",
-  "license": "Rolo är gratis och öppen källkod."
+  "license": "Scrollino är gratis och öppen källkod."
 }

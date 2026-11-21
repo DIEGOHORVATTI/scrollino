@@ -24,7 +24,7 @@ export default function HomeScreen() {
         <View className="flex-row items-center gap-3 py-2">
           <Image source={require('@/assets/images/icon.png')} className="h-11 w-11 rounded-xl" />
           <View className="flex-1">
-            <Text className="text-3xl font-black tracking-tight text-text-primary">Rolo</Text>
+            <Text className="text-3xl font-black tracking-tight text-text-primary">Scrollino</Text>
             <Text className="text-sm text-text-secondary">{t('tagline')}</Text>
           </View>
           <Pressable

@@ -14,7 +14,7 @@
   "apps": "Aplikasi",
   "appsAll": "Semua aplikasi",
   "appsSome": "{n} dipilih",
-  "appsHint": "Rolo hanya menggulir di dalam aplikasi yang Anda pilih. Biarkan kosong untuk menggulir di mana saja.",
+  "appsHint": "Scrollino hanya menggulir di dalam aplikasi yang Anda pilih. Biarkan kosong untuk menggulir di mana saja.",
   "appsSearch": "Cari aplikasi",
   "appsClear": "Hapus pilihan",
   "appsLoading": "Memuat aplikasi…",
@@ -24,11 +24,11 @@
   "tip": "Tips: tahan tombol mengambang untuk mengubah kecepatan tanpa meninggalkan buku Anda.",
   "buttonHint": "Ketuk untuk memulai atau menjeda, tahan untuk mengubah kecepatan, seret untuk memindahkan",
   "buttonDescription": "Mulai atau jeda pengguliran",
-  "autoStopped": "Rolo berhenti setelah 60 menit",
-  "disclosureTitle": "Sebelum mengaktifkan Rolo",
-  "disclosureWhy": "Rolo menggunakan layanan aksesibilitas Android untuk menggulir bagi Anda. Ini satu-satunya cara agar sebuah aplikasi dapat menggerakkan layar aplikasi lain, seperti pembaca e-book atau PDF Anda.",
+  "autoStopped": "Scrollino berhenti setelah 60 menit",
+  "disclosureTitle": "Sebelum mengaktifkan Scrollino",
+  "disclosureWhy": "Scrollino menggunakan layanan aksesibilitas Android untuk menggulir bagi Anda. Ini satu-satunya cara agar sebuah aplikasi dapat menggerakkan layar aplikasi lain, seperti pembaca e-book atau PDF Anda.",
   "disclosureDoes": "Yang dilakukannya: mensimulasikan usapan lambat ke atas, dengan kecepatan pilihan Anda, hanya saat pengguliran aktif.",
-  "disclosureDoesNot": "Yang tidak dilakukannya: tidak membaca, mengumpulkan, menyimpan, atau membagikan apa pun di layar Anda. Rolo tidak memiliki akses internet.",
+  "disclosureDoesNot": "Yang tidak dilakukannya: tidak membaca, mengumpulkan, menyimpan, atau membagikan apa pun di layar Anda. Scrollino tidak memiliki akses internet.",
   "disclosureRestricted": "Jika sakelar berwarna abu-abu, buka Info aplikasi, ketuk ⋮ lalu pilih Izinkan setelan terbatas, kemudian coba lagi.",
   "agree": "Saya setuju, buka setelan",
   "notNow": "Nanti saja",
@@ -46,5 +46,5 @@
   "version": "Versi",
   "credits": "Mesin penggulir berbasis auto-scroll-android oleh XiuXianInk, lisensi MIT.",
   "privacy": "Kebijakan privasi",
-  "license": "Rolo gratis dan bersumber terbuka."
+  "license": "Scrollino gratis dan bersumber terbuka."
 }

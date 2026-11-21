@@ -13,7 +13,7 @@ import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
 import java.io.ByteArrayOutputStream
 
-class ServiceDisabledException : CodedException("Enable Rolo in Accessibility settings first")
+class ServiceDisabledException : CodedException("Enable Scrollino in Accessibility settings first")
 
 class ScrollEngineModule : Module() {
   private val context: Context
