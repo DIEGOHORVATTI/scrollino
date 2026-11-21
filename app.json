@@ -49,8 +49,24 @@
       "policy": "fingerprint"
     },
     "extra": {
-      "router": {}
+      "router": {},
+      "eas": {
+        "projectId": "d22ed913-cf3f-4fa4-85f6-fce623660a8f"
+      }
     },
-    "ios": {}
+    "ios": {
+      "infoPlist": {
+        "ExpoLocalization_supportsRTL": true
+      }
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 4000,
+      "requestHeaders": {
+        "expo-channel-name": "production"
+      },
+      "url": "https://u.expo.dev/d22ed913-cf3f-4fa4-85f6-fce623660a8f"
+    }
   }
 }
