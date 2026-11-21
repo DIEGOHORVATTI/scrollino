@@ -7,9 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "rolo",
     "userInterfaceStyle": "automatic",
-    "platforms": [
-      "android"
-    ],
+    "platforms": ["android"],
     "android": {
       "package": "com.diegohorvatti.rolo",
       "versionCode": 1,
