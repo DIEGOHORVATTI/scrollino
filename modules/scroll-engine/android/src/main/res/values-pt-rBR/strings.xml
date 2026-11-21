@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rolo_service_label">Rolo</string>
+    <string name="rolo_service_description">Rola a tela em velocidade constante para você ler sem as mãos. O Rolo só simula um deslize lento para cima. Ele não lê, não guarda e não envia nada do que aparece na sua tela.</string>
+</resources>

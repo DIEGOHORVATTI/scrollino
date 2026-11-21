@@ -20,3 +20,7 @@ export function setLanguage(code: string) {
 export function t(key: TranslationKey) {
   return bundle[key] ?? en[key]
 }
+
+export function tn(key: TranslationKey, n: number | string) {
+  return t(key).replace('{n}', String(n))
+}
