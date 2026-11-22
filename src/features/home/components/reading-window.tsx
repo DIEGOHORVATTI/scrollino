@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Serif } from '@/src/components/ui/serif'
-import { type LayoutChangeEvent, Text, View } from 'react-native'
+import { type LayoutChangeEvent, View } from 'react-native'
 import Animated, {
   useAnimatedStyle,
   useFrameCallback,

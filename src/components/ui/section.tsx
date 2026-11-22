@@ -1,7 +1,7 @@
 import { Serif } from '@/src/components/ui/serif'
 import type { ReactNode } from 'react'
 
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 
 type SectionProps = {
   title: string

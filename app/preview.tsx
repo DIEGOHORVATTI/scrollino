@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 import { useFocusEffect } from 'expo-router'
-import { ScrollView, Text } from 'react-native'
+import { ScrollView } from 'react-native'
 
 import { ScrollEngine } from '@/modules/scroll-engine'
 import { Button } from '@/src/components/ui/button'
