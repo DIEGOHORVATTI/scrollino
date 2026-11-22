@@ -4,7 +4,7 @@
 
 **Título (30):** Scrollino: rolagem automática
 
-**Descrição curta (80):** A tela rola sozinha para você ler livros, PDFs e artigos sem tocar no celular.
+**Descrição curta (80):** A tela rola sozinha: leia livros e PDFs sem tocar no celular. Sem anúncios.
 
 **Descrição completa:**
 
@@ -27,7 +27,7 @@ Por que o Scrollino pede o serviço de acessibilidade?
 
 **Title (30):** Scrollino: Auto Scroll Reader
 
-**Short description (80):** The screen scrolls by itself. Read books, PDFs and articles hands-free.
+**Short description (80):** The screen scrolls by itself. Read books and PDFs hands-free. No ads.
 
 **Full description:**
 
