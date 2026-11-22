@@ -75,6 +75,7 @@ jobs:
         run: |
           bunx eas-cli@25.3.0 update \
             --branch production \
+            --platform android \
             --message "$(echo "$MENSAGEM" | head -1)" \
             --non-interactive
         env:
