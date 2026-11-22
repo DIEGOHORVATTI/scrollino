@@ -40,7 +40,7 @@ it('converte em telas por minuto', () => {
   expect(screensPerMinute(60)).toBe(1)
 })
 
-it('atalhos seguem o original', () => {
+it('atalhos lento, padrão e rápido', () => {
   expect(PRESETS.map(({ secs }) => secs)).toEqual([20, 15, 10])
   expect(DEFAULT_SECS).toBe(15)
 })

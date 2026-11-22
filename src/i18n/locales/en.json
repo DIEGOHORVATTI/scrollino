@@ -35,7 +35,6 @@
   "themeDark": "Dark",
   "about": "About",
   "version": "Version",
-  "credits": "Scrolling engine based on auto-scroll-android by XiuXianInk, MIT license.",
   "privacy": "Privacy policy",
   "license": "Scrollino is free and open source.",
   "speedSentence": "One screen every {n} seconds",

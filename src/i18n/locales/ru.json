@@ -35,7 +35,6 @@
   "themeDark": "Тёмная",
   "about": "О приложении",
   "version": "Версия",
-  "credits": "Механизм прокрутки основан на auto-scroll-android от XiuXianInk, лицензия MIT.",
   "privacy": "Политика конфиденциальности",
   "license": "Scrollino бесплатен и имеет открытый исходный код.",
   "speedSentence": "Один экран каждые {n} с",

@@ -5,9 +5,7 @@ Data: 2026-11-21
 ## Intenção
 
 App Android que rola a tela sozinho, em velocidade constante, para ler sem
-tocar no celular: livros, PDFs, artigos, mangá, cifras. Reescrita em Expo do
-[auto-scroll-android](https://github.com/XiuXianInk/auto-scroll-android)
-(MIT, Java, interface só em chinês), na stack do Scale, publicada na Play Store
+tocar no celular: livros, PDFs, artigos, mangá, cifras. Escrito do zero em Expo, na stack do Scale, publicada na Play Store
 como o FakeTraveler (`~/Dev/FakeTraveler`).
 
 ## Objetivos
@@ -41,12 +39,11 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
   comentários e sem menção ao Claude.
 - Pacote `com.diegohorvatti.scrollino`, owner EAS `diegohorvatti`, `runtimeVersion`
   por fingerprint, OTA no canal `production`.
-- minSdk 26 (o original também), targetSdk o do Expo 57.
+- minSdk 26, targetSdk o do Expo 57.
 - Política da Play para AccessibilityService em app que não é ferramenta de
   acessibilidade: `isAccessibilityTool` falso, divulgação em destaque dentro do
   app com consentimento antes de abrir as configurações, formulário de
   declaração e vídeo no Console.
-- Créditos MIT ao projeto original (tela Sobre + LICENSE de terceiros).
 
 ## Abordagens
 
@@ -61,9 +58,9 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
 
 ## O que foi decidido
 
-### Motor (Kotlin, porte do original)
+### Motor (Kotlin)
 
-- `ScrollService : AccessibilityService` com a cadeia de gestos do original:
+- `ScrollService : AccessibilityService` com uma cadeia de gestos:
   trechos de ~1/4 de tela, duração calculada da velocidade, próximo trecho
   postado no `onCompleted`, recuo em `onCancelled` e nos gestos rejeitados
   (quando o usuário toca a tela). Portar `ScrollMath` e `ScrollPolicy`
@@ -89,11 +86,11 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
 ### Interface (React Native)
 
 - **Início:** estado da permissão de acessibilidade,
-  velocidade (slider logarítmico 3–60 s como no original + atalhos
+  velocidade (slider logarítmico 3–60 s + atalhos
   Lento 20 s / Padrão 15 s / Rápido 10 s), apps permitidos, botão
   Iniciar/Pausar, link para a prévia.
 - **Apps permitidos:** lista dos apps instaláveis com ícone e busca,
-  multi-seleção. Vazio = todos. (O original aceitava um só, digitado.)
+  multi-seleção. Vazio = todos.
 - **Divulgação de acessibilidade:** tela própria antes de mandar o usuário
   para as configurações, explicando que o serviço só simula o deslize e não lê
   a tela; botões "Concordo" / "Agora não". Inclui a dica do Android 13+ para

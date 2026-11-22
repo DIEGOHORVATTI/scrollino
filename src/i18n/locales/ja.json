@@ -35,7 +35,6 @@
   "themeDark": "ダーク",
   "about": "このアプリについて",
   "version": "バージョン",
-  "credits": "スクロールエンジンは XiuXianInk の auto-scroll-android をベースにしています(MIT ライセンス)。",
   "privacy": "プライバシーポリシー",
   "license": "Scrollino は無料のオープンソースです。",
   "speedSentence": "{n}秒ごとに1画面",

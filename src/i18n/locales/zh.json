@@ -35,7 +35,6 @@
   "themeDark": "深色",
   "about": "关于",
   "version": "版本",
-  "credits": "滚动引擎基于 XiuXianInk 的 auto-scroll-android，采用 MIT 许可证。",
   "privacy": "隐私政策",
   "license": "Scrollino 免费且开源。",
   "speedSentence": "每 {n} 秒一屏",

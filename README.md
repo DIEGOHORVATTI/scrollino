@@ -21,7 +21,3 @@ bun run check
 ```
 
 Builds nativos rodam no GitHub Actions: `build-apk.yml` (APK de teste), `build-aab.yml` (Play Store) e `ota-update.yml` (EAS Update).
-
-## Créditos
-
-O motor de rolagem é um porte do [auto-scroll-android](https://github.com/XiuXianInk/auto-scroll-android) (MIT). Veja [THIRD_PARTY.md](THIRD_PARTY.md).

@@ -26,7 +26,6 @@ export default function SettingsScreen() {
         <Pressable accessibilityRole="link" onPress={() => Linking.openURL(SOURCE_URL)}>
           <Text className="text-base text-ink underline">{t('license')}</Text>
         </Pressable>
-        <Text className="text-sm leading-5 text-faint">{t('credits')}</Text>
       </Section>
     </ScrollView>
   )
