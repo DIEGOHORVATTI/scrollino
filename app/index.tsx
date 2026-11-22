@@ -29,8 +29,12 @@ export default function HomeScreen() {
   return (
     <ScrollView
       className="flex-1 bg-paper"
-      contentContainerClassName="gap-7 px-6"
-      contentContainerStyle={{ paddingTop: insets.top + 16, paddingBottom: insets.bottom + 32 }}
+      contentContainerStyle={{
+        gap: 28,
+        paddingHorizontal: 24,
+        paddingTop: insets.top + 16,
+        paddingBottom: insets.bottom + 32,
+      }}
     >
       <Serif weight="bold" className="text-[30px] text-ink">
         Scrollino

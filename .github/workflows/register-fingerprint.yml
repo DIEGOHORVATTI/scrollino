@@ -1,0 +1,40 @@
+name: Registra fingerprint
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  registrar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version: latest
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: bun install --frozen-lockfile
+
+      - name: Gera o nativo e calcula o fingerprint
+        run: |
+          bunx expo prebuild --platform android --no-install
+          bunx expo-updates fingerprint:generate --platform android | jq '{hash}' > "$RUNNER_TEMP/native-fingerprint.json"
+          cat "$RUNNER_TEMP/native-fingerprint.json"
+
+      - name: Registra no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -- .
+          cp "$RUNNER_TEMP/native-fingerprint.json" native-fingerprint.json
+          git add native-fingerprint.json
+          git diff --quiet --cached && exit 0
+          git commit -m "chore: registra o fingerprint do binário na Play"
+          git push
