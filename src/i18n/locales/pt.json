@@ -1,6 +1,5 @@
 {
   "tagline": "Leitura sem as mãos. O ecrã desloca-se sozinho.",
-  "serviceRequired": "Ative primeiro o serviço de acessibilidade",
   "speed": "Velocidade",
   "slow": "Lento",
   "standard": "Padrão",
@@ -12,9 +11,7 @@
   "appsSearch": "Pesquisar apps",
   "appsClear": "Limpar seleção",
   "appsLoading": "A carregar apps…",
-  "start": "Iniciar deslocamento",
   "pause": "Pausar",
-  "tryPreview": "Experimentar numa página de exemplo",
   "autoStopped": "O Scrollino parou ao fim de 60 minutos",
   "disclosureTitle": "Antes de ativar o Scrollino",
   "disclosureWhy": "O Scrollino usa o serviço de acessibilidade do Android para se deslocar por si. É a única forma de uma app mover o ecrã de outra app, como o seu leitor de e-books ou de PDF.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "Se o interruptor estiver acinzentado, abra Informações da app, toque em ⋮ e escolha Permitir definições restritas. Depois tente novamente.",
   "agree": "Concordo, abrir definições",
   "notNow": "Agora não",
-  "preview": "Pré-visualização",
-  "previewTitle": "A faroleira",
-  "previewBody": "O farol erguia-se na última rocha antes do mar aberto, e todos os fins de tarde a Marta subia os seus cento e doze degraus para acender a lâmpada.\n\nJá os tinha contado tantas vezes que os pés sabiam o número antes dela. O sexto degrau rangia, o quadragésimo estava lascado, e no nonagésimo primeiro alguém, há muito tempo, tinha entalhado um barquinho com a ponta de uma faca.\n\nLá de cima via a baía inteira: os barcos de pesca a regressar, as gaivotas a fechar as asas no muro do cais, as luzes da vila a acenderem-se uma a uma, como pirilampos sem pressa.\n\nNessa noite o nevoeiro chegou cedo. Rolou sobre a água sem fazer barulho e engoliu os barcos, as gaivotas e a vila, até sobrar só o feixe do farol, a girar e a girar num mundo feito de branco.\n\nA Marta sentou-se junto à lâmpada com uma chávena de chá e um livro que já tinha lido três vezes. Nalgum lugar lá fora, um barco que ela não via guiava-se pela sua luz, e isso bastava.",
-  "settings": "Definições",
   "appearance": "Aspeto",
   "language": "Idioma",
   "theme": "Tema",
@@ -36,7 +29,6 @@
   "about": "Acerca de",
   "version": "Versão",
   "privacy": "Política de privacidade",
-  "license": "O Scrollino é livre e de código aberto.",
   "speedSentence": "Um ecrã a cada {n} segundos",
   "scrollsIn": "Desloca em",
   "serviceOffNotice": "O serviço de acessibilidade está desligado, por isso o Scrollino ainda não consegue deslocar o ecrã.",
@@ -47,5 +39,7 @@
   "actionStart": "Iniciar",
   "actionSlower": "Mais lento",
   "actionFaster": "Mais rápido",
-  "controlsHint": "Pause e mude a velocidade a partir do painel de notificações, sem sair do livro."
+  "controlsHint": "Abra o livro, deslize para baixo a gaveta de notificações e toque em Iniciar. Daí também pode pausar e alterar a velocidade.",
+  "notificationsOffNotice": "As notificações estão desativadas. Os botões Iniciar e Pausar do Scrollino estão na gaveta de notificações.",
+  "notificationsTurnOn": "Permitir"
 }

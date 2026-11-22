@@ -1,6 +1,5 @@
 {
   "tagline": "Lettura a mani libere. Lo schermo scorre da solo.",
-  "serviceRequired": "Attiva prima il servizio di accessibilità",
   "speed": "Velocità",
   "slow": "Lenta",
   "standard": "Standard",
@@ -12,9 +11,7 @@
   "appsSearch": "Cerca app",
   "appsClear": "Cancella selezione",
   "appsLoading": "Caricamento app…",
-  "start": "Avvia scorrimento",
   "pause": "Pausa",
-  "tryPreview": "Prova su una pagina di esempio",
   "autoStopped": "Scrollino si è fermato dopo 60 minuti",
   "disclosureTitle": "Prima di attivare Scrollino",
   "disclosureWhy": "Scrollino usa il servizio di accessibilità di Android per scorrere al posto tuo. È l'unico modo in cui un'app può muovere lo schermo di un'altra app, come il tuo lettore di e-book o PDF.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "Se l'interruttore è disattivato, apri Info app, tocca ⋮ e scegli Consenti impostazioni con limitazioni, poi riprova.",
   "agree": "Accetto, apri impostazioni",
   "notNow": "Non ora",
-  "preview": "Anteprima",
-  "previewTitle": "La custode del faro",
-  "previewBody": "Il faro sorgeva sull'ultimo scoglio prima del mare aperto, e ogni sera Marta saliva i suoi centododici gradini per accendere la lampada.\n\nLi aveva contati così tante volte che i suoi piedi conoscevano il numero prima di lei. Il sesto gradino scricchiolava, il quarantesimo era scheggiato, e sul novantunesimo qualcuno, molto tempo prima, aveva inciso con un coltello una piccola barca.\n\nDalla cima vedeva l'intera baia: i pescherecci che tornavano, i gabbiani che ripiegavano le ali sul muro del porto, le luci del paese che si accendevano una a una come lente lucciole.\n\nQuella notte la nebbia arrivò presto. Rotolò sull'acqua senza un suono e inghiottì le barche, i gabbiani e il paese, finché non rimase che il raggio del faro, che girava e girava in un mondo fatto di bianco.\n\nMarta sedeva accanto alla lampada con una tazza di tè e un libro che aveva già letto tre volte. Da qualche parte là fuori, una barca che non poteva vedere si guidava con la sua luce, e questo bastava.",
-  "settings": "Impostazioni",
   "appearance": "Aspetto",
   "language": "Lingua",
   "theme": "Tema",
@@ -36,7 +29,6 @@
   "about": "Informazioni",
   "version": "Versione",
   "privacy": "Informativa sulla privacy",
-  "license": "Scrollino è gratuito e open source.",
   "speedSentence": "Una schermata ogni {n} secondi",
   "scrollsIn": "Scorre in",
   "serviceOffNotice": "Il servizio di accessibilità è disattivato, quindi Scrollino non può ancora scorrere.",
@@ -47,5 +39,7 @@
   "actionStart": "Avvia",
   "actionSlower": "Più lento",
   "actionFaster": "Più veloce",
-  "controlsHint": "Metti in pausa e cambia la velocità dal pannello delle notifiche, senza uscire dal libro."
+  "controlsHint": "Apri il libro, trascina verso il basso la tendina delle notifiche e tocca Avvia. Da lì puoi anche mettere in pausa e cambiare la velocità.",
+  "notificationsOffNotice": "Le notifiche sono disattivate. I pulsanti Avvia e Pausa di Scrollino si trovano nella tendina delle notifiche.",
+  "notificationsTurnOn": "Consenti"
 }

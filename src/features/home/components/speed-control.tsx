@@ -8,8 +8,6 @@ import { t, tn } from '@/src/i18n'
 import { PRESETS, progressToSecs, secsToProgress } from '@/src/lib/speed'
 import { useThemeColors } from '@/src/theme/colors'
 
-import { ReadingWindow } from './reading-window'
-
 type SpeedControlProps = {
   secs: number
 }
@@ -26,7 +24,6 @@ export function SpeedControl({ secs }: SpeedControlProps) {
 
   return (
     <View className="gap-5">
-      <ReadingWindow secs={shown} />
       <Serif className="text-[26px] leading-9 text-ink">{tn('speedSentence', shown)}</Serif>
       <Slider
         value={secsToProgress(secs)}

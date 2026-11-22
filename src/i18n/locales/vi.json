@@ -1,6 +1,5 @@
 {
   "tagline": "Đọc rảnh tay. Màn hình tự cuộn.",
-  "serviceRequired": "Hãy bật dịch vụ hỗ trợ tiếp cận trước",
   "speed": "Tốc độ",
   "slow": "Chậm",
   "standard": "Chuẩn",
@@ -12,9 +11,7 @@
   "appsSearch": "Tìm ứng dụng",
   "appsClear": "Xóa lựa chọn",
   "appsLoading": "Đang tải ứng dụng…",
-  "start": "Bắt đầu cuộn",
   "pause": "Tạm dừng",
-  "tryPreview": "Thử trên trang mẫu",
   "autoStopped": "Scrollino đã dừng sau 60 phút",
   "disclosureTitle": "Trước khi bật Scrollino",
   "disclosureWhy": "Scrollino dùng dịch vụ hỗ trợ tiếp cận của Android để cuộn thay bạn. Đây là cách duy nhất để một ứng dụng di chuyển màn hình của ứng dụng khác, như trình đọc sách điện tử hoặc PDF của bạn.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "Nếu công tắc bị mờ, hãy mở Thông tin ứng dụng, nhấn vào ⋮ rồi chọn Cho phép cài đặt bị hạn chế, sau đó thử lại.",
   "agree": "Tôi đồng ý, mở cài đặt",
   "notNow": "Để sau",
-  "preview": "Xem trước",
-  "previewTitle": "Người giữ ngọn hải đăng",
-  "previewBody": "Ngọn hải đăng đứng trên mỏm đá cuối cùng trước biển khơi, và mỗi chiều Marta leo một trăm mười hai bậc thang của nó để thắp đèn.\n\nCô đã đếm chúng nhiều lần đến mức đôi chân biết con số trước cả cô. Bậc thứ sáu kêu cót két, bậc thứ bốn mươi bị mẻ, và trên bậc thứ chín mươi mốt, từ lâu lắm rồi, ai đó đã khắc một chiếc thuyền nhỏ bằng dao.\n\nTừ trên cao cô nhìn thấy cả vịnh: những chiếc thuyền cá trở về, bầy mòng biển xếp cánh trên bức tường bến cảng, ánh đèn của ngôi làng sáng lên từng chiếc một như những chú đom đóm chậm rãi.\n\nĐêm ấy sương mù đến sớm. Nó lăn trên mặt nước không một tiếng động và nuốt chửng những chiếc thuyền, bầy mòng biển và ngôi làng, cho đến khi chỉ còn chùm sáng của ngọn hải đăng, xoay và xoay trong một thế giới làm bằng màu trắng.\n\nMarta ngồi bên ngọn đèn với tách trà và cuốn sách cô đã đọc ba lần. Đâu đó ngoài kia, một chiếc thuyền cô không nhìn thấy đang lái theo ánh sáng của cô, và thế là đủ.",
-  "settings": "Cài đặt",
   "appearance": "Giao diện",
   "language": "Ngôn ngữ",
   "theme": "Chủ đề",
@@ -36,7 +29,6 @@
   "about": "Giới thiệu",
   "version": "Phiên bản",
   "privacy": "Chính sách quyền riêng tư",
-  "license": "Scrollino miễn phí và mã nguồn mở.",
   "speedSentence": "Cứ {n} giây một màn hình",
   "scrollsIn": "Cuộn trong",
   "serviceOffNotice": "Dịch vụ trợ năng đang tắt nên Scrollino chưa thể cuộn.",
@@ -47,5 +39,7 @@
   "actionStart": "Bắt đầu",
   "actionSlower": "Chậm hơn",
   "actionFaster": "Nhanh hơn",
-  "controlsHint": "Tạm dừng và đổi tốc độ ngay từ thanh thông báo mà không cần rời khỏi cuốn sách."
+  "controlsHint": "Mở sách của bạn, kéo thanh thông báo xuống rồi nhấn Bắt đầu. Từ đó bạn cũng có thể tạm dừng và đổi tốc độ.",
+  "notificationsOffNotice": "Thông báo đang tắt. Các nút Bắt đầu và Tạm dừng của Scrollino nằm trong thanh thông báo.",
+  "notificationsTurnOn": "Cho phép"
 }

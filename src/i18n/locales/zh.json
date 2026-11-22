@@ -1,6 +1,5 @@
 {
   "tagline": "解放双手的阅读。屏幕自动滚动。",
-  "serviceRequired": "请先开启无障碍服务",
   "speed": "速度",
   "slow": "慢",
   "standard": "标准",
@@ -12,9 +11,7 @@
   "appsSearch": "搜索应用",
   "appsClear": "清除选择",
   "appsLoading": "正在加载应用…",
-  "start": "开始滚动",
   "pause": "暂停",
-  "tryPreview": "在示例页面上试用",
   "autoStopped": "Scrollino 已在 60 分钟后停止",
   "disclosureTitle": "开启 Scrollino 之前",
   "disclosureWhy": "Scrollino 使用 Android 无障碍服务来替你滚动。这是一个应用控制另一个应用（例如你的电子书或 PDF 阅读器）屏幕的唯一方式。",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "如果开关呈灰色，请打开“应用信息”，点按 ⋮，选择“允许受限设置”，然后重试。",
   "agree": "我同意，打开设置",
   "notNow": "暂不",
-  "preview": "预览",
-  "previewTitle": "守灯人",
-  "previewBody": "灯塔立在通往大海之前的最后一块礁石上，每天傍晚，玛尔塔都要爬上它的一百一十二级台阶，去点亮那盏灯。\n\n她数过太多遍，脚比她自己更早记住了这个数字。第六级吱呀作响，第四十级缺了一角，而第九十一级上，很久以前有人用刀刻下了一只小船。\n\n从塔顶她能望见整个海湾：归来的渔船，在港口矮墙上收起翅膀的海鸥，村里的灯火一盏接一盏亮起，像缓缓飞舞的萤火虫。\n\n那天夜里，雾来得很早。它悄无声息地漫过海面，吞没了渔船、海鸥和村庄，最后只剩下灯塔的光束，在一片雪白的世界里转啊转。\n\n玛尔塔坐在灯旁，手边是一杯茶和一本读过三遍的书。远处的某个地方，一条她看不见的船正循着她的光航行，这就足够了。",
-  "settings": "设置",
   "appearance": "外观",
   "language": "语言",
   "theme": "主题",
@@ -36,7 +29,6 @@
   "about": "关于",
   "version": "版本",
   "privacy": "隐私政策",
-  "license": "Scrollino 免费且开源。",
   "speedSentence": "每 {n} 秒一屏",
   "scrollsIn": "滚动范围",
   "serviceOffNotice": "无障碍服务已关闭，Scrollino 暂时无法滚动。",
@@ -47,5 +39,7 @@
   "actionStart": "开始",
   "actionSlower": "减慢",
   "actionFaster": "加快",
-  "controlsHint": "无需离开书本，即可在通知栏暂停并调整速度。"
+  "controlsHint": "打开你的书，下拉通知栏，然后点按“开始”。你也可以在那里暂停和调整速度。",
+  "notificationsOffNotice": "通知已关闭。Scrollino 的“开始”和“暂停”按钮位于通知栏中。",
+  "notificationsTurnOn": "允许"
 }

@@ -1,6 +1,5 @@
 {
   "tagline": "Lezen zonder handen. Het scherm scrolt vanzelf.",
-  "serviceRequired": "Schakel eerst de toegankelijkheidsservice in",
   "speed": "Snelheid",
   "slow": "Langzaam",
   "standard": "Standaard",
@@ -12,9 +11,7 @@
   "appsSearch": "Apps zoeken",
   "appsClear": "Selectie wissen",
   "appsLoading": "Apps laden…",
-  "start": "Scrollen starten",
   "pause": "Pauzeren",
-  "tryPreview": "Probeer het op een voorbeeldpagina",
   "autoStopped": "Scrollino is gestopt na 60 minuten",
   "disclosureTitle": "Voordat je Scrollino inschakelt",
   "disclosureWhy": "Scrollino gebruikt de toegankelijkheidsservice van Android om voor je te scrollen. Dat is de enige manier waarop een app het scherm van een andere app kan verplaatsen, zoals je e-book- of pdf-lezer.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "Als de schakelaar grijs is, open je App-info, tik je op ⋮ en kies je Beperkte instellingen toestaan. Probeer het daarna opnieuw.",
   "agree": "Akkoord, instellingen openen",
   "notNow": "Niet nu",
-  "preview": "Voorbeeld",
-  "previewTitle": "De vuurtorenwachteres",
-  "previewBody": "De vuurtoren stond op de laatste rots voor de open zee, en elke avond beklom Marta zijn honderdtwaalf treden om de lamp aan te steken.\n\nZe had ze zo vaak geteld dat haar voeten het getal eerder kenden dan zijzelf. De zesde trede kraakte, de veertigste was afgebrokkeld, en in de eenennegentigste had iemand lang geleden met een mes een klein bootje gekerfd.\n\nVanaf de top zag ze de hele baai: de vissersboten die naar huis keerden, de meeuwen die hun vleugels vouwden op de havenmuur, de lichtjes van het dorp die een voor een aangingen als trage vuurvliegjes.\n\nDie nacht kwam de mist vroeg. Hij rolde zonder geluid over het water en verzwolg de boten, de meeuwen en het dorp, tot alleen de lichtbundel van de vuurtoren overbleef, draaiend en draaiend in een wereld van wit.\n\nMarta zat bij de lamp met een kop thee en een boek dat ze al driemaal had gelezen. Ergens daarbuiten stuurde een boot die ze niet kon zien op haar licht, en dat was genoeg.",
-  "settings": "Instellingen",
   "appearance": "Weergave",
   "language": "Taal",
   "theme": "Thema",
@@ -36,7 +29,6 @@
   "about": "Over",
   "version": "Versie",
   "privacy": "Privacybeleid",
-  "license": "Scrollino is gratis en open source.",
   "speedSentence": "Elke {n} seconden één scherm",
   "scrollsIn": "Scrolt in",
   "serviceOffNotice": "De toegankelijkheidsservice staat uit, dus Scrollino kan nog niet scrollen.",
@@ -47,5 +39,7 @@
   "actionStart": "Start",
   "actionSlower": "Langzamer",
   "actionFaster": "Sneller",
-  "controlsHint": "Pauzeer en pas de snelheid aan vanuit het meldingenpaneel, zonder je boek te verlaten."
+  "controlsHint": "Open je boek, trek het meldingenpaneel omlaag en tik op Start. Daar kun je ook pauzeren en de snelheid aanpassen.",
+  "notificationsOffNotice": "Meldingen staan uit. De knoppen Start en Pauzeren van Scrollino staan in het meldingenpaneel.",
+  "notificationsTurnOn": "Toestaan"
 }

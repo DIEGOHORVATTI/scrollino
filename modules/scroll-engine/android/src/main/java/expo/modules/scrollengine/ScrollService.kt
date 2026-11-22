@@ -42,9 +42,6 @@ class ScrollService : AccessibilityService() {
   @Volatile
   private var screenOn = true
 
-  @Volatile
-  private var preview = false
-
   private var inFlight = false
   private var currentGesture: GestureDescription? = null
   private var lastDispatchAt = 0L
@@ -124,10 +121,6 @@ class ScrollService : AccessibilityService() {
     onStateChanged()
   }
 
-  fun setPreview(enabled: Boolean) {
-    preview = enabled
-  }
-
   fun refreshControls() = ControlNotification.show(this, running, EnginePrefs.secs(this))
 
   private fun onStateChanged() {
@@ -199,7 +192,7 @@ class ScrollService : AccessibilityService() {
   }
 
   private fun canScrollHere() =
-    ScrollPolicy.shouldScroll(foreground, packageName, EnginePrefs.allowed(this), preview)
+    ScrollPolicy.shouldScroll(foreground, packageName, EnginePrefs.allowed(this))
 
   private fun pump() {
     if (!running) {

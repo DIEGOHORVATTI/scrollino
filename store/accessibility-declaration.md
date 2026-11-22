@@ -10,11 +10,11 @@ Play Console › Conteúdo do app › Serviços de acessibilidade.
 
 **Divulgação em destaque:** tela "Antes de ativar o Scrollino" (`app/disclosure.tsx`), mostrada antes de abrir as configurações de acessibilidade, com botões "Concordo, abrir configurações" e "Agora não".
 
-## Roteiro do vídeo (até 1 min, gravar com o Den Den ou scrcpy)
+## Roteiro do vídeo (até 1 min, gravado com adb screenrecord)
 
-1. Abrir o Scrollino com o serviço desligado; tocar em "Serviço de acessibilidade".
-2. Mostrar a tela de divulgação inteira; tocar em "Concordo, abrir configurações".
+1. Abrir o Scrollino com o serviço desligado: a tela de divulgação abre sozinha.
+2. Mostrar a divulgação inteira e tocar em "Concordo, abrir configurações"; permitir as notificações.
 3. Ativar o Scrollino em Configurações › Acessibilidade e aceitar o aviso do sistema.
-4. Voltar, escolher um leitor de PDF em "Apps", ajustar a velocidade.
-5. Tocar em Iniciar rolagem, abrir um PDF longo: a página rola sozinha.
-6. Puxar a gaveta de notificações, tocar em Mais rápido e em Pausar.
+4. Voltar ao app, ajustar a velocidade e escolher os apps em "Rola em".
+5. Abrir um PDF ou página longa, puxar a gaveta e tocar em Iniciar: a página rola sozinha.
+6. Puxar a gaveta de novo, tocar em Mais rápido e depois em Pausar.

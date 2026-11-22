@@ -1,6 +1,5 @@
 {
   "tagline": "Lecture mains libres. L'écran défile tout seul.",
-  "serviceRequired": "Activez d'abord le service d'accessibilité",
   "speed": "Vitesse",
   "slow": "Lente",
   "standard": "Standard",
@@ -12,9 +11,7 @@
   "appsSearch": "Rechercher des applis",
   "appsClear": "Effacer la sélection",
   "appsLoading": "Chargement des applis…",
-  "start": "Démarrer le défilement",
   "pause": "Pause",
-  "tryPreview": "Essayer sur une page d'exemple",
   "autoStopped": "Scrollino s'est arrêté après 60 minutes",
   "disclosureTitle": "Avant d'activer Scrollino",
   "disclosureWhy": "Scrollino utilise le service d'accessibilité d'Android pour faire défiler à votre place. C'est le seul moyen pour une appli de déplacer l'écran d'une autre appli, comme votre lecteur d'e-books ou de PDF.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "Si le commutateur est grisé, ouvrez Infos sur l'appli, appuyez sur ⋮ et choisissez Autoriser les paramètres restreints, puis réessayez.",
   "agree": "J'accepte, ouvrir les paramètres",
   "notNow": "Pas maintenant",
-  "preview": "Aperçu",
-  "previewTitle": "La gardienne du phare",
-  "previewBody": "Le phare se dressait sur le dernier rocher avant la haute mer, et chaque soir Marta gravissait ses cent douze marches pour allumer la lampe.\n\nElle les avait comptées tant de fois que ses pieds connaissaient le nombre avant elle. La sixième marche grinçait, la quarantième était ébréchée, et sur la quatre-vingt-onzième quelqu'un avait gravé, il y a longtemps, un petit bateau au couteau.\n\nDu haut, elle voyait toute la baie : les bateaux de pêche qui rentraient, les mouettes repliant leurs ailes sur le mur du port, les lumières du village qui s'allumaient une à une comme de lentes lucioles.\n\nCette nuit-là, le brouillard arriva tôt. Il glissa sur l'eau sans un bruit et avala les bateaux, les mouettes et le village, jusqu'à ne laisser que le faisceau du phare, tournant et tournant dans un monde fait de blanc.\n\nMarta s'assit près de la lampe avec une tasse de thé et un livre qu'elle avait déjà lu trois fois. Quelque part là-bas, un bateau qu'elle ne voyait pas se guidait sur sa lumière, et cela suffisait.",
-  "settings": "Paramètres",
   "appearance": "Apparence",
   "language": "Langue",
   "theme": "Thème",
@@ -36,7 +29,6 @@
   "about": "À propos",
   "version": "Version",
   "privacy": "Politique de confidentialité",
-  "license": "Scrollino est gratuit et open source.",
   "speedSentence": "Un écran toutes les {n} secondes",
   "scrollsIn": "Défile dans",
   "serviceOffNotice": "Le service d’accessibilité est désactivé, Scrollino ne peut donc pas encore faire défiler.",
@@ -47,5 +39,7 @@
   "actionStart": "Démarrer",
   "actionSlower": "Plus lent",
   "actionFaster": "Plus rapide",
-  "controlsHint": "Mettez en pause et réglez la vitesse depuis le volet de notifications, sans quitter votre livre."
+  "controlsHint": "Ouvrez votre livre, faites glisser le volet des notifications vers le bas et touchez Démarrer. Vous pouvez aussi y mettre en pause et changer la vitesse.",
+  "notificationsOffNotice": "Les notifications sont désactivées. Les boutons Démarrer et Pause de Scrollino se trouvent dans le volet des notifications.",
+  "notificationsTurnOn": "Autoriser"
 }

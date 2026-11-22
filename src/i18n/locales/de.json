@@ -1,6 +1,5 @@
 {
   "tagline": "Lesen ohne Hände. Der Bildschirm scrollt von selbst.",
-  "serviceRequired": "Aktiviere zuerst den Bedienungshilfen-Dienst",
   "speed": "Geschwindigkeit",
   "slow": "Langsam",
   "standard": "Standard",
@@ -12,9 +11,7 @@
   "appsSearch": "Apps suchen",
   "appsClear": "Auswahl löschen",
   "appsLoading": "Apps werden geladen…",
-  "start": "Scrollen starten",
   "pause": "Pause",
-  "tryPreview": "Auf einer Beispielseite ausprobieren",
   "autoStopped": "Scrollino wurde nach 60 Minuten gestoppt",
   "disclosureTitle": "Bevor du Scrollino aktivierst",
   "disclosureWhy": "Scrollino nutzt den Bedienungshilfen-Dienst von Android, um für dich zu scrollen. Nur so kann eine App den Bildschirm einer anderen App bewegen, etwa deines E-Book- oder PDF-Readers.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "Wenn der Schalter ausgegraut ist, öffne App-Info, tippe auf ⋮ und wähle Eingeschränkte Einstellungen zulassen. Versuche es dann erneut.",
   "agree": "Ich stimme zu, Einstellungen öffnen",
   "notNow": "Jetzt nicht",
-  "preview": "Vorschau",
-  "previewTitle": "Die Leuchtturmwärterin",
-  "previewBody": "Der Leuchtturm stand auf dem letzten Felsen vor dem offenen Meer, und jeden Abend stieg Marta seine hundertzwölf Stufen hinauf, um die Lampe zu entzünden.\n\nSie hatte sie so oft gezählt, dass ihre Füße die Zahl früher kannten als sie selbst. Die sechste Stufe knarrte, die vierzigste war angeschlagen, und in die einundneunzigste hatte vor langer Zeit jemand mit einem Messer ein kleines Boot geritzt.\n\nVon oben sah sie die ganze Bucht: die Fischerboote auf dem Heimweg, die Möwen, die auf der Hafenmauer die Flügel falteten, die Lichter des Dorfes, die eins nach dem anderen angingen wie langsame Glühwürmchen.\n\nIn dieser Nacht kam der Nebel früh. Er rollte lautlos über das Wasser und verschluckte die Boote, die Möwen und das Dorf, bis nur noch der Strahl des Leuchtturms übrig war, der sich drehte und drehte in einer Welt aus Weiß.\n\nMarta saß neben der Lampe, mit einer Tasse Tee und einem Buch, das sie schon dreimal gelesen hatte. Irgendwo da draußen hielt ein Boot, das sie nicht sehen konnte, Kurs auf ihr Licht, und das genügte.",
-  "settings": "Einstellungen",
   "appearance": "Darstellung",
   "language": "Sprache",
   "theme": "Design",
@@ -36,7 +29,6 @@
   "about": "Über",
   "version": "Version",
   "privacy": "Datenschutzerklärung",
-  "license": "Scrollino ist kostenlos und Open Source.",
   "speedSentence": "Alle {n} Sekunden ein Bildschirm",
   "scrollsIn": "Scrollt in",
   "serviceOffNotice": "Der Bedienungshilfen-Dienst ist aus, daher kann Scrollino noch nicht scrollen.",
@@ -47,5 +39,7 @@
   "actionStart": "Start",
   "actionSlower": "Langsamer",
   "actionFaster": "Schneller",
-  "controlsHint": "Pausiere und ändere das Tempo direkt in der Benachrichtigungsleiste, ohne dein Buch zu verlassen."
+  "controlsHint": "Öffne dein Buch, ziehe die Benachrichtigungsleiste herunter und tippe auf Start. Dort kannst du auch pausieren und die Geschwindigkeit ändern.",
+  "notificationsOffNotice": "Benachrichtigungen sind aus. Die Schaltflächen Start und Pause von Scrollino befinden sich in der Benachrichtigungsleiste.",
+  "notificationsTurnOn": "Erlauben"
 }

@@ -1,6 +1,5 @@
 {
   "tagline": "Lectura sin manos. La pantalla se desplaza sola.",
-  "serviceRequired": "Activa primero el servicio de accesibilidad",
   "speed": "Velocidad",
   "slow": "Lenta",
   "standard": "Estándar",
@@ -12,9 +11,7 @@
   "appsSearch": "Buscar aplicaciones",
   "appsClear": "Borrar selección",
   "appsLoading": "Cargando aplicaciones…",
-  "start": "Iniciar desplazamiento",
   "pause": "Pausar",
-  "tryPreview": "Probar en una página de ejemplo",
   "autoStopped": "Scrollino se detuvo tras 60 minutos",
   "disclosureTitle": "Antes de activar Scrollino",
   "disclosureWhy": "Scrollino usa el servicio de accesibilidad de Android para desplazarse por ti. Es la única forma en que una aplicación puede mover la pantalla de otra, como tu lector de libros electrónicos o de PDF.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "Si el interruptor aparece atenuado, abre Información de la aplicación, toca ⋮ y elige Permitir ajustes restringidos. Luego vuelve a intentarlo.",
   "agree": "Acepto, abrir ajustes",
   "notNow": "Ahora no",
-  "preview": "Vista previa",
-  "previewTitle": "La farera",
-  "previewBody": "El faro se alzaba sobre la última roca antes del mar abierto, y cada atardecer Marta subía sus ciento doce escalones para encender la lámpara.\n\nLos había contado tantas veces que sus pies sabían el número antes que ella. El sexto escalón crujía, el cuadragésimo estaba astillado, y en el nonagésimo primero alguien, hacía mucho, había tallado un barquito con un cuchillo.\n\nDesde lo alto veía toda la bahía: los barcos de pesca que volvían, las gaviotas plegando las alas sobre el muro del puerto, las luces del pueblo encendiéndose una a una como luciérnagas lentas.\n\nAquella noche la niebla llegó temprano. Rodó sobre el agua sin hacer ruido y se tragó los barcos, las gaviotas y el pueblo, hasta que solo quedó el haz del faro, girando y girando en un mundo hecho de blanco.\n\nMarta se sentó junto a la lámpara con una taza de té y un libro que ya había leído tres veces. En algún lugar allá afuera, un barco que ella no podía ver se guiaba por su luz, y eso bastaba.",
-  "settings": "Ajustes",
   "appearance": "Apariencia",
   "language": "Idioma",
   "theme": "Tema",
@@ -36,7 +29,6 @@
   "about": "Acerca de",
   "version": "Versión",
   "privacy": "Política de privacidad",
-  "license": "Scrollino es gratuito y de código abierto.",
   "speedSentence": "Una pantalla cada {n} segundos",
   "scrollsIn": "Se desplaza en",
   "serviceOffNotice": "El servicio de accesibilidad está desactivado, así que Scrollino aún no puede desplazarse.",
@@ -47,5 +39,7 @@
   "actionStart": "Iniciar",
   "actionSlower": "Más lento",
   "actionFaster": "Más rápido",
-  "controlsHint": "Pausa y cambia la velocidad desde el panel de notificaciones, sin salir de tu libro."
+  "controlsHint": "Abre tu libro, desliza hacia abajo el panel de notificaciones y toca Iniciar. Desde ahí también puedes pausar y cambiar la velocidad.",
+  "notificationsOffNotice": "Las notificaciones están desactivadas. Los botones Iniciar y Pausar de Scrollino están en el panel de notificaciones.",
+  "notificationsTurnOn": "Permitir"
 }

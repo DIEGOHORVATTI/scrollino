@@ -1,6 +1,5 @@
 {
   "tagline": "Eller serbest okuma. Ekran kendiliğinden kayar.",
-  "serviceRequired": "Önce erişilebilirlik hizmetini açın",
   "speed": "Hız",
   "slow": "Yavaş",
   "standard": "Standart",
@@ -12,9 +11,7 @@
   "appsSearch": "Uygulama ara",
   "appsClear": "Seçimi temizle",
   "appsLoading": "Uygulamalar yükleniyor…",
-  "start": "Kaydırmayı başlat",
   "pause": "Duraklat",
-  "tryPreview": "Örnek sayfada deneyin",
   "autoStopped": "Scrollino 60 dakika sonra durdu",
   "disclosureTitle": "Scrollino'yu açmadan önce",
   "disclosureWhy": "Scrollino, sizin yerinize kaydırmak için Android erişilebilirlik hizmetini kullanır. Bir uygulamanın, e-kitap veya PDF okuyucunuz gibi başka bir uygulamanın ekranını hareket ettirmesinin tek yolu budur.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "Anahtar gri görünüyorsa Uygulama bilgisi'ni açın, ⋮ simgesine dokunun ve Kısıtlanmış ayarlara izin ver'i seçin, ardından tekrar deneyin.",
   "agree": "Kabul ediyorum, ayarları aç",
   "notNow": "Şimdi değil",
-  "preview": "Önizleme",
-  "previewTitle": "Deniz feneri bekçisi",
-  "previewBody": "Deniz feneri açık denizden önceki son kayanın üzerinde dururdu ve Marta her akşam lambayı yakmak için yüz on iki basamağını çıkardı.\n\nBasamakları o kadar çok saymıştı ki ayakları sayıyı kendisinden önce biliyordu. Altıncı basamak gıcırdardı, kırkıncı basamak çentikliydi ve doksan birinci basamağa çok eskiden biri bıçakla küçük bir tekne oymuştu.\n\nYukarıdan bütün körfezi görebilirdi: eve dönen balıkçı tekneleri, liman duvarında kanatlarını katlayan martılar, köyün ışıkları, yavaş ateş böcekleri gibi birer birer yanıyordu.\n\nO gece sis erken geldi. Suyun üzerinde sessizce yuvarlandı; tekneleri, martıları ve köyü yuttu, geriye yalnızca fenerin ışığı kaldı; beyazdan yapılmış bir dünyada dönüp duran.\n\nMarta lambanın yanında oturuyordu; elinde bir fincan çay ve üç kez okuduğu bir kitap vardı. Dışarıda bir yerlerde, göremediği bir tekne onun ışığına bakarak yol alıyordu ve bu yeterliydi.",
-  "settings": "Ayarlar",
   "appearance": "Görünüm",
   "language": "Dil",
   "theme": "Tema",
@@ -36,7 +29,6 @@
   "about": "Hakkında",
   "version": "Sürüm",
   "privacy": "Gizlilik politikası",
-  "license": "Scrollino ücretsiz ve açık kaynaklıdır.",
   "speedSentence": "Her {n} saniyede bir ekran",
   "scrollsIn": "Kaydırılan yer",
   "serviceOffNotice": "Erişilebilirlik hizmeti kapalı, bu yüzden Scrollino henüz kaydıramıyor.",
@@ -47,5 +39,7 @@
   "actionStart": "Başlat",
   "actionSlower": "Yavaş",
   "actionFaster": "Hızlı",
-  "controlsHint": "Kitabından çıkmadan bildirim panelinden duraklat ve hızı değiştir."
+  "controlsHint": "Kitabını aç, bildirim panelini aşağı çek ve Başlat düğmesine dokun. Duraklatmayı ve hızı değiştirmeyi de oradan yapabilirsin.",
+  "notificationsOffNotice": "Bildirimler kapalı. Scrollino'nun Başlat ve Duraklat düğmeleri bildirim panelinde bulunur.",
+  "notificationsTurnOn": "İzin ver"
 }

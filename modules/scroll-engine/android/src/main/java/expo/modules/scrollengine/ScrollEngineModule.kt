@@ -35,19 +35,19 @@ class ScrollEngineModule : Module() {
 
     Function("getState") { EngineState.snapshot(context) }
 
+    Function("openNotificationSettings") {
+      context.startActivity(
+        Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
+          .putExtra(Settings.EXTRA_APP_PACKAGE, context.packageName)
+          .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+      )
+    }
+
     Function("openAccessibilitySettings") {
       context.startActivity(
         Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
       )
     }
-
-    Function("start") {
-      val service = ScrollService.instance ?: return@Function false
-      service.start()
-      true
-    }
-
-    Function("stop") { ScrollService.instance?.stop() }
 
     Function("setSecondsPerScreen") { secs: Int ->
       EnginePrefs.setSecs(context, secs)
@@ -58,7 +58,6 @@ class ScrollEngineModule : Module() {
       EnginePrefs.setAllowed(context, packages.toSet())
     }
 
-    Function("setPreviewMode") { enabled: Boolean -> ScrollService.instance?.setPreview(enabled) }
 
     Function("setLabels") { labels: Map<String, String> ->
       EnginePrefs.setLabels(context, labels)

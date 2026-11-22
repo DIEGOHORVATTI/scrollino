@@ -29,8 +29,6 @@ export default function RootLayout() {
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="disclosure" options={{ headerShown: false, presentation: 'modal' }} />
         <Stack.Screen name="apps" options={{ title: t('apps') }} />
-        <Stack.Screen name="preview" options={{ title: t('preview') }} />
-        <Stack.Screen name="settings" options={{ title: t('settings') }} />
       </Stack>
     </>
   )

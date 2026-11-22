@@ -1,6 +1,5 @@
 {
   "tagline": "Læsning uden hænder. Skærmen ruller af sig selv.",
-  "serviceRequired": "Aktivér først tilgængelighedstjenesten",
   "speed": "Hastighed",
   "slow": "Langsom",
   "standard": "Standard",
@@ -12,9 +11,7 @@
   "appsSearch": "Søg efter apps",
   "appsClear": "Ryd valg",
   "appsLoading": "Indlæser apps…",
-  "start": "Start rulning",
   "pause": "Pause",
-  "tryPreview": "Prøv det på en eksempelside",
   "autoStopped": "Scrollino stoppede efter 60 minutter",
   "disclosureTitle": "Før du aktiverer Scrollino",
   "disclosureWhy": "Scrollino bruger Androids tilgængelighedstjeneste til at rulle for dig. Det er den eneste måde, en app kan flytte en anden apps skærm på, f.eks. din e-bogs- eller PDF-læser.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "Hvis kontakten er nedtonet, skal du åbne Appoplysninger, trykke på ⋮ og vælge Tillad begrænsede indstillinger og derefter prøve igen.",
   "agree": "Jeg accepterer, åbn indstillinger",
   "notNow": "Ikke nu",
-  "preview": "Eksempel",
-  "previewTitle": "Fyrpasseren",
-  "previewBody": "Fyret stod på den sidste klippe før det åbne hav, og hver aften steg Marta op ad dets hundrede og tolv trin for at tænde lampen.\n\nHun havde talt dem så mange gange, at hendes fødder kendte tallet før hende selv. Det sjette trin knirkede, det fyrretyvende var skarpt, og på det enogfirsende havde nogen for længe siden skåret en lille båd med en kniv.\n\nFra toppen kunne hun se hele bugten: fiskerbådene på vej hjem, mågerne, der foldede vingerne på havnemuren, landsbyens lys, der tændtes et efter et som langsomme ildfluer.\n\nDen nat kom tågen tidligt. Den rullede over vandet uden en lyd og slugte bådene, mågerne og landsbyen, til kun fyrets stråle var tilbage, drejende og drejende i en verden af hvidt.\n\nMarta sad ved lampen med en kop te og en bog, hun havde læst tre gange. Et sted derude styrede en båd, hun ikke kunne se, efter hendes lys, og det var nok.",
-  "settings": "Indstillinger",
   "appearance": "Udseende",
   "language": "Sprog",
   "theme": "Tema",
@@ -36,7 +29,6 @@
   "about": "Om",
   "version": "Version",
   "privacy": "Privatlivspolitik",
-  "license": "Scrollino er gratis og open source.",
   "speedSentence": "Én skærm hvert {n}. sekund",
   "scrollsIn": "Ruller i",
   "serviceOffNotice": "Tilgængelighedstjenesten er slået fra, så Scrollino kan ikke rulle endnu.",
@@ -47,5 +39,7 @@
   "actionStart": "Start",
   "actionSlower": "Langsommere",
   "actionFaster": "Hurtigere",
-  "controlsHint": "Sæt på pause og skift hastighed fra notifikationspanelet uden at forlade din bog."
+  "controlsHint": "Åbn din bog, træk notifikationspanelet ned, og tryk på Start. Derfra kan du også sætte på pause og ændre hastigheden.",
+  "notificationsOffNotice": "Notifikationer er slået fra. Scrollinos knapper Start og Pause findes i notifikationspanelet.",
+  "notificationsTurnOn": "Tillad"
 }

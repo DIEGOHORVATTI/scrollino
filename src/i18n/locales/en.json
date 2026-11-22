@@ -1,6 +1,5 @@
 {
   "tagline": "Hands-free reading. The screen scrolls by itself.",
-  "serviceRequired": "Turn on the accessibility service first",
   "speed": "Speed",
   "slow": "Slow",
   "standard": "Standard",
@@ -12,9 +11,7 @@
   "appsSearch": "Search apps",
   "appsClear": "Clear selection",
   "appsLoading": "Loading apps…",
-  "start": "Start scrolling",
   "pause": "Pause",
-  "tryPreview": "Try it on a sample page",
   "autoStopped": "Scrollino stopped after 60 minutes",
   "disclosureTitle": "Before you turn on Scrollino",
   "disclosureWhy": "Scrollino uses the Android accessibility service to scroll for you. It is the only way an app can move the screen of another app, like your e-book or PDF reader.",
@@ -23,10 +20,6 @@
   "disclosureRestricted": "If the switch is greyed out, open App info, tap ⋮ and choose Allow restricted settings, then try again.",
   "agree": "I agree, open settings",
   "notNow": "Not now",
-  "preview": "Preview",
-  "previewTitle": "The lighthouse keeper",
-  "previewBody": "The lighthouse stood on the last rock before the open sea, and every evening Marta climbed its hundred and twelve steps to light the lamp.\n\nShe had counted them so many times that her feet knew the number before she did. The sixth step creaked, the fortieth was chipped, and on the ninety-first someone long ago had carved a small boat with a knife.\n\nFrom the top she could see the whole bay: the fishing boats coming home, the gulls folding their wings on the harbour wall, the lights of the village going on one by one like slow fireflies.\n\nThat night the fog came early. It rolled over the water without a sound and swallowed the boats, the gulls and the village, until only the beam of the lighthouse was left, turning and turning in a world made of white.\n\nMarta sat by the lamp with a cup of tea and a book she had read three times. Somewhere out there, a boat she could not see was steering by her light, and that was enough.",
-  "settings": "Settings",
   "appearance": "Appearance",
   "language": "Language",
   "theme": "Theme",
@@ -36,7 +29,6 @@
   "about": "About",
   "version": "Version",
   "privacy": "Privacy policy",
-  "license": "Scrollino is free and open source.",
   "speedSentence": "One screen every {n} seconds",
   "scrollsIn": "Scrolls in",
   "serviceOffNotice": "The accessibility service is off, so Scrollino can’t scroll yet.",
@@ -47,5 +39,7 @@
   "actionStart": "Start",
   "actionSlower": "Slower",
   "actionFaster": "Faster",
-  "controlsHint": "Pause and change the speed from the notification shade, without leaving your book."
+  "controlsHint": "Open your book, pull down the notification shade and tap Start. Pause and change the speed from there too.",
+  "notificationsOffNotice": "Notifications are off. Scrollino’s Start and Pause buttons live in the notification shade.",
+  "notificationsTurnOn": "Allow"
 }
