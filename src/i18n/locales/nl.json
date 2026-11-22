@@ -15,8 +15,6 @@
   "start": "Scrollen starten",
   "pause": "Pauzeren",
   "tryPreview": "Probeer het op een voorbeeldpagina",
-  "buttonHint": "Tik om te starten of te pauzeren, houd ingedrukt om de snelheid te wijzigen, sleep om te verplaatsen",
-  "buttonDescription": "Scrollen starten of pauzeren",
   "autoStopped": "Scrollino is gestopt na 60 minuten",
   "disclosureTitle": "Voordat je Scrollino inschakelt",
   "disclosureWhy": "Scrollino gebruikt de toegankelijkheidsservice van Android om voor je te scrollen. Dat is de enige manier waarop een app het scherm van een andere app kan verplaatsen, zoals je e-book- of pdf-lezer.",
@@ -43,5 +41,12 @@
   "speedSentence": "Elke {n} seconden één scherm",
   "scrollsIn": "Scrolt in",
   "serviceOffNotice": "De toegankelijkheidsservice staat uit, dus Scrollino kan nog niet scrollen.",
-  "serviceTurnOn": "Inschakelen"
+  "serviceTurnOn": "Inschakelen",
+  "controlsChannel": "Scrollbediening",
+  "notifScrolling": "Scrollt, elke {n} s een scherm",
+  "notifPaused": "Gepauzeerd",
+  "actionStart": "Start",
+  "actionSlower": "Langzamer",
+  "actionFaster": "Sneller",
+  "controlsHint": "Pauzeer en pas de snelheid aan vanuit het meldingenpaneel, zonder je boek te verlaten."
 }

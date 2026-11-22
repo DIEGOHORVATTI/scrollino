@@ -15,8 +15,6 @@
   "start": "Scrollen starten",
   "pause": "Pause",
   "tryPreview": "Auf einer Beispielseite ausprobieren",
-  "buttonHint": "Tippen zum Starten oder Pausieren, halten zum Ändern der Geschwindigkeit, ziehen zum Verschieben",
-  "buttonDescription": "Scrollen starten oder pausieren",
   "autoStopped": "Scrollino wurde nach 60 Minuten gestoppt",
   "disclosureTitle": "Bevor du Scrollino aktivierst",
   "disclosureWhy": "Scrollino nutzt den Bedienungshilfen-Dienst von Android, um für dich zu scrollen. Nur so kann eine App den Bildschirm einer anderen App bewegen, etwa deines E-Book- oder PDF-Readers.",
@@ -43,5 +41,12 @@
   "speedSentence": "Alle {n} Sekunden ein Bildschirm",
   "scrollsIn": "Scrollt in",
   "serviceOffNotice": "Der Bedienungshilfen-Dienst ist aus, daher kann Scrollino noch nicht scrollen.",
-  "serviceTurnOn": "Einschalten"
+  "serviceTurnOn": "Einschalten",
+  "controlsChannel": "Scroll-Steuerung",
+  "notifScrolling": "Scrollt, alle {n} s eine Seite",
+  "notifPaused": "Pausiert",
+  "actionStart": "Start",
+  "actionSlower": "Langsamer",
+  "actionFaster": "Schneller",
+  "controlsHint": "Pausiere und ändere das Tempo direkt in der Benachrichtigungsleiste, ohne dein Buch zu verlassen."
 }

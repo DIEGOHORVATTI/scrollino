@@ -10,6 +10,7 @@ import { Button } from '@/src/components/ui/button'
 import { ScreenFooter } from '@/src/components/ui/screen-footer'
 import { Serif } from '@/src/components/ui/serif'
 import { t } from '@/src/i18n'
+import { requestNotifications } from '@/src/lib/notifications'
 import { useSettings } from '@/src/stores/settings-store'
 import { useThemeColors } from '@/src/theme/colors'
 
@@ -33,8 +34,9 @@ export default function DisclosureScreen() {
   const router = useRouter()
   const insets = useSafeAreaInsets()
 
-  function agree() {
+  async function agree() {
     useSettings.getState().update({ disclosureAccepted: true })
+    await requestNotifications()
     router.back()
     ScrollEngine.openAccessibilitySettings()
   }

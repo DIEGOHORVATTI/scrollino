@@ -14,8 +14,13 @@ export type LaunchableApp = {
 
 export type EngineLabels = {
   autoStopped: string
-  buttonHint: string
-  buttonDescription: string
+  controlsChannel: string
+  notifScrolling: string
+  notifPaused: string
+  actionStart: string
+  actionPause: string
+  actionSlower: string
+  actionFaster: string
 }
 
 type ScrollEngineEvents = {
@@ -31,6 +36,7 @@ declare class ScrollEngineNativeModule extends NativeModule<ScrollEngineEvents> 
   setAllowedPackages(packages: string[]): void
   setPreviewMode(enabled: boolean): void
   setLabels(labels: EngineLabels): void
+  refreshControls(): void
   listLaunchableApps(): Promise<LaunchableApp[]>
 }
 
@@ -45,6 +51,7 @@ export const ScrollEngine = {
   setAllowedPackages: (packages: string[]) => native.setAllowedPackages(packages),
   setPreviewMode: (enabled: boolean) => native.setPreviewMode(enabled),
   setLabels: (labels: EngineLabels) => native.setLabels(labels),
+  refreshControls: () => native.refreshControls(),
   listLaunchableApps: () => native.listLaunchableApps(),
   addListener: native.addListener.bind(native) as ScrollEngineNativeModule['addListener'],
 }

@@ -3,7 +3,7 @@
 Leitura sem as mãos: o Scrollino rola a tela sozinho, em velocidade constante, dentro de qualquer app de leitura (e-books, PDFs, artigos, mangá, cifras).
 
 - Velocidade de 3 a 60 segundos por tela, com atalhos Lento, Padrão e Rápido
-- Botão flutuante: toque inicia ou pausa, segurar abre o ajuste de velocidade, arrastar move
+- Controles na gaveta de notificações: mais devagar, pausar/iniciar, mais rápido
 - Escolha em quais apps ele rola
 - Para sozinho depois de 60 minutos e mantém a tela acesa só enquanto rola
 - Sem internet, sem anúncios, sem coleta de dados ([política de privacidade](PRIVACY.md))

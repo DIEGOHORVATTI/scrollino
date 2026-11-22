@@ -15,8 +15,6 @@
   "start": "Mulai menggulir",
   "pause": "Jeda",
   "tryPreview": "Coba di halaman contoh",
-  "buttonHint": "Ketuk untuk memulai atau menjeda, tahan untuk mengubah kecepatan, seret untuk memindahkan",
-  "buttonDescription": "Mulai atau jeda pengguliran",
   "autoStopped": "Scrollino berhenti setelah 60 menit",
   "disclosureTitle": "Sebelum mengaktifkan Scrollino",
   "disclosureWhy": "Scrollino menggunakan layanan aksesibilitas Android untuk menggulir bagi Anda. Ini satu-satunya cara agar sebuah aplikasi dapat menggerakkan layar aplikasi lain, seperti pembaca e-book atau PDF Anda.",
@@ -43,5 +41,12 @@
   "speedSentence": "Satu layar setiap {n} detik",
   "scrollsIn": "Menggulir di",
   "serviceOffNotice": "Layanan aksesibilitas nonaktif, jadi Scrollino belum bisa menggulir.",
-  "serviceTurnOn": "Aktifkan"
+  "serviceTurnOn": "Aktifkan",
+  "controlsChannel": "Kontrol gulir",
+  "notifScrolling": "Menggulir, satu layar setiap {n} dtk",
+  "notifPaused": "Dijeda",
+  "actionStart": "Mulai",
+  "actionSlower": "Lebih lambat",
+  "actionFaster": "Lebih cepat",
+  "controlsHint": "Jeda dan ubah kecepatan dari bilah notifikasi, tanpa meninggalkan bukumu."
 }

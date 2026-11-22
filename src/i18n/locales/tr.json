@@ -15,8 +15,6 @@
   "start": "Kaydırmayı başlat",
   "pause": "Duraklat",
   "tryPreview": "Örnek sayfada deneyin",
-  "buttonHint": "Başlatmak veya duraklatmak için dokunun, hızı değiştirmek için basılı tutun, taşımak için sürükleyin",
-  "buttonDescription": "Kaydırmayı başlat veya duraklat",
   "autoStopped": "Scrollino 60 dakika sonra durdu",
   "disclosureTitle": "Scrollino'yu açmadan önce",
   "disclosureWhy": "Scrollino, sizin yerinize kaydırmak için Android erişilebilirlik hizmetini kullanır. Bir uygulamanın, e-kitap veya PDF okuyucunuz gibi başka bir uygulamanın ekranını hareket ettirmesinin tek yolu budur.",
@@ -43,5 +41,12 @@
   "speedSentence": "Her {n} saniyede bir ekran",
   "scrollsIn": "Kaydırılan yer",
   "serviceOffNotice": "Erişilebilirlik hizmeti kapalı, bu yüzden Scrollino henüz kaydıramıyor.",
-  "serviceTurnOn": "Aç"
+  "serviceTurnOn": "Aç",
+  "controlsChannel": "Kaydırma kontrolleri",
+  "notifScrolling": "Kaydırılıyor, her {n} sn'de bir ekran",
+  "notifPaused": "Duraklatıldı",
+  "actionStart": "Başlat",
+  "actionSlower": "Yavaş",
+  "actionFaster": "Hızlı",
+  "controlsHint": "Kitabından çıkmadan bildirim panelinden duraklat ve hızı değiştir."
 }

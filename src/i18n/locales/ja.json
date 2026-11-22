@@ -15,8 +15,6 @@
   "start": "スクロールを開始",
   "pause": "一時停止",
   "tryPreview": "サンプルページで試す",
-  "buttonHint": "タップで開始/一時停止、長押しで速度変更、ドラッグで移動",
-  "buttonDescription": "スクロールの開始/一時停止",
   "autoStopped": "Scrollino は60分後に停止しました",
   "disclosureTitle": "Scrollino をオンにする前に",
   "disclosureWhy": "Scrollino は Android のユーザー補助サービスを使って、代わりにスクロールします。電子書籍や PDF リーダーなど、他のアプリの画面を動かせる方法はこれだけです。",
@@ -43,5 +41,12 @@
   "speedSentence": "{n}秒ごとに1画面",
   "scrollsIn": "スクロール対象",
   "serviceOffNotice": "ユーザー補助サービスがオフのため、Scrollinoはまだスクロールできません。",
-  "serviceTurnOn": "オンにする"
+  "serviceTurnOn": "オンにする",
+  "controlsChannel": "スクロール操作",
+  "notifScrolling": "スクロール中、{n}秒ごとに1画面",
+  "notifPaused": "一時停止中",
+  "actionStart": "開始",
+  "actionSlower": "遅く",
+  "actionFaster": "速く",
+  "controlsHint": "本を開いたまま、通知パネルから一時停止や速度の変更ができます。"
 }

@@ -15,8 +15,6 @@
   "start": "Avvia scorrimento",
   "pause": "Pausa",
   "tryPreview": "Prova su una pagina di esempio",
-  "buttonHint": "Tocca per avviare o mettere in pausa, tieni premuto per cambiare velocità, trascina per spostare",
-  "buttonDescription": "Avvia o metti in pausa lo scorrimento",
   "autoStopped": "Scrollino si è fermato dopo 60 minuti",
   "disclosureTitle": "Prima di attivare Scrollino",
   "disclosureWhy": "Scrollino usa il servizio di accessibilità di Android per scorrere al posto tuo. È l'unico modo in cui un'app può muovere lo schermo di un'altra app, come il tuo lettore di e-book o PDF.",
@@ -43,5 +41,12 @@
   "speedSentence": "Una schermata ogni {n} secondi",
   "scrollsIn": "Scorre in",
   "serviceOffNotice": "Il servizio di accessibilità è disattivato, quindi Scrollino non può ancora scorrere.",
-  "serviceTurnOn": "Attiva"
+  "serviceTurnOn": "Attiva",
+  "controlsChannel": "Controlli di scorrimento",
+  "notifScrolling": "Scorrimento, una schermata ogni {n} s",
+  "notifPaused": "In pausa",
+  "actionStart": "Avvia",
+  "actionSlower": "Più lento",
+  "actionFaster": "Più veloce",
+  "controlsHint": "Metti in pausa e cambia la velocità dal pannello delle notifiche, senza uscire dal libro."
 }

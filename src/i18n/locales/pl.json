@@ -15,8 +15,6 @@
   "start": "Rozpocznij przewijanie",
   "pause": "Wstrzymaj",
   "tryPreview": "Wypróbuj na stronie przykładowej",
-  "buttonHint": "Dotknij, aby rozpocząć lub wstrzymać, przytrzymaj, aby zmienić prędkość, przeciągnij, aby przesunąć",
-  "buttonDescription": "Rozpocznij lub wstrzymaj przewijanie",
   "autoStopped": "Scrollino zatrzymało się po 60 minutach",
   "disclosureTitle": "Zanim włączysz Scrollino",
   "disclosureWhy": "Scrollino korzysta z usługi dostępności Androida, aby przewijać za Ciebie. To jedyny sposób, w jaki aplikacja może przesuwać ekran innej aplikacji, na przykład czytnika e-booków lub PDF.",
@@ -43,5 +41,12 @@
   "speedSentence": "Jeden ekran co {n} s",
   "scrollsIn": "Przewija w",
   "serviceOffNotice": "Usługa dostępności jest wyłączona, więc Scrollino nie może jeszcze przewijać.",
-  "serviceTurnOn": "Włącz"
+  "serviceTurnOn": "Włącz",
+  "controlsChannel": "Sterowanie przewijaniem",
+  "notifScrolling": "Przewijanie, jeden ekran co {n} s",
+  "notifPaused": "Wstrzymano",
+  "actionStart": "Start",
+  "actionSlower": "Wolniej",
+  "actionFaster": "Szybciej",
+  "controlsHint": "Wstrzymuj i zmieniaj prędkość z panelu powiadomień, bez opuszczania książki."
 }

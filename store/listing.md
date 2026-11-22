@@ -13,7 +13,7 @@ O Scrollino rola a tela sozinho, em velocidade constante, para você ler sem as 
 Funciona no seu leitor de e-book, de PDF, no navegador, em apps de mangá, cifras e partituras.
 
 • Velocidade de 3 a 60 segundos por tela, com atalhos Lento, Padrão e Rápido
-• Botão flutuante: toque para iniciar ou pausar, segure para mudar a velocidade sem sair do livro
+• Controles na gaveta de notificações: pause e mude a velocidade sem sair do livro
 • Escolha em quais apps o Scrollino pode rolar
 • Pausa sozinho quando você toca na tela ou troca de app, e retoma quando você volta
 • Mantém a tela acesa só enquanto rola e para sozinho depois de 60 minutos
@@ -36,7 +36,7 @@ Scrollino scrolls the screen at a steady speed so you can read without touching 
 It works in your e-book and PDF readers, the browser, manga, chords and sheet music apps.
 
 • Speed from 3 to 60 seconds per screen, with Slow, Standard and Fast presets
-• Floating button: tap to start or pause, hold to change the speed without leaving your book
+• Controls in the notification shade: pause and change the speed without leaving your book
 • Pick which apps Scrollino can scroll
 • Pauses when you touch the screen or switch apps, and resumes when you come back
 • Keeps the screen on only while scrolling and stops by itself after 60 minutes

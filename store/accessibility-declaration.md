@@ -16,5 +16,5 @@ Play Console › Conteúdo do app › Serviços de acessibilidade.
 2. Mostrar a tela de divulgação inteira; tocar em "Concordo, abrir configurações".
 3. Ativar o Scrollino em Configurações › Acessibilidade e aceitar o aviso do sistema.
 4. Voltar, escolher um leitor de PDF em "Apps", ajustar a velocidade.
-5. Abrir um PDF longo, tocar no botão flutuante: a página rola sozinha.
-6. Segurar o botão, mudar a velocidade com − / +; tocar de novo para pausar.
+5. Tocar em Iniciar rolagem, abrir um PDF longo: a página rola sozinha.
+6. Puxar a gaveta de notificações, tocar em Mais rápido e em Pausar.

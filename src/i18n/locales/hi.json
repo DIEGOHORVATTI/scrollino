@@ -15,8 +15,6 @@
   "start": "स्क्रॉल शुरू करें",
   "pause": "रोकें",
   "tryPreview": "नमूना पेज पर आज़माएँ",
-  "buttonHint": "शुरू या रोकने के लिए टैप करें, गति बदलने के लिए दबाए रखें, हिलाने के लिए खींचें",
-  "buttonDescription": "स्क्रॉल शुरू करें या रोकें",
   "autoStopped": "Scrollino 60 मिनट बाद रुक गया",
   "disclosureTitle": "Scrollino चालू करने से पहले",
   "disclosureWhy": "Scrollino आपके लिए स्क्रॉल करने हेतु Android की सुलभता सेवा का उपयोग करता है। किसी ऐप के लिए दूसरे ऐप की स्क्रीन को हिलाने का यही एकमात्र तरीका है, जैसे आपका ई-बुक या PDF रीडर।",
@@ -43,5 +41,12 @@
   "speedSentence": "हर {n} सेकंड में एक स्क्रीन",
   "scrollsIn": "स्क्रॉल होता है",
   "serviceOffNotice": "एक्सेसिबिलिटी सेवा बंद है, इसलिए Scrollino अभी स्क्रॉल नहीं कर सकता।",
-  "serviceTurnOn": "चालू करें"
+  "serviceTurnOn": "चालू करें",
+  "controlsChannel": "स्क्रॉल नियंत्रण",
+  "notifScrolling": "स्क्रॉल हो रहा है, हर {n} सेकंड में एक स्क्रीन",
+  "notifPaused": "रुका हुआ",
+  "actionStart": "शुरू",
+  "actionSlower": "धीमा",
+  "actionFaster": "तेज़",
+  "controlsHint": "अपनी किताब छोड़े बिना नोटिफ़िकेशन शेड से रोकें और गति बदलें।"
 }

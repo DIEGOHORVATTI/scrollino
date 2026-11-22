@@ -15,8 +15,6 @@
   "start": "Starta rullning",
   "pause": "Pausa",
   "tryPreview": "Prova på en exempelsida",
-  "buttonHint": "Tryck för att starta eller pausa, håll in för att ändra hastighet, dra för att flytta",
-  "buttonDescription": "Starta eller pausa rullning",
   "autoStopped": "Scrollino stannade efter 60 minuter",
   "disclosureTitle": "Innan du aktiverar Scrollino",
   "disclosureWhy": "Scrollino använder Androids tillgänglighetstjänst för att rulla åt dig. Det är det enda sättet för en app att flytta en annan apps skärm, till exempel din e-boks- eller PDF-läsare.",
@@ -43,5 +41,12 @@
   "speedSentence": "En skärm var {n}:e sekund",
   "scrollsIn": "Rullar i",
   "serviceOffNotice": "Tillgänglighetstjänsten är avstängd, så Scrollino kan inte rulla än.",
-  "serviceTurnOn": "Slå på"
+  "serviceTurnOn": "Slå på",
+  "controlsChannel": "Rullningskontroller",
+  "notifScrolling": "Rullar, en skärm var {n}:e s",
+  "notifPaused": "Pausad",
+  "actionStart": "Starta",
+  "actionSlower": "Långsammare",
+  "actionFaster": "Snabbare",
+  "controlsHint": "Pausa och ändra hastigheten från aviseringspanelen, utan att lämna din bok."
 }

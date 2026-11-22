@@ -15,8 +15,6 @@
   "start": "ابدأ التمرير",
   "pause": "إيقاف مؤقت",
   "tryPreview": "جرّبه على صفحة نموذجية",
-  "buttonHint": "انقر للبدء أو الإيقاف المؤقت، واضغط مطولاً لتغيير السرعة، واسحب لنقله",
-  "buttonDescription": "بدء التمرير أو إيقافه مؤقتاً",
   "autoStopped": "توقف Scrollino بعد 60 دقيقة",
   "disclosureTitle": "قبل تفعيل Scrollino",
   "disclosureWhy": "يستخدم Scrollino خدمة إمكانية الوصول في أندرويد ليتمرّر عنك. وهذه هي الطريقة الوحيدة التي يستطيع بها تطبيق تحريك شاشة تطبيق آخر، مثل قارئ الكتب الإلكترونية أو ملفات PDF.",
@@ -43,5 +41,12 @@
   "speedSentence": "شاشة واحدة كل {n} ثوانٍ",
   "scrollsIn": "يتمرّر في",
   "serviceOffNotice": "خدمة إمكانية الوصول متوقفة، لذا لا يستطيع Scrollino التمرير بعد.",
-  "serviceTurnOn": "تشغيل"
+  "serviceTurnOn": "تشغيل",
+  "controlsChannel": "عناصر التحكم في التمرير",
+  "notifScrolling": "جارٍ التمرير، شاشة كل {n} ث",
+  "notifPaused": "متوقف مؤقتًا",
+  "actionStart": "ابدأ",
+  "actionSlower": "أبطأ",
+  "actionFaster": "أسرع",
+  "controlsHint": "أوقف التمرير مؤقتًا وغيّر السرعة من شريط الإشعارات دون مغادرة كتابك."
 }

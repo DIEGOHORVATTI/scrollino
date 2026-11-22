@@ -15,8 +15,6 @@
   "start": "Iniciar deslocamento",
   "pause": "Pausar",
   "tryPreview": "Experimentar numa página de exemplo",
-  "buttonHint": "Toque para iniciar ou pausar, mantenha premido para mudar a velocidade, arraste para mover",
-  "buttonDescription": "Iniciar ou pausar o deslocamento",
   "autoStopped": "O Scrollino parou ao fim de 60 minutos",
   "disclosureTitle": "Antes de ativar o Scrollino",
   "disclosureWhy": "O Scrollino usa o serviço de acessibilidade do Android para se deslocar por si. É a única forma de uma app mover o ecrã de outra app, como o seu leitor de e-books ou de PDF.",
@@ -43,5 +41,12 @@
   "speedSentence": "Um ecrã a cada {n} segundos",
   "scrollsIn": "Desloca em",
   "serviceOffNotice": "O serviço de acessibilidade está desligado, por isso o Scrollino ainda não consegue deslocar o ecrã.",
-  "serviceTurnOn": "Ativar"
+  "serviceTurnOn": "Ativar",
+  "controlsChannel": "Controlos de deslocamento",
+  "notifScrolling": "A deslocar, um ecrã a cada {n} s",
+  "notifPaused": "Em pausa",
+  "actionStart": "Iniciar",
+  "actionSlower": "Mais lento",
+  "actionFaster": "Mais rápido",
+  "controlsHint": "Pause e mude a velocidade a partir do painel de notificações, sem sair do livro."
 }

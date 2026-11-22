@@ -14,9 +14,13 @@ Scrollino uses the Android AccessibilityService API for one purpose: to perform 
 
 The accessibility service is only enabled after you read an in-app explanation and agree to it, and you can turn it off at any time in Settings › Accessibility.
 
+## Notifications
+
+While the accessibility service is on, Scrollino shows a silent notification with Slower, Pause/Start and Faster buttons, so you can control scrolling from the notification shade. It contains no personal data.
+
 ## Data stored on your device
 
-Your preferences (speed, selected apps, language, theme and the floating button position) are stored only on your device and are deleted when you uninstall the app.
+Your preferences (speed, selected apps, language, theme) are stored only on your device and are deleted when you uninstall the app.
 
 ## Contact
 

@@ -15,8 +15,6 @@
   "start": "Bắt đầu cuộn",
   "pause": "Tạm dừng",
   "tryPreview": "Thử trên trang mẫu",
-  "buttonHint": "Nhấn để bắt đầu hoặc tạm dừng, nhấn giữ để đổi tốc độ, kéo để di chuyển",
-  "buttonDescription": "Bắt đầu hoặc tạm dừng cuộn",
   "autoStopped": "Scrollino đã dừng sau 60 phút",
   "disclosureTitle": "Trước khi bật Scrollino",
   "disclosureWhy": "Scrollino dùng dịch vụ hỗ trợ tiếp cận của Android để cuộn thay bạn. Đây là cách duy nhất để một ứng dụng di chuyển màn hình của ứng dụng khác, như trình đọc sách điện tử hoặc PDF của bạn.",
@@ -43,5 +41,12 @@
   "speedSentence": "Cứ {n} giây một màn hình",
   "scrollsIn": "Cuộn trong",
   "serviceOffNotice": "Dịch vụ trợ năng đang tắt nên Scrollino chưa thể cuộn.",
-  "serviceTurnOn": "Bật"
+  "serviceTurnOn": "Bật",
+  "controlsChannel": "Điều khiển cuộn",
+  "notifScrolling": "Đang cuộn, mỗi {n} giây một màn hình",
+  "notifPaused": "Đã tạm dừng",
+  "actionStart": "Bắt đầu",
+  "actionSlower": "Chậm hơn",
+  "actionFaster": "Nhanh hơn",
+  "controlsHint": "Tạm dừng và đổi tốc độ ngay từ thanh thông báo mà không cần rời khỏi cuốn sách."
 }

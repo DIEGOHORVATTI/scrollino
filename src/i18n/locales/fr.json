@@ -15,8 +15,6 @@
   "start": "Démarrer le défilement",
   "pause": "Pause",
   "tryPreview": "Essayer sur une page d'exemple",
-  "buttonHint": "Appuyez pour démarrer ou mettre en pause, maintenez pour changer la vitesse, faites glisser pour déplacer",
-  "buttonDescription": "Démarrer ou mettre en pause le défilement",
   "autoStopped": "Scrollino s'est arrêté après 60 minutes",
   "disclosureTitle": "Avant d'activer Scrollino",
   "disclosureWhy": "Scrollino utilise le service d'accessibilité d'Android pour faire défiler à votre place. C'est le seul moyen pour une appli de déplacer l'écran d'une autre appli, comme votre lecteur d'e-books ou de PDF.",
@@ -43,5 +41,12 @@
   "speedSentence": "Un écran toutes les {n} secondes",
   "scrollsIn": "Défile dans",
   "serviceOffNotice": "Le service d’accessibilité est désactivé, Scrollino ne peut donc pas encore faire défiler.",
-  "serviceTurnOn": "Activer"
+  "serviceTurnOn": "Activer",
+  "controlsChannel": "Commandes de défilement",
+  "notifScrolling": "Défilement, un écran toutes les {n} s",
+  "notifPaused": "En pause",
+  "actionStart": "Démarrer",
+  "actionSlower": "Plus lent",
+  "actionFaster": "Plus rapide",
+  "controlsHint": "Mettez en pause et réglez la vitesse depuis le volet de notifications, sans quitter votre livre."
 }

@@ -1,6 +1,6 @@
 import { useRouter } from 'expo-router'
 import { Settings } from 'lucide-react-native'
-import { Pressable, ScrollView, View } from 'react-native'
+import { Pressable, ScrollView, Text, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import { Button } from '@/src/components/ui/button'
@@ -47,6 +47,7 @@ export default function HomeScreen() {
           />
           <View className="border-t border-rule" />
         </View>
+        <Text className="text-[15px] leading-6 text-pencil">{t('controlsHint')}</Text>
       </ScrollView>
       <ScreenFooter>
         <Button

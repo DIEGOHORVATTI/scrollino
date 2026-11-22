@@ -14,8 +14,8 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
 
 - Rolagem contínua e suave em qualquer app de leitura, ajustável de 3 a 60
   segundos por tela.
-- Controle sem sair do livro: botão flutuante que inicia/pausa e ajusta a
-  velocidade.
+- Controle sem sair do livro: notificação fixa na gaveta com Mais devagar,
+  Pausar/Iniciar e Mais rápido.
 - Interface traduzida (pt-BR base + os mesmos 21 idiomas do FakeTraveler).
 - Aprovada na Play Store, incluindo a política de serviço de acessibilidade.
 
@@ -51,7 +51,7 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
 ## Abordagens
 
 1. **Expo + módulo Kotlin local (escolhida).** Interface em React Native,
-   motor (AccessibilityService + botão flutuante) em `modules/scroll-engine`,
+   motor (AccessibilityService + notificação de controle) em `modules/scroll-engine`,
    igual ao `modules/mock-location` do FakeTraveler. Mesma stack e mesmo CD do
    Scale; motor nativo é obrigatório de qualquer jeito.
 2. Só traduzir/forkar o app Java. Rápido, mas foge da stack, sem OTA, sem i18n
@@ -75,16 +75,16 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
 - Não rola dentro do próprio Scrollino (exceto na prévia) nem com a gaveta de
   notificações aberta.
 
-### Botão flutuante (Kotlin, overlay `TYPE_ACCESSIBILITY_OVERLAY`)
+### Controles na gaveta de notificações (Kotlin)
 
-- Toque: inicia/pausa. Arrastar: move, posição salva em proporção da tela.
-- **Novo:** segurar abre um mini painel com − / + e a velocidade atual;
-  fecha sozinho após alguns segundos sem toque.
-- Esmaece enquanto rola, volta opaco ao tocar ou pausar.
-- Desenhado pelo próprio serviço como `TYPE_ACCESSIBILITY_OVERLAY`: não pede
-  a permissão de sobreposição (`SYSTEM_ALERT_WINDOW` fica fora do manifest).
-  Uma permissão a menos para explicar ao Google e ao usuário. (Decisão do
-  construtor do design; o original usava `TYPE_APPLICATION_OVERLAY`.)
+- Decisão do usuário em 2026-11-21: trocar o botão flutuante pela gaveta.
+- Notificação silenciosa e fixa enquanto o serviço está ligado: título
+  "Rolando, uma tela a cada N s" ou "Pausado"; ações Mais devagar (+1 s),
+  Pausar/Iniciar e Mais rápido (−1 s). Tocar abre o app.
+- A rolagem já pausa com a gaveta aberta (`com.android.systemui`) e retoma ao
+  fechar.
+- Tela acesa durante a rolagem por wake lock com timeout (`WAKE_LOCK`).
+- Permissão `POST_NOTIFICATIONS` pedida ao aceitar a divulgação e ao iniciar.
 
 ### Interface (React Native)
 
@@ -108,7 +108,7 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
   `setSecondsPerScreen(n)`, `setAllowedPackages(string[])`,
   `listLaunchableApps()`, `setPreviewMode(bool)`.
 - Evento `onStateChange({ running, serviceEnabled })` para a tela refletir o
-  que o botão flutuante faz.
+  que a notificação faz.
 - Preferências do motor ficam em SharedPreferences (o serviço roda sem o JS);
   o JS é a fonte das mudanças e espelha o estado em zustand.
 

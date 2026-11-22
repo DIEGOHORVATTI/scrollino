@@ -18,8 +18,13 @@ export function useAppPreferences() {
   useEffect(() => {
     ScrollEngine.setLabels({
       autoStopped: t('autoStopped'),
-      buttonHint: t('buttonHint'),
-      buttonDescription: t('buttonDescription'),
+      controlsChannel: t('controlsChannel'),
+      notifScrolling: t('notifScrolling'),
+      notifPaused: t('notifPaused'),
+      actionStart: t('actionStart'),
+      actionPause: t('pause'),
+      actionSlower: t('actionSlower'),
+      actionFaster: t('actionFaster'),
     })
   }, [language])
 

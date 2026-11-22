@@ -64,8 +64,10 @@ class ScrollEngineModule : Module() {
 
     Function("setLabels") { labels: Map<String, String> ->
       EnginePrefs.setLabels(context, labels)
-      ScrollService.instance?.refreshLabels()
+      ScrollService.instance?.refreshControls()
     }
+
+    Function("refreshControls") { ScrollService.instance?.refreshControls() }
 
     AsyncFunction("listLaunchableApps") { listLaunchableApps() }
   }

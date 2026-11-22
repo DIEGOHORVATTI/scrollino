@@ -15,8 +15,6 @@
   "start": "스크롤 시작",
   "pause": "일시중지",
   "tryPreview": "샘플 페이지로 체험하기",
-  "buttonHint": "탭하여 시작 또는 일시중지, 길게 눌러 속도 변경, 드래그하여 이동",
-  "buttonDescription": "스크롤 시작 또는 일시중지",
   "autoStopped": "Scrollino가 60분 후에 중지되었습니다",
   "disclosureTitle": "Scrollino를 켜기 전에",
   "disclosureWhy": "Scrollino는 Android 접근성 서비스를 사용해 대신 스크롤합니다. 전자책이나 PDF 리더처럼 다른 앱의 화면을 움직일 수 있는 유일한 방법입니다.",
@@ -43,5 +41,12 @@
   "speedSentence": "{n}초마다 한 화면",
   "scrollsIn": "스크롤 대상",
   "serviceOffNotice": "접근성 서비스가 꺼져 있어 Scrollino가 아직 스크롤할 수 없습니다.",
-  "serviceTurnOn": "켜기"
+  "serviceTurnOn": "켜기",
+  "controlsChannel": "스크롤 컨트롤",
+  "notifScrolling": "스크롤 중, {n}초마다 한 화면",
+  "notifPaused": "일시정지됨",
+  "actionStart": "시작",
+  "actionSlower": "느리게",
+  "actionFaster": "빠르게",
+  "controlsHint": "책을 떠나지 않고 알림 창에서 일시정지하고 속도를 바꿀 수 있어요."
 }

@@ -15,8 +15,6 @@
   "start": "Start scrolling",
   "pause": "Pause",
   "tryPreview": "Try it on a sample page",
-  "buttonHint": "Tap to start or pause, hold to change speed, drag to move",
-  "buttonDescription": "Start or pause scrolling",
   "autoStopped": "Scrollino stopped after 60 minutes",
   "disclosureTitle": "Before you turn on Scrollino",
   "disclosureWhy": "Scrollino uses the Android accessibility service to scroll for you. It is the only way an app can move the screen of another app, like your e-book or PDF reader.",
@@ -43,5 +41,12 @@
   "speedSentence": "One screen every {n} seconds",
   "scrollsIn": "Scrolls in",
   "serviceOffNotice": "The accessibility service is off, so Scrollino can’t scroll yet.",
-  "serviceTurnOn": "Turn on"
+  "serviceTurnOn": "Turn on",
+  "controlsChannel": "Scroll controls",
+  "notifScrolling": "Scrolling, one screen every {n} s",
+  "notifPaused": "Paused",
+  "actionStart": "Start",
+  "actionSlower": "Slower",
+  "actionFaster": "Faster",
+  "controlsHint": "Pause and change the speed from the notification shade, without leaving your book."
 }

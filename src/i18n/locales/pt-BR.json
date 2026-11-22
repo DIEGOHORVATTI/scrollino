@@ -15,8 +15,6 @@
   "start": "Iniciar rolagem",
   "pause": "Pausar",
   "tryPreview": "Testar numa página de exemplo",
-  "buttonHint": "Toque para iniciar ou pausar, segure para mudar a velocidade, arraste para mover",
-  "buttonDescription": "Iniciar ou pausar a rolagem",
   "autoStopped": "O Scrollino parou depois de 60 minutos",
   "disclosureTitle": "Antes de ativar o Scrollino",
   "disclosureWhy": "O Scrollino usa o serviço de acessibilidade do Android para rolar por você. É o único jeito de um app mover a tela de outro app, como o seu leitor de e-book ou de PDF.",
@@ -43,5 +41,12 @@
   "speedSentence": "Uma tela a cada {n} segundos",
   "scrollsIn": "Rola em",
   "serviceOffNotice": "O serviço de acessibilidade está desligado, então o Scrollino ainda não consegue rolar.",
-  "serviceTurnOn": "Ativar"
+  "serviceTurnOn": "Ativar",
+  "controlsChannel": "Controles de rolagem",
+  "notifScrolling": "Rolando, uma tela a cada {n} s",
+  "notifPaused": "Pausado",
+  "actionStart": "Iniciar",
+  "actionSlower": "Mais devagar",
+  "actionFaster": "Mais rápido",
+  "controlsHint": "Pause e mude a velocidade pela gaveta de notificações, sem sair do livro."
 }

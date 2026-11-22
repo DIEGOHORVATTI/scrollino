@@ -51,8 +51,9 @@ class ScrollService : AccessibilityService() {
   private var lastChunkMs = 0L
   private var retryCount = 0
   private var runStartedAt = 0L
-  private var button: FloatingButton? = null
   private var screenReceiver: BroadcastReceiver? = null
+  private var controlsReceiver: BroadcastReceiver? = null
+  private lateinit var awake: ScreenAwake
 
   private val gestureCallback = object : GestureResultCallback() {
     override fun onCompleted(gestureDescription: GestureDescription) {
@@ -72,9 +73,10 @@ class ScrollService : AccessibilityService() {
   override fun onServiceConnected() {
     super.onServiceConnected()
     instance = this
+    awake = ScreenAwake(this)
     registerScreenReceiver()
-    button = FloatingButton(this).also { it.show(running) }
-    EngineState.emit(this)
+    registerControlsReceiver()
+    onStateChanged()
   }
 
   override fun onAccessibilityEvent(event: AccessibilityEvent?) {
@@ -111,7 +113,7 @@ class ScrollService : AccessibilityService() {
   fun stop() {
     running = false
     handler.removeCallbacks(pumpTask)
-    button?.setKeepScreenOn(false)
+    awake.release()
     onStateChanged()
   }
 
@@ -126,10 +128,10 @@ class ScrollService : AccessibilityService() {
     preview = enabled
   }
 
-  fun refreshLabels() = button?.refreshLabels()
+  fun refreshControls() = ControlNotification.show(this, running, EnginePrefs.secs(this))
 
   private fun onStateChanged() {
-    button?.update(running, EnginePrefs.secs(this))
+    ControlNotification.show(this, running, EnginePrefs.secs(this))
     EngineState.emit(this)
   }
 
@@ -137,10 +139,11 @@ class ScrollService : AccessibilityService() {
     running = false
     inFlight = false
     handler.removeCallbacksAndMessages(null)
-    button?.remove()
-    button = null
-    screenReceiver?.let { runCatching { unregisterReceiver(it) } }
+    if (::awake.isInitialized) awake.release()
+    ControlNotification.cancel(this)
+    listOfNotNull(screenReceiver, controlsReceiver).forEach { runCatching { unregisterReceiver(it) } }
     screenReceiver = null
+    controlsReceiver = null
     if (instance === this) instance = null
     EngineState.emit(this)
   }
@@ -167,6 +170,29 @@ class ScrollService : AccessibilityService() {
     screenReceiver = receiver
   }
 
+  private fun registerControlsReceiver() {
+    val receiver = object : BroadcastReceiver() {
+      override fun onReceive(context: Context, intent: Intent) {
+        when (intent.action) {
+          ControlNotification.ACTION_TOGGLE -> toggle()
+          ControlNotification.ACTION_SLOWER -> adjustSecs(+1)
+          ControlNotification.ACTION_FASTER -> adjustSecs(-1)
+        }
+      }
+    }
+    val filter = IntentFilter().apply {
+      addAction(ControlNotification.ACTION_TOGGLE)
+      addAction(ControlNotification.ACTION_SLOWER)
+      addAction(ControlNotification.ACTION_FASTER)
+    }
+    if (Build.VERSION.SDK_INT >= 33) {
+      registerReceiver(receiver, filter, Context.RECEIVER_NOT_EXPORTED)
+    } else {
+      registerReceiver(receiver, filter)
+    }
+    controlsReceiver = receiver
+  }
+
   private fun schedule(delayMs: Long) {
     handler.removeCallbacks(pumpTask)
     handler.postDelayed(pumpTask, delayMs)
@@ -189,11 +215,11 @@ class ScrollService : AccessibilityService() {
     }
     if (!screenOn || !canScrollHere()) {
       inFlight = false
-      button?.setKeepScreenOn(false)
+      awake.release()
       schedule(IDLE_POLL_MS)
       return
     }
-    button?.setKeepScreenOn(true)
+    awake.hold()
     if (inFlight && SystemClock.elapsedRealtime() - lastDispatchAt < lastChunkMs + CALLBACK_GRACE_MS) {
       schedule(INFLIGHT_POLL_MS)
       return

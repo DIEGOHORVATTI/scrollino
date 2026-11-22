@@ -15,8 +15,6 @@
   "start": "开始滚动",
   "pause": "暂停",
   "tryPreview": "在示例页面上试用",
-  "buttonHint": "点按开始或暂停，长按调整速度，拖动可移动位置",
-  "buttonDescription": "开始或暂停滚动",
   "autoStopped": "Scrollino 已在 60 分钟后停止",
   "disclosureTitle": "开启 Scrollino 之前",
   "disclosureWhy": "Scrollino 使用 Android 无障碍服务来替你滚动。这是一个应用控制另一个应用（例如你的电子书或 PDF 阅读器）屏幕的唯一方式。",
@@ -43,5 +41,12 @@
   "speedSentence": "每 {n} 秒一屏",
   "scrollsIn": "滚动范围",
   "serviceOffNotice": "无障碍服务已关闭，Scrollino 暂时无法滚动。",
-  "serviceTurnOn": "开启"
+  "serviceTurnOn": "开启",
+  "controlsChannel": "滚动控制",
+  "notifScrolling": "正在滚动，每 {n} 秒一屏",
+  "notifPaused": "已暂停",
+  "actionStart": "开始",
+  "actionSlower": "减慢",
+  "actionFaster": "加快",
+  "controlsHint": "无需离开书本，即可在通知栏暂停并调整速度。"
 }
