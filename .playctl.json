@@ -1,6 +1,7 @@
 {
   "packageName": "com.diegohorvatti.scrollino",
   "keyFile": "~/.config/scale/play-key.json",
+  "consoleAppId": "4973303183996985260",
   "appContent": {
     "privacyPolicyUrl": "https://github.com/DIEGOHORVATTI/scrollino/blob/main/PRIVACY.md",
     "containsAds": false,
@@ -10,7 +11,9 @@
     "financialFeatures": false,
     "healthFeatures": false,
     "collectsData": false,
-    "targetAges": ["18+"],
+    "targetAges": [
+      "18+"
+    ],
     "contentRating": {
       "email": "contact@horvatti.com",
       "answers": {

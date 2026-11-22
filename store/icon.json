@@ -1,0 +1,14 @@
+{
+  "imageType": "icon",
+  "screenshots": [
+    "play-icon.png"
+  ],
+  "languages": {
+    "pt-BR": {
+      "dir": "."
+    },
+    "en-US": {
+      "dir": "."
+    }
+  }
+}

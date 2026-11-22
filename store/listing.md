@@ -25,9 +25,9 @@ Por que o Scrollino pede o serviço de acessibilidade?
 
 ## en-US
 
-**Title (30):** Scrollino: hands-free auto scroll
+**Title (30):** Scrollino: Auto Scroll Reader
 
-**Short description (80):** The screen scrolls by itself so you can read books, PDFs and articles hands-free.
+**Short description (80):** The screen scrolls by itself. Read books, PDFs and articles hands-free.
 
 **Full description:**
 

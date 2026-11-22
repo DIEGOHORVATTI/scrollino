@@ -1,0 +1,24 @@
+{
+  "packageName": "com.diegohorvatti.scrollino",
+  "imageType": "phoneScreenshots",
+  "screenshots": [],
+  "featureGraphic": "feature-graphic.png",
+  "languages": {
+    "pt-BR": {
+      "dir": "pt-BR",
+      "listing": {
+        "title": "Scrollino: rolagem automática",
+        "shortDescription": "A tela rola sozinha para você ler livros, PDFs e artigos sem tocar no celular.",
+        "fullDescription": "O Scrollino rola a tela sozinho, em velocidade constante, para você ler sem as mãos.\n\nFunciona no seu leitor de e-book, de PDF, no navegador, em apps de mangá, cifras e partituras.\n\n• Velocidade de 3 a 60 segundos por tela, com atalhos Lento, Padrão e Rápido\n• Controles na gaveta de notificações: pause e mude a velocidade sem sair do livro\n• Escolha em quais apps o Scrollino pode rolar\n• Pausa sozinho quando você toca na tela ou troca de app, e retoma quando você volta\n• Mantém a tela acesa só enquanto rola e para sozinho depois de 60 minutos\n• Sem internet, sem anúncios, sem coleta de dados\n• Livre e de código aberto\n\nPor que o Scrollino pede o serviço de acessibilidade?\nÉ a única forma de um app mover a tela de outro app. O Scrollino usa esse serviço apenas para simular um deslize lento para cima. Ele não lê, não guarda e não envia nada do que aparece na sua tela."
+      }
+    },
+    "en-US": {
+      "dir": "en-US",
+      "listing": {
+        "title": "Scrollino: Auto Scroll Reader",
+        "shortDescription": "The screen scrolls by itself. Read books, PDFs and articles hands-free.",
+        "fullDescription": "Scrollino scrolls the screen at a steady speed so you can read without touching your phone.\n\nIt works in your e-book and PDF readers, the browser, manga, chords and sheet music apps.\n\n• Speed from 3 to 60 seconds per screen, with Slow, Standard and Fast presets\n• Controls in the notification shade: pause and change the speed without leaving your book\n• Pick which apps Scrollino can scroll\n• Pauses when you touch the screen or switch apps, and resumes when you come back\n• Keeps the screen on only while scrolling and stops by itself after 60 minutes\n• No internet, no ads, no data collection\n• Free and open source\n\nWhy does Scrollino need the accessibility service?\nIt is the only way an app can move the screen of another app. Scrollino uses it only to simulate a slow upward swipe. It does not read, store or send anything on your screen."
+      }
+    }
+  }
+}
