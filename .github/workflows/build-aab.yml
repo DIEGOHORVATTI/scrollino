@@ -191,6 +191,27 @@ jobs:
           ls -la "$caminho"
           unzip -l "$caminho" | grep -c 'lib/' || true
 
+      - name: Gera o APK universal a partir do AAB
+        run: |
+          curl -fsSL https://github.com/google/bundletool/releases/download/1.18.1/bundletool-all-1.18.1.jar -o "$RUNNER_TEMP/bundletool.jar"
+          java -jar "$RUNNER_TEMP/bundletool.jar" build-apks \
+            --bundle=$(ls android/app/build/outputs/bundle/release/*.aab) \
+            --output="$RUNNER_TEMP/app.apks" --mode=universal \
+            --ks=android/app/upload.jks --ks-key-alias="$KEY_ALIAS" \
+            --ks-pass=pass:"$KEYSTORE_PASSWORD" --key-pass=pass:"$KEY_PASSWORD"
+          unzip -p "$RUNNER_TEMP/app.apks" universal.apk > scrollino.apk
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+
+      - name: Upload do APK universal
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrollino-apk-${{ inputs.versionCode }}
+          path: scrollino.apk
+          retention-days: 30
+
       - name: Apaga a keystore do runner
         if: always()
         run: rm -f android/app/upload.jks
