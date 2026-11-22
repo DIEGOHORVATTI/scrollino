@@ -14,4 +14,7 @@ object ScrollPolicy {
     if (packageName == self) return className.endsWith("Activity")
     return true
   }
+
+  fun pausesOnEnter(previous: String, next: String) =
+    next.startsWith(SYSTEM_UI) && !previous.startsWith(SYSTEM_UI)
 }

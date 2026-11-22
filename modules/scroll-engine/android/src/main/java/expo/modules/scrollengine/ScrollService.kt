@@ -74,9 +74,9 @@ class ScrollService : AccessibilityService() {
     if (event?.eventType != AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) return
     val packageName = event.packageName?.toString().orEmpty()
     if (packageName.isEmpty()) return
-    if (ScrollPolicy.tracksForeground(packageName, event.className?.toString().orEmpty(), this.packageName)) {
-      foreground = packageName
-    }
+    if (!ScrollPolicy.tracksForeground(packageName, event.className?.toString().orEmpty(), this.packageName)) return
+    if (running && ScrollPolicy.pausesOnEnter(foreground, packageName)) stop()
+    foreground = packageName
   }
 
   override fun onInterrupt() = Unit

@@ -78,8 +78,10 @@ como o FakeTraveler (`~/Dev/FakeTraveler`).
 - Notificação silenciosa e fixa enquanto o serviço está ligado: título
   "Rolando, uma tela a cada N s" ou "Pausado"; ações Mais devagar (+1 s),
   Pausar/Iniciar e Mais rápido (−1 s). Tocar abre o app.
-- A rolagem já pausa com a gaveta aberta (`com.android.systemui`) e retoma ao
-  fechar.
+- Puxar a gaveta (`com.android.systemui`) pausa a rolagem de vez; ela só volta
+  quando o usuário toca em Iniciar. Iniciar com a gaveta aberta começa ao fechar.
+- O motor roda em processo separado (`:engine`) para sobreviver ao app fechado
+  nos recentes; a interface conversa com ele por broadcasts.
 - Tela acesa durante a rolagem por wake lock com timeout (`WAKE_LOCK`).
 - Permissão `POST_NOTIFICATIONS` pedida ao aceitar a divulgação e ao iniciar.
 
