@@ -11,9 +11,7 @@
     "financialFeatures": false,
     "healthFeatures": false,
     "collectsData": false,
-    "targetAges": [
-      "18+"
-    ],
+    "targetAges": ["18+"],
     "contentRating": {
       "email": "contact@horvatti.com",
       "answers": {

@@ -11,13 +11,13 @@ export function useToggleScroll() {
 
   async function toggle() {
     if (engine.running) return ScrollEngine.stop()
-    if (!engine.serviceEnabled) {
-      toast(t('serviceRequired'))
-      return enableService()
+    if (engine.serviceEnabled) {
+      await requestNotifications()
+      ScrollEngine.refreshControls()
+      if (ScrollEngine.start()) return
     }
-    await requestNotifications()
-    ScrollEngine.refreshControls()
-    ScrollEngine.start()
+    toast(t('serviceRequired'))
+    enableService()
   }
 
   return { engine, toggle }

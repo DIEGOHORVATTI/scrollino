@@ -1,8 +1,6 @@
 {
   "imageType": "icon",
-  "screenshots": [
-    "play-icon.png"
-  ],
+  "screenshots": ["play-icon.png"],
   "languages": {
     "pt-BR": {
       "dir": "."

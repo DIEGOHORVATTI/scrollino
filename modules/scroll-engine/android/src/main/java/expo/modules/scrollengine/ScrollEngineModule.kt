@@ -7,13 +7,10 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.provider.Settings
 import android.util.Base64
-import expo.modules.kotlin.exception.CodedException
 import expo.modules.kotlin.exception.Exceptions
 import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
 import java.io.ByteArrayOutputStream
-
-class ServiceDisabledException : CodedException("Enable Scrollino in Accessibility settings first")
 
 class ScrollEngineModule : Module() {
   private val context: Context
@@ -45,8 +42,9 @@ class ScrollEngineModule : Module() {
     }
 
     Function("start") {
-      val service = ScrollService.instance ?: throw ServiceDisabledException()
+      val service = ScrollService.instance ?: return@Function false
       service.start()
+      true
     }
 
     Function("stop") { ScrollService.instance?.stop() }

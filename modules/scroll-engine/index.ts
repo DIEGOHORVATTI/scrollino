@@ -30,7 +30,7 @@ type ScrollEngineEvents = {
 declare class ScrollEngineNativeModule extends NativeModule<ScrollEngineEvents> {
   getState(): EngineState
   openAccessibilitySettings(): void
-  start(): void
+  start(): boolean
   stop(): void
   setSecondsPerScreen(secs: number): void
   setAllowedPackages(packages: string[]): void
