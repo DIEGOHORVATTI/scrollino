@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Serif } from '@/src/components/ui/serif'
 import { type LayoutChangeEvent, Text, View } from 'react-native'
 import Animated, {
   useAnimatedStyle,
@@ -72,9 +73,9 @@ export function ReadingWindow({ secs }: ReadingWindowProps) {
   const copy = (onLayout?: (event: LayoutChangeEvent) => void) => (
     <View onLayout={onLayout} className="gap-4 pb-4">
       {paragraphs.map((paragraph, index) => (
-        <Text key={index} className="font-serif text-[17px] leading-7 text-ink">
+        <Serif key={index} className="text-[17px] leading-7 text-ink">
           {paragraph}
-        </Text>
+        </Serif>
       ))}
     </View>
   )

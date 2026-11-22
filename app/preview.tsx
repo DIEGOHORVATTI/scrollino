@@ -6,6 +6,7 @@ import { ScrollEngine } from '@/modules/scroll-engine'
 import { Button } from '@/src/components/ui/button'
 import { ScreenFooter } from '@/src/components/ui/screen-footer'
 import { useToggleScroll } from '@/src/features/engine/use-toggle-scroll'
+import { Serif } from '@/src/components/ui/serif'
 import { t } from '@/src/i18n'
 
 const REPEAT = 4
@@ -27,11 +28,13 @@ export default function PreviewScreen() {
   return (
     <>
       <ScrollView className="flex-1 bg-paper" contentContainerClassName="gap-5 px-6 py-6">
-        <Text className="font-serif-bold text-[26px] leading-9 text-ink">{t('previewTitle')}</Text>
+        <Serif weight="bold" className="text-[26px] leading-9 text-ink">
+          {t('previewTitle')}
+        </Serif>
         {paragraphs.map((paragraph, index) => (
-          <Text key={index} className="font-serif text-[18px] leading-8 text-ink">
+          <Serif key={index} className="text-[18px] leading-8 text-ink">
             {paragraph}
-          </Text>
+          </Serif>
         ))}
       </ScrollView>
       <ScreenFooter>

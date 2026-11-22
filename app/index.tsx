@@ -9,6 +9,7 @@ import { ScreenFooter } from '@/src/components/ui/screen-footer'
 import { useToggleScroll } from '@/src/features/engine/use-toggle-scroll'
 import { ServiceNotice } from '@/src/features/home/components/service-notice'
 import { SpeedControl } from '@/src/features/home/components/speed-control'
+import { Serif } from '@/src/components/ui/serif'
 import { t, tn } from '@/src/i18n'
 import { useSettings } from '@/src/stores/settings-store'
 import { useThemeColors } from '@/src/theme/colors'
@@ -24,7 +25,9 @@ export default function HomeScreen() {
     <View className="flex-1 bg-paper" style={{ paddingTop: insets.top }}>
       <ScrollView contentContainerClassName="gap-7 px-6 pb-8 pt-4">
         <View className="flex-row items-center justify-between">
-          <Text className="font-serif-bold text-[30px] text-ink">Scrollino</Text>
+          <Serif weight="bold" className="text-[30px] text-ink">
+            Scrollino
+          </Serif>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel={t('settings')}

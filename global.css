@@ -5,10 +5,6 @@
 @import 'nativewind/theme';
 
 @theme {
-  --font-serif: 'Literata_400Regular';
-  --font-serif-italic: 'Literata_400Regular_Italic';
-  --font-serif-bold: 'Literata_600SemiBold';
-
   --color-paper: #12171e;
   --color-paper-deep: #1a212b;
   --color-ink: #e6e8e3;

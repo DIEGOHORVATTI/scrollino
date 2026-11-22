@@ -1,3 +1,4 @@
+import { Serif } from '@/src/components/ui/serif'
 import type { ReactNode } from 'react'
 
 import { Text, View } from 'react-native'
@@ -10,7 +11,9 @@ type SectionProps = {
 export function Section({ title, children }: SectionProps) {
   return (
     <View className="gap-4 border-t border-rule pt-5">
-      <Text className="font-serif-bold text-xl text-ink">{title}</Text>
+      <Serif weight="bold" className="text-xl text-ink">
+        {title}
+      </Serif>
       {children}
     </View>
   )

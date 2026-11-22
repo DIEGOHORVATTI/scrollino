@@ -3,6 +3,7 @@ import Slider from '@react-native-community/slider'
 import { Pressable, Text, View } from 'react-native'
 
 import { ScrollEngine } from '@/modules/scroll-engine'
+import { Serif } from '@/src/components/ui/serif'
 import { t, tn } from '@/src/i18n'
 import { PRESETS, progressToSecs, secsToProgress } from '@/src/lib/speed'
 import { useThemeColors } from '@/src/theme/colors'
@@ -26,9 +27,7 @@ export function SpeedControl({ secs }: SpeedControlProps) {
   return (
     <View className="gap-5">
       <ReadingWindow secs={shown} />
-      <Text className="font-serif text-[26px] leading-9 text-ink">
-        {tn('speedSentence', shown)}
-      </Text>
+      <Serif className="text-[26px] leading-9 text-ink">{tn('speedSentence', shown)}</Serif>
       <Slider
         value={secsToProgress(secs)}
         minimumValue={0}

@@ -8,6 +8,7 @@ import type { LucideIcon } from 'lucide-react-native'
 import { ScrollEngine } from '@/modules/scroll-engine'
 import { Button } from '@/src/components/ui/button'
 import { ScreenFooter } from '@/src/components/ui/screen-footer'
+import { Serif } from '@/src/components/ui/serif'
 import { t } from '@/src/i18n'
 import { useSettings } from '@/src/stores/settings-store'
 import { useThemeColors } from '@/src/theme/colors'
@@ -41,9 +42,9 @@ export default function DisclosureScreen() {
   return (
     <View className="flex-1 bg-paper" style={{ paddingTop: insets.top }}>
       <ScrollView contentContainerClassName="gap-6 p-6">
-        <Text className="font-serif-bold text-[28px] leading-9 text-ink">
+        <Serif weight="bold" className="text-[28px] leading-9 text-ink">
           {t('disclosureTitle')}
-        </Text>
+        </Serif>
         <Point icon={ShieldCheck} text={t('disclosureWhy')} />
         <Point icon={Hand} text={t('disclosureDoes')} />
         <Point icon={EyeOff} text={t('disclosureDoesNot')} />
