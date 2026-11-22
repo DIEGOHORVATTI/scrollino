@@ -9,10 +9,6 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 
 object ControlNotification {
-  const val ACTION_TOGGLE = "expo.modules.scrollengine.TOGGLE"
-  const val ACTION_SLOWER = "expo.modules.scrollengine.SLOWER"
-  const val ACTION_FASTER = "expo.modules.scrollengine.FASTER"
-
   private const val CHANNEL = "scrollino_controls"
   private const val ID = 4107
 
@@ -43,9 +39,9 @@ object ControlNotification {
       .setPriority(NotificationCompat.PRIORITY_LOW)
       .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
       .setContentIntent(openApp(context))
-      .addAction(0, EnginePrefs.label(context, "actionSlower", "Slower"), broadcast(context, ACTION_SLOWER, 1))
-      .addAction(0, toggleLabel, broadcast(context, ACTION_TOGGLE, 2))
-      .addAction(0, EnginePrefs.label(context, "actionFaster", "Faster"), broadcast(context, ACTION_FASTER, 3))
+      .addAction(0, EnginePrefs.label(context, "actionSlower", "Slower"), broadcast(context, 1) { putExtra(EngineIntents.TYPE, EngineIntents.ADJUST).putExtra(EngineIntents.VALUE, 1) })
+      .addAction(0, toggleLabel, broadcast(context, 2) { putExtra(EngineIntents.TYPE, EngineIntents.TOGGLE) })
+      .addAction(0, EnginePrefs.label(context, "actionFaster", "Faster"), broadcast(context, 3) { putExtra(EngineIntents.TYPE, EngineIntents.ADJUST).putExtra(EngineIntents.VALUE, -1) })
       .build()
 
     runCatching { manager.notify(ID, notification) }
@@ -63,10 +59,10 @@ object ControlNotification {
     )
   }
 
-  private fun broadcast(context: Context, action: String, code: Int) = PendingIntent.getBroadcast(
+  private fun broadcast(context: Context, code: Int, extras: Intent.() -> Unit) = PendingIntent.getBroadcast(
     context,
     code,
-    Intent(action).setPackage(context.packageName),
+    Intent(EngineIntents.COMMAND).setPackage(context.packageName).apply(extras),
     PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
   )
 

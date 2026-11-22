@@ -41,5 +41,6 @@
   "actionFaster": "빠르게",
   "controlsHint": "책을 열고 알림 창을 아래로 당긴 다음 시작을(를) 누르세요. 일시정지와 속도 변경도 그곳에서 할 수 있습니다.",
   "notificationsOffNotice": "알림이 꺼져 있습니다. Scrollino의 시작 및 일시중지 버튼은 알림 창에 있습니다.",
-  "notificationsTurnOn": "허용"
+  "notificationsTurnOn": "허용",
+  "serviceStuckNotice": "Android가 Scrollino 서비스를 중지했습니다. 접근성에서 Scrollino를 껐다가 다시 켜 주세요."
 }

@@ -41,5 +41,6 @@
   "actionFaster": "Mais rápido",
   "controlsHint": "Abra o livro, puxe a gaveta de notificações e toque em Iniciar. Por lá você também pausa e muda a velocidade.",
   "notificationsOffNotice": "As notificações estão desligadas. Os botões Iniciar e Pausar do Scrollino ficam na gaveta de notificações.",
-  "notificationsTurnOn": "Permitir"
+  "notificationsTurnOn": "Permitir",
+  "serviceStuckNotice": "O Android parou o serviço do Scrollino. Desligue e ligue o Scrollino de novo em Acessibilidade."
 }

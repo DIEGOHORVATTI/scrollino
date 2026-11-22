@@ -5,8 +5,10 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.graphics.drawable.Drawable
 import android.provider.Settings
 import android.util.Base64
+import expo.modules.kotlin.Promise
 import expo.modules.kotlin.exception.Exceptions
 import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
@@ -16,24 +18,34 @@ class ScrollEngineModule : Module() {
   private val context: Context
     get() = appContext.reactContext ?: throw Exceptions.ReactContextLost()
 
+  private var engine: EngineState? = null
+
+  private fun state() = engine ?: EngineState(context) { sendEvent("onStateChange", it) }.also {
+    it.start()
+    engine = it
+  }
+
   override fun definition() = ModuleDefinition {
     Name("ScrollEngine")
 
     Events("onStateChange")
 
-    OnStartObserving {
-      EngineState.listener = { state -> sendEvent("onStateChange", state) }
-    }
-
-    OnStopObserving {
-      EngineState.listener = null
+    OnDestroy {
+      engine?.stop()
+      engine = null
     }
 
     OnActivityEntersForeground {
-      EngineState.emit(context)
+      state().request { sendEvent("onStateChange", it) }
     }
 
-    Function("getState") { EngineState.snapshot(context) }
+    Function("getState") { state().snapshot() }
+
+    AsyncFunction("requestState") { promise: Promise -> state().request { promise.resolve(it) } }
+
+    Function("openAccessibilitySettings") {
+      context.startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+    }
 
     Function("openNotificationSettings") {
       context.startActivity(
@@ -43,28 +55,22 @@ class ScrollEngineModule : Module() {
       )
     }
 
-    Function("openAccessibilitySettings") {
-      context.startActivity(
-        Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
-      )
-    }
-
-    Function("setSecondsPerScreen") { secs: Int ->
-      EnginePrefs.setSecs(context, secs)
-      ScrollService.instance?.adjustSecs(0) ?: EngineState.emit(context)
-    }
+    Function("setSecondsPerScreen") { secs: Int -> state().setSecs(secs) }
 
     Function("setAllowedPackages") { packages: List<String> ->
-      EnginePrefs.setAllowed(context, packages.toSet())
+      EngineIntents.send(context, EngineIntents.SET_ALLOWED) {
+        putExtra(EngineIntents.VALUE, packages.toTypedArray())
+      }
     }
-
 
     Function("setLabels") { labels: Map<String, String> ->
-      EnginePrefs.setLabels(context, labels)
-      ScrollService.instance?.refreshControls()
+      EngineIntents.send(context, EngineIntents.SET_LABELS) {
+        putExtra(EngineIntents.KEYS, labels.keys.toTypedArray())
+        putExtra(EngineIntents.VALUES, labels.values.toTypedArray())
+      }
     }
 
-    Function("refreshControls") { ScrollService.instance?.refreshControls() }
+    Function("refreshControls") { EngineIntents.send(context, EngineIntents.REFRESH) }
 
     AsyncFunction("listLaunchableApps") { listLaunchableApps() }
   }
@@ -86,7 +92,7 @@ class ScrollEngineModule : Module() {
       .sortedBy { it["label"]?.lowercase() }
   }
 
-  private fun iconDataUri(drawable: android.graphics.drawable.Drawable): String {
+  private fun iconDataUri(drawable: Drawable): String {
     val px = (40 * context.resources.displayMetrics.density).toInt()
     val bitmap = Bitmap.createBitmap(px, px, Bitmap.Config.ARGB_8888)
     drawable.setBounds(0, 0, px, px)

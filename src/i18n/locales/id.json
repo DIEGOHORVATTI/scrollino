@@ -41,5 +41,6 @@
   "actionFaster": "Lebih cepat",
   "controlsHint": "Buka bukumu, tarik turun panel notifikasi, lalu ketuk Mulai. Dari sana kamu juga bisa menjeda dan mengubah kecepatan.",
   "notificationsOffNotice": "Notifikasi nonaktif. Tombol Mulai dan Jeda Scrollino ada di panel notifikasi.",
-  "notificationsTurnOn": "Izinkan"
+  "notificationsTurnOn": "Izinkan",
+  "serviceStuckNotice": "Android menghentikan layanan Scrollino. Matikan lalu nyalakan kembali Scrollino di Aksesibilitas."
 }

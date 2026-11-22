@@ -41,5 +41,6 @@
   "actionFaster": "Snabbare",
   "controlsHint": "Öppna boken, dra ned aviseringspanelen och tryck på Starta. Därifrån kan du också pausa och ändra hastigheten.",
   "notificationsOffNotice": "Aviseringar är avstängda. Scrollinos knappar Starta och Pausa finns i aviseringspanelen.",
-  "notificationsTurnOn": "Tillåt"
+  "notificationsTurnOn": "Tillåt",
+  "serviceStuckNotice": "Android stoppade Scrollinos tjänst. Stäng av och slå på Scrollino igen i Tillgänglighet."
 }

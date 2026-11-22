@@ -41,5 +41,6 @@
   "actionFaster": "Plus rapide",
   "controlsHint": "Ouvrez votre livre, faites glisser le volet des notifications vers le bas et touchez Démarrer. Vous pouvez aussi y mettre en pause et changer la vitesse.",
   "notificationsOffNotice": "Les notifications sont désactivées. Les boutons Démarrer et Pause de Scrollino se trouvent dans le volet des notifications.",
-  "notificationsTurnOn": "Autoriser"
+  "notificationsTurnOn": "Autoriser",
+  "serviceStuckNotice": "Android a arrêté le service de Scrollino. Désactivez puis réactivez Scrollino dans Accessibilité."
 }

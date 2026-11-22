@@ -41,5 +41,6 @@
   "actionFaster": "Più veloce",
   "controlsHint": "Apri il libro, trascina verso il basso la tendina delle notifiche e tocca Avvia. Da lì puoi anche mettere in pausa e cambiare la velocità.",
   "notificationsOffNotice": "Le notifiche sono disattivate. I pulsanti Avvia e Pausa di Scrollino si trovano nella tendina delle notifiche.",
-  "notificationsTurnOn": "Consenti"
+  "notificationsTurnOn": "Consenti",
+  "serviceStuckNotice": "Android ha interrotto il servizio di Scrollino. Disattiva e riattiva Scrollino in Accessibilità."
 }

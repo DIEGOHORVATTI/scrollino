@@ -41,5 +41,6 @@
   "actionFaster": "Faster",
   "controlsHint": "Open your book, pull down the notification shade and tap Start. Pause and change the speed from there too.",
   "notificationsOffNotice": "Notifications are off. Scrollino’s Start and Pause buttons live in the notification shade.",
-  "notificationsTurnOn": "Allow"
+  "notificationsTurnOn": "Allow",
+  "serviceStuckNotice": "Android stopped Scrollino’s service. Turn Scrollino off and on again in Accessibility."
 }

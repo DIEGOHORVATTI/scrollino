@@ -41,5 +41,6 @@
   "actionFaster": "加快",
   "controlsHint": "打开你的书，下拉通知栏，然后点按“开始”。你也可以在那里暂停和调整速度。",
   "notificationsOffNotice": "通知已关闭。Scrollino 的“开始”和“暂停”按钮位于通知栏中。",
-  "notificationsTurnOn": "允许"
+  "notificationsTurnOn": "允许",
+  "serviceStuckNotice": "Android 已停止 Scrollino 的服务。请在“无障碍”中关闭并重新开启 Scrollino。"
 }

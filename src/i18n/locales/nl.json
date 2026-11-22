@@ -41,5 +41,6 @@
   "actionFaster": "Sneller",
   "controlsHint": "Open je boek, trek het meldingenpaneel omlaag en tik op Start. Daar kun je ook pauzeren en de snelheid aanpassen.",
   "notificationsOffNotice": "Meldingen staan uit. De knoppen Start en Pauzeren van Scrollino staan in het meldingenpaneel.",
-  "notificationsTurnOn": "Toestaan"
+  "notificationsTurnOn": "Toestaan",
+  "serviceStuckNotice": "Android heeft de service van Scrollino gestopt. Zet Scrollino uit en weer aan in Toegankelijkheid."
 }

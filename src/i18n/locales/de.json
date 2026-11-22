@@ -41,5 +41,6 @@
   "actionFaster": "Schneller",
   "controlsHint": "Öffne dein Buch, ziehe die Benachrichtigungsleiste herunter und tippe auf Start. Dort kannst du auch pausieren und die Geschwindigkeit ändern.",
   "notificationsOffNotice": "Benachrichtigungen sind aus. Die Schaltflächen Start und Pause von Scrollino befinden sich in der Benachrichtigungsleiste.",
-  "notificationsTurnOn": "Erlauben"
+  "notificationsTurnOn": "Erlauben",
+  "serviceStuckNotice": "Android hat den Dienst von Scrollino beendet. Schalte Scrollino in den Bedienungshilfen aus und wieder ein."
 }

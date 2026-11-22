@@ -41,5 +41,6 @@
   "actionFaster": "तेज़",
   "controlsHint": "अपनी किताब खोलें, नोटिफ़िकेशन शेड को नीचे खींचें और शुरू पर टैप करें। वहीं से रोक भी सकते हैं और गति भी बदल सकते हैं।",
   "notificationsOffNotice": "नोटिफ़िकेशन बंद हैं। Scrollino के शुरू और रोकें बटन नोटिफ़िकेशन शेड में होते हैं।",
-  "notificationsTurnOn": "अनुमति दें"
+  "notificationsTurnOn": "अनुमति दें",
+  "serviceStuckNotice": "Android ने Scrollino की सेवा रोक दी। सुलभता में Scrollino को बंद करके फिर से चालू करें।"
 }

@@ -17,10 +17,6 @@ import android.widget.Toast
 
 class ScrollService : AccessibilityService() {
   companion object {
-    @Volatile
-    var instance: ScrollService? = null
-      private set
-
     private const val MAX_RUN_MS = 60 * 60 * 1000L
     private const val IDLE_POLL_MS = 500L
     private const val INFLIGHT_POLL_MS = 40L
@@ -33,8 +29,7 @@ class ScrollService : AccessibilityService() {
   private val pumpTask = Runnable { pump() }
 
   @Volatile
-  var running = false
-    private set
+  private var running = false
 
   @Volatile
   private var foreground = ""
@@ -49,7 +44,7 @@ class ScrollService : AccessibilityService() {
   private var retryCount = 0
   private var runStartedAt = 0L
   private var screenReceiver: BroadcastReceiver? = null
-  private var controlsReceiver: BroadcastReceiver? = null
+  private var commandReceiver: BroadcastReceiver? = null
   private lateinit var awake: ScreenAwake
 
   private val gestureCallback = object : GestureResultCallback() {
@@ -69,10 +64,9 @@ class ScrollService : AccessibilityService() {
 
   override fun onServiceConnected() {
     super.onServiceConnected()
-    instance = this
     awake = ScreenAwake(this)
     registerScreenReceiver()
-    registerControlsReceiver()
+    commandReceiver = EngineIntents.register(this, EngineIntents.COMMAND, ::onCommand)
     onStateChanged()
   }
 
@@ -97,7 +91,7 @@ class ScrollService : AccessibilityService() {
     super.onDestroy()
   }
 
-  fun start() {
+  private fun start() {
     if (running) return
     running = true
     retryCount = 0
@@ -107,25 +101,52 @@ class ScrollService : AccessibilityService() {
     onStateChanged()
   }
 
-  fun stop() {
+  private fun stop() {
     running = false
     handler.removeCallbacks(pumpTask)
     awake.release()
     onStateChanged()
   }
 
-  fun toggle() = if (running) stop() else start()
+  private fun toggle() = if (running) stop() else start()
 
-  fun adjustSecs(delta: Int) {
+  private fun adjustSecs(delta: Int) {
     EnginePrefs.setSecs(this, EnginePrefs.secs(this) + delta)
     onStateChanged()
   }
 
-  fun refreshControls() = ControlNotification.show(this, running, EnginePrefs.secs(this))
-
   private fun onStateChanged() {
     ControlNotification.show(this, running, EnginePrefs.secs(this))
-    EngineState.emit(this)
+    broadcastState(connected = true)
+  }
+
+  private fun broadcastState(connected: Boolean) {
+    sendBroadcast(
+      Intent(EngineIntents.STATE).setPackage(packageName)
+        .putExtra(EngineIntents.RUNNING, running)
+        .putExtra(EngineIntents.SECS, EnginePrefs.secs(this))
+        .putExtra(EngineIntents.CONNECTED, connected),
+    )
+  }
+
+  private fun onCommand(intent: Intent) {
+    when (intent.getStringExtra(EngineIntents.TYPE)) {
+      EngineIntents.TOGGLE -> toggle()
+      EngineIntents.ADJUST -> adjustSecs(intent.getIntExtra(EngineIntents.VALUE, 0))
+      EngineIntents.SET_SECS -> {
+        EnginePrefs.setSecs(this, intent.getIntExtra(EngineIntents.VALUE, ScrollMath.DEFAULT_SECS))
+        onStateChanged()
+      }
+      EngineIntents.SET_ALLOWED ->
+        EnginePrefs.setAllowed(this, intent.getStringArrayExtra(EngineIntents.VALUE)?.toSet() ?: emptySet())
+      EngineIntents.SET_LABELS -> {
+        val keys = intent.getStringArrayExtra(EngineIntents.KEYS) ?: emptyArray()
+        val values = intent.getStringArrayExtra(EngineIntents.VALUES) ?: emptyArray()
+        EnginePrefs.setLabels(this, keys.zip(values).toMap())
+        onStateChanged()
+      }
+      EngineIntents.REFRESH, EngineIntents.REQUEST_STATE -> onStateChanged()
+    }
   }
 
   private fun cleanup() {
@@ -134,11 +155,10 @@ class ScrollService : AccessibilityService() {
     handler.removeCallbacksAndMessages(null)
     if (::awake.isInitialized) awake.release()
     ControlNotification.cancel(this)
-    listOfNotNull(screenReceiver, controlsReceiver).forEach { runCatching { unregisterReceiver(it) } }
+    listOfNotNull(screenReceiver, commandReceiver).forEach { runCatching { unregisterReceiver(it) } }
     screenReceiver = null
-    controlsReceiver = null
-    if (instance === this) instance = null
-    EngineState.emit(this)
+    commandReceiver = null
+    broadcastState(connected = false)
   }
 
   private fun registerScreenReceiver() {
@@ -161,29 +181,6 @@ class ScrollService : AccessibilityService() {
       registerReceiver(receiver, filter)
     }
     screenReceiver = receiver
-  }
-
-  private fun registerControlsReceiver() {
-    val receiver = object : BroadcastReceiver() {
-      override fun onReceive(context: Context, intent: Intent) {
-        when (intent.action) {
-          ControlNotification.ACTION_TOGGLE -> toggle()
-          ControlNotification.ACTION_SLOWER -> adjustSecs(+1)
-          ControlNotification.ACTION_FASTER -> adjustSecs(-1)
-        }
-      }
-    }
-    val filter = IntentFilter().apply {
-      addAction(ControlNotification.ACTION_TOGGLE)
-      addAction(ControlNotification.ACTION_SLOWER)
-      addAction(ControlNotification.ACTION_FASTER)
-    }
-    if (Build.VERSION.SDK_INT >= 33) {
-      registerReceiver(receiver, filter, Context.RECEIVER_NOT_EXPORTED)
-    } else {
-      registerReceiver(receiver, filter)
-    }
-    controlsReceiver = receiver
   }
 
   private fun schedule(delayMs: Long) {

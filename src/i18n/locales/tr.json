@@ -41,5 +41,6 @@
   "actionFaster": "Hızlı",
   "controlsHint": "Kitabını aç, bildirim panelini aşağı çek ve Başlat düğmesine dokun. Duraklatmayı ve hızı değiştirmeyi de oradan yapabilirsin.",
   "notificationsOffNotice": "Bildirimler kapalı. Scrollino'nun Başlat ve Duraklat düğmeleri bildirim panelinde bulunur.",
-  "notificationsTurnOn": "İzin ver"
+  "notificationsTurnOn": "İzin ver",
+  "serviceStuckNotice": "Android, Scrollino hizmetini durdurdu. Erişilebilirlik bölümünde Scrollino'yu kapatıp yeniden açın."
 }

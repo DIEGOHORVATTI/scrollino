@@ -41,5 +41,6 @@
   "actionFaster": "Nhanh hơn",
   "controlsHint": "Mở sách của bạn, kéo thanh thông báo xuống rồi nhấn Bắt đầu. Từ đó bạn cũng có thể tạm dừng và đổi tốc độ.",
   "notificationsOffNotice": "Thông báo đang tắt. Các nút Bắt đầu và Tạm dừng của Scrollino nằm trong thanh thông báo.",
-  "notificationsTurnOn": "Cho phép"
+  "notificationsTurnOn": "Cho phép",
+  "serviceStuckNotice": "Android đã dừng dịch vụ của Scrollino. Hãy tắt rồi bật lại Scrollino trong Hỗ trợ tiếp cận."
 }

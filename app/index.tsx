@@ -39,10 +39,17 @@ export default function HomeScreen() {
       <Serif weight="bold" className="text-[30px] text-ink">
         Scrollino
       </Serif>
-      {engine.serviceEnabled ? null : (
+      {engine.ready && engine.serviceStuck ? (
+        <Notice
+          text={t('serviceStuckNotice')}
+          action={t('serviceTurnOn')}
+          onPress={() => ScrollEngine.openAccessibilitySettings()}
+        />
+      ) : null}
+      {engine.ready && !engine.serviceEnabled && !engine.serviceStuck ? (
         <Notice text={t('serviceOffNotice')} action={t('serviceTurnOn')} onPress={enableService} />
-      )}
-      {engine.serviceEnabled && !engine.notificationsEnabled ? (
+      ) : null}
+      {engine.ready && engine.serviceEnabled && !engine.notificationsEnabled ? (
         <Notice
           text={t('notificationsOffNotice')}
           action={t('notificationsTurnOn')}

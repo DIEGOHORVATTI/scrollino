@@ -41,5 +41,6 @@
   "actionFaster": "Hurtigere",
   "controlsHint": "Åbn din bog, træk notifikationspanelet ned, og tryk på Start. Derfra kan du også sætte på pause og ændre hastigheden.",
   "notificationsOffNotice": "Notifikationer er slået fra. Scrollinos knapper Start og Pause findes i notifikationspanelet.",
-  "notificationsTurnOn": "Tillad"
+  "notificationsTurnOn": "Tillad",
+  "serviceStuckNotice": "Android stoppede Scrollinos tjeneste. Slå Scrollino fra og til igen i Tilgængelighed."
 }

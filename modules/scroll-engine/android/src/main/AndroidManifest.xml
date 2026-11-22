@@ -13,6 +13,7 @@
     <application>
         <service
             android:name=".ScrollService"
+            android:process=":engine"
             android:exported="true"
             android:label="@string/scrollino_service_label"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">

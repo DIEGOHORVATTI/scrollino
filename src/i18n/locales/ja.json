@@ -41,5 +41,6 @@
   "actionFaster": "速く",
   "controlsHint": "本を開き、通知パネルを下に引いて「開始」をタップします。一時停止や速度の変更もそこからできます。",
   "notificationsOffNotice": "通知がオフです。Scrollino の「開始」と「一時停止」ボタンは通知パネルにあります。",
-  "notificationsTurnOn": "許可"
+  "notificationsTurnOn": "許可",
+  "serviceStuckNotice": "AndroidがScrollinoのサービスを停止しました。ユーザー補助でScrollinoをオフにして、もう一度オンにしてください。"
 }

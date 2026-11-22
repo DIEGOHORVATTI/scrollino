@@ -3,6 +3,7 @@ import { type NativeModule, requireNativeModule } from 'expo'
 export type EngineState = {
   running: boolean
   serviceEnabled: boolean
+  serviceStuck: boolean
   secondsPerScreen: number
   notificationsEnabled: boolean
 }
@@ -30,6 +31,7 @@ type ScrollEngineEvents = {
 
 declare class ScrollEngineNativeModule extends NativeModule<ScrollEngineEvents> {
   getState(): EngineState
+  requestState(): Promise<EngineState>
   openAccessibilitySettings(): void
   setSecondsPerScreen(secs: number): void
   setAllowedPackages(packages: string[]): void
@@ -43,6 +45,7 @@ const native = requireNativeModule<ScrollEngineNativeModule>('ScrollEngine')
 
 export const ScrollEngine = {
   getState: () => native.getState(),
+  requestState: () => native.requestState(),
   openAccessibilitySettings: () => native.openAccessibilitySettings(),
   setSecondsPerScreen: (secs: number) => native.setSecondsPerScreen(secs),
   setAllowedPackages: (packages: string[]) => native.setAllowedPackages(packages),

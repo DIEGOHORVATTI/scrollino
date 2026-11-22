@@ -41,5 +41,6 @@
   "actionFaster": "Szybciej",
   "controlsHint": "Otwórz książkę, rozwiń panel powiadomień i dotknij Start. Stamtąd możesz też wstrzymać czytanie i zmienić prędkość.",
   "notificationsOffNotice": "Powiadomienia są wyłączone. Przyciski Start i Wstrzymaj Scrollino znajdują się w panelu powiadomień.",
-  "notificationsTurnOn": "Zezwól"
+  "notificationsTurnOn": "Zezwól",
+  "serviceStuckNotice": "Android zatrzymał usługę Scrollino. Wyłącz i ponownie włącz Scrollino w Ułatwieniach dostępu."
 }

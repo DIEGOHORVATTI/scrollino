@@ -41,5 +41,6 @@
   "actionFaster": "Швидше",
   "controlsHint": "Відкрийте книгу, опустіть шторку сповіщень і натисніть «Старт». Там само можна призупинити та змінити швидкість.",
   "notificationsOffNotice": "Сповіщення вимкнено. Кнопки «Старт» і «Пауза» Scrollino розташовані в шторці сповіщень.",
-  "notificationsTurnOn": "Дозволити"
+  "notificationsTurnOn": "Дозволити",
+  "serviceStuckNotice": "Android зупинив службу Scrollino. Вимкніть і знову ввімкніть Scrollino в розділі «Спеціальні можливості»."
 }

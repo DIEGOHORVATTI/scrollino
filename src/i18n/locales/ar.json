@@ -41,5 +41,6 @@
   "actionFaster": "أسرع",
   "controlsHint": "افتح كتابك، واسحب شريط الإشعارات للأسفل، ثم اضغط على «ابدأ». ومن هناك يمكنك أيضًا الإيقاف المؤقت وتغيير السرعة.",
   "notificationsOffNotice": "الإشعارات متوقفة. أزرار «ابدأ» و«إيقاف مؤقت» في Scrollino موجودة في شريط الإشعارات.",
-  "notificationsTurnOn": "السماح"
+  "notificationsTurnOn": "السماح",
+  "serviceStuckNotice": "أوقف Android خدمة Scrollino. أوقف تشغيل Scrollino ثم شغّله مرة أخرى في إمكانية الوصول."
 }
