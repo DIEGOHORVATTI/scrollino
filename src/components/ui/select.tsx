@@ -28,11 +28,11 @@ export function Select({ value, options, onChange }: SelectProps) {
   return (
     <>
       <Pressable
-        className="h-12 flex-row items-center justify-between rounded-xl bg-bg-input px-4 active:opacity-70"
+        className="h-12 flex-row items-center justify-between rounded-xl bg-paper-deep px-4 active:opacity-70"
         onPress={() => setOpen(true)}
       >
-        <Text className="text-base text-text-primary">{selected?.label ?? value}</Text>
-        <ChevronDown color={colors.muted} size={20} />
+        <Text className="text-base text-ink">{selected?.label ?? value}</Text>
+        <ChevronDown color={colors.faint} size={20} />
       </Pressable>
       <Modal
         visible={open}
@@ -43,16 +43,16 @@ export function Select({ value, options, onChange }: SelectProps) {
       >
         <View style={styles.backdrop}>
           <Pressable style={StyleSheet.absoluteFill} onPress={() => setOpen(false)} />
-          <View className="max-h-[70%] overflow-hidden rounded-2xl bg-bg-card">
+          <View className="max-h-[70%] overflow-hidden rounded-2xl bg-paper-deep">
             <ScrollView>
               {options.map((option) => (
                 <Pressable
                   key={option.value}
-                  className="flex-row items-center justify-between border-b border-border px-5 py-4 active:opacity-70"
+                  className="flex-row items-center justify-between border-b border-rule px-5 py-4 active:opacity-70"
                   onPress={() => choose(option.value)}
                 >
-                  <Text className="text-base text-text-primary">{option.label}</Text>
-                  {option.value === value ? <Check color={colors.accent} size={20} /> : null}
+                  <Text className="text-base text-ink">{option.label}</Text>
+                  {option.value === value ? <Check color={colors.ink} size={20} /> : null}
                 </Pressable>
               ))}
             </ScrollView>

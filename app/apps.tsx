@@ -17,9 +17,9 @@ export default function AppsScreen() {
   const { toggleAllowed, update } = useSettings.getState()
 
   return (
-    <View className="flex-1 bg-bg-primary">
+    <View className="flex-1 bg-paper">
       <View className="gap-3 p-4">
-        <Text className="text-sm leading-5 text-text-secondary">{t('appsHint')}</Text>
+        <Text className="text-sm leading-5 text-pencil">{t('appsHint')}</Text>
         <SearchInput
           value={query}
           onChangeText={setQuery}
@@ -28,7 +28,7 @@ export default function AppsScreen() {
         />
         {selected.length ? (
           <Pressable onPress={() => update({ allowedPackages: [] })} className="self-start py-1">
-            <Text className="text-sm font-semibold text-primary">{t('appsClear')}</Text>
+            <Text className="text-sm font-semibold text-ink underline">{t('appsClear')}</Text>
           </Pressable>
         ) : null}
       </View>
@@ -45,18 +45,18 @@ export default function AppsScreen() {
                 accessibilityRole="checkbox"
                 accessibilityState={{ checked }}
                 onPress={() => toggleAllowed(item.packageName)}
-                className="flex-row items-center gap-3 border-b border-border py-3 active:opacity-70"
+                className="flex-row items-center gap-3 border-b border-rule py-3 active:opacity-70"
               >
                 <Image source={{ uri: item.icon }} className="h-10 w-10" />
-                <Text className="flex-1 text-base text-text-primary" numberOfLines={1}>
+                <Text className="flex-1 text-base text-ink" numberOfLines={1}>
                   {item.label}
                 </Text>
                 <View
                   className={`h-6 w-6 items-center justify-center rounded-md border-2 ${
-                    checked ? 'border-primary bg-primary' : 'border-border'
+                    checked ? 'border-ink bg-ink' : 'border-faint'
                   }`}
                 >
-                  {checked ? <Check size={16} color="#ffffff" /> : null}
+                  {checked ? <Check size={16} color={colors.paper} /> : null}
                 </View>
               </Pressable>
             )
@@ -64,8 +64,8 @@ export default function AppsScreen() {
         />
       ) : (
         <View className="flex-1 items-center justify-center gap-3">
-          <ActivityIndicator color={colors.accent} />
-          <Text className="text-sm text-text-muted">{t('appsLoading')}</Text>
+          <ActivityIndicator color={colors.ink} />
+          <Text className="text-sm text-faint">{t('appsLoading')}</Text>
         </View>
       )}
     </View>

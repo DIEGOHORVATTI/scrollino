@@ -1,31 +1,32 @@
 import { Pressable, Text, type PressableProps } from 'react-native'
 
-type ButtonVariant = 'primary' | 'danger' | 'ghost'
+type ButtonVariant = 'ink' | 'marker' | 'quiet'
 
 type ButtonProps = PressableProps & {
   title: string
   variant?: ButtonVariant
 }
 
-const variantClass: Record<ButtonVariant, string> = {
-  primary: 'bg-button',
-  danger: 'bg-danger',
-  ghost: 'bg-transparent',
+const surface: Record<ButtonVariant, string> = {
+  ink: 'bg-ink',
+  marker: 'bg-marker',
+  quiet: 'bg-transparent',
 }
 
-const textClass: Record<ButtonVariant, string> = {
-  primary: 'text-on-accent',
-  danger: 'text-on-accent',
-  ghost: 'text-text-secondary',
+const label: Record<ButtonVariant, string> = {
+  ink: 'text-paper',
+  marker: 'text-on-marker',
+  quiet: 'text-pencil',
 }
 
-export function Button({ title, variant = 'primary', ...props }: ButtonProps) {
+export function Button({ title, variant = 'ink', ...props }: ButtonProps) {
   return (
     <Pressable
-      className={`h-14 items-center justify-center rounded-xl active:opacity-70 ${variantClass[variant]}`}
+      accessibilityRole="button"
+      className={`h-14 items-center justify-center rounded-full px-6 active:opacity-80 ${surface[variant]}`}
       {...props}
     >
-      <Text className={`text-base font-semibold ${textClass[variant]}`}>{title}</Text>
+      <Text className={`text-base font-semibold ${label[variant]}`}>{title}</Text>
     </Pressable>
   )
 }

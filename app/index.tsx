@@ -1,15 +1,16 @@
 import { useRouter } from 'expo-router'
 import { Settings } from 'lucide-react-native'
-import { Image, Pressable, ScrollView, Text, View } from 'react-native'
+import { Pressable, ScrollView, Text, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import { Button } from '@/src/components/ui/button'
+import { RowLink } from '@/src/components/ui/row-link'
 import { ScreenFooter } from '@/src/components/ui/screen-footer'
 import { useToggleScroll } from '@/src/features/engine/use-toggle-scroll'
-import { AppsRow } from '@/src/features/home/components/apps-row'
-import { ServiceCard } from '@/src/features/home/components/service-card'
-import { SpeedCard } from '@/src/features/home/components/speed-card'
-import { t } from '@/src/i18n'
+import { ServiceNotice } from '@/src/features/home/components/service-notice'
+import { SpeedControl } from '@/src/features/home/components/speed-control'
+import { t, tn } from '@/src/i18n'
+import { useSettings } from '@/src/stores/settings-store'
 import { useThemeColors } from '@/src/theme/colors'
 
 export default function HomeScreen() {
@@ -17,39 +18,40 @@ export default function HomeScreen() {
   const insets = useSafeAreaInsets()
   const colors = useThemeColors()
   const { engine, toggle } = useToggleScroll()
+  const allowedCount = useSettings((state) => state.allowedPackages.length)
 
   return (
-    <View className="flex-1 bg-bg-primary" style={{ paddingTop: insets.top }}>
-      <ScrollView contentContainerClassName="gap-4 p-4 pb-8">
-        <View className="flex-row items-center gap-3 py-2">
-          <Image source={require('@/assets/images/icon.png')} className="h-11 w-11 rounded-xl" />
-          <View className="flex-1">
-            <Text className="text-3xl font-black tracking-tight text-text-primary">Scrollino</Text>
-            <Text className="text-sm text-text-secondary">{t('tagline')}</Text>
-          </View>
+    <View className="flex-1 bg-paper" style={{ paddingTop: insets.top }}>
+      <ScrollView contentContainerClassName="gap-7 px-6 pb-8 pt-4">
+        <View className="flex-row items-center justify-between">
+          <Text className="font-serif-bold text-[30px] text-ink">Scrollino</Text>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel={t('settings')}
             onPress={() => router.push('/settings')}
-            className="h-11 w-11 items-center justify-center rounded-xl active:opacity-70"
+            className="-mr-2 h-11 w-11 items-center justify-center rounded-full active:opacity-60"
           >
-            <Settings size={22} color={colors.text} />
+            <Settings size={22} color={colors.pencil} />
           </Pressable>
         </View>
-        <ServiceCard enabled={engine.serviceEnabled} />
-        <SpeedCard secs={engine.secondsPerScreen} />
-        <AppsRow />
-        <Text className="px-1 text-sm leading-5 text-text-muted">{t('tip')}</Text>
+        {engine.serviceEnabled ? null : <ServiceNotice />}
+        <SpeedControl secs={engine.secondsPerScreen} />
+        <View>
+          <RowLink
+            label={t('scrollsIn')}
+            value={allowedCount ? tn('appsSome', allowedCount) : t('appsAll')}
+            onPress={() => router.push('/apps')}
+          />
+          <View className="border-t border-rule" />
+        </View>
       </ScrollView>
       <ScreenFooter>
         <Button
           title={engine.running ? t('pause') : t('start')}
-          variant={engine.running ? 'danger' : 'primary'}
+          variant={engine.running ? 'marker' : 'ink'}
           onPress={toggle}
         />
-        <Pressable onPress={() => router.push('/preview')} className="items-center py-1">
-          <Text className="text-sm font-semibold text-primary">{t('tryPreview')}</Text>
-        </Pressable>
+        <Button title={t('tryPreview')} variant="quiet" onPress={() => router.push('/preview')} />
       </ScreenFooter>
     </View>
   )

@@ -1,13 +1,7 @@
 {
   "tagline": "手を使わない読書。画面が自動でスクロールします。",
-  "serviceTitle": "ユーザー補助サービス",
-  "serviceOn": "オン",
-  "serviceOff": "オフ",
-  "serviceEnable": "タップしてオンにする",
   "serviceRequired": "先にユーザー補助サービスをオンにしてください",
   "speed": "速度",
-  "secondsPerScreen": "秒/画面",
-  "screensPerMinute": "1分あたり{n}画面",
   "slow": "遅い",
   "standard": "標準",
   "fast": "速い",
@@ -21,7 +15,6 @@
   "start": "スクロールを開始",
   "pause": "一時停止",
   "tryPreview": "サンプルページで試す",
-  "tip": "ヒント: フローティングボタンを長押しすると、本を閉じずに速度を変更できます。",
   "buttonHint": "タップで開始/一時停止、長押しで速度変更、ドラッグで移動",
   "buttonDescription": "スクロールの開始/一時停止",
   "autoStopped": "Scrollino は60分後に停止しました",
@@ -46,5 +39,9 @@
   "version": "バージョン",
   "credits": "スクロールエンジンは XiuXianInk の auto-scroll-android をベースにしています(MIT ライセンス)。",
   "privacy": "プライバシーポリシー",
-  "license": "Scrollino は無料のオープンソースです。"
+  "license": "Scrollino は無料のオープンソースです。",
+  "speedSentence": "{n}秒ごとに1画面",
+  "scrollsIn": "スクロール対象",
+  "serviceOffNotice": "ユーザー補助サービスがオフのため、Scrollinoはまだスクロールできません。",
+  "serviceTurnOn": "オンにする"
 }

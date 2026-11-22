@@ -1,13 +1,7 @@
 {
   "tagline": "Lectura sin manos. La pantalla se desplaza sola.",
-  "serviceTitle": "Servicio de accesibilidad",
-  "serviceOn": "Activado",
-  "serviceOff": "Desactivado",
-  "serviceEnable": "Toca para activar",
   "serviceRequired": "Activa primero el servicio de accesibilidad",
   "speed": "Velocidad",
-  "secondsPerScreen": "s por pantalla",
-  "screensPerMinute": "{n} pantallas por minuto",
   "slow": "Lenta",
   "standard": "Estándar",
   "fast": "Rápida",
@@ -21,7 +15,6 @@
   "start": "Iniciar desplazamiento",
   "pause": "Pausar",
   "tryPreview": "Probar en una página de ejemplo",
-  "tip": "Consejo: mantén pulsado el botón flotante para cambiar la velocidad sin salir de tu libro.",
   "buttonHint": "Toca para iniciar o pausar, mantén pulsado para cambiar la velocidad, arrastra para mover",
   "buttonDescription": "Iniciar o pausar el desplazamiento",
   "autoStopped": "Scrollino se detuvo tras 60 minutos",
@@ -46,5 +39,9 @@
   "version": "Versión",
   "credits": "Motor de desplazamiento basado en auto-scroll-android de XiuXianInk, licencia MIT.",
   "privacy": "Política de privacidad",
-  "license": "Scrollino es gratuito y de código abierto."
+  "license": "Scrollino es gratuito y de código abierto.",
+  "speedSentence": "Una pantalla cada {n} segundos",
+  "scrollsIn": "Se desplaza en",
+  "serviceOffNotice": "El servicio de accesibilidad está desactivado, así que Scrollino aún no puede desplazarse.",
+  "serviceTurnOn": "Activar"
 }

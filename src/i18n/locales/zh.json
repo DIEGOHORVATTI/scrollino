@@ -1,13 +1,7 @@
 {
   "tagline": "解放双手的阅读。屏幕自动滚动。",
-  "serviceTitle": "无障碍服务",
-  "serviceOn": "已开启",
-  "serviceOff": "已关闭",
-  "serviceEnable": "点按开启",
   "serviceRequired": "请先开启无障碍服务",
   "speed": "速度",
-  "secondsPerScreen": "秒/屏",
-  "screensPerMinute": "每分钟 {n} 屏",
   "slow": "慢",
   "standard": "标准",
   "fast": "快",
@@ -21,7 +15,6 @@
   "start": "开始滚动",
   "pause": "暂停",
   "tryPreview": "在示例页面上试用",
-  "tip": "提示：长按悬浮按钮即可调整速度，无需离开你的书。",
   "buttonHint": "点按开始或暂停，长按调整速度，拖动可移动位置",
   "buttonDescription": "开始或暂停滚动",
   "autoStopped": "Scrollino 已在 60 分钟后停止",
@@ -46,5 +39,9 @@
   "version": "版本",
   "credits": "滚动引擎基于 XiuXianInk 的 auto-scroll-android，采用 MIT 许可证。",
   "privacy": "隐私政策",
-  "license": "Scrollino 免费且开源。"
+  "license": "Scrollino 免费且开源。",
+  "speedSentence": "每 {n} 秒一屏",
+  "scrollsIn": "滚动范围",
+  "serviceOffNotice": "无障碍服务已关闭，Scrollino 暂时无法滚动。",
+  "serviceTurnOn": "开启"
 }

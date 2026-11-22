@@ -22,8 +22,8 @@ function Point({ icon: Icon, text }: PointProps) {
 
   return (
     <View className="flex-row gap-3">
-      <Icon size={22} color={colors.accent} />
-      <Text className="flex-1 text-base leading-6 text-text-primary">{text}</Text>
+      <Icon size={22} color={colors.pencil} />
+      <Text className="flex-1 text-base leading-6 text-ink">{text}</Text>
     </View>
   )
 }
@@ -39,19 +39,19 @@ export default function DisclosureScreen() {
   }
 
   return (
-    <View className="flex-1 bg-bg-primary" style={{ paddingTop: insets.top }}>
+    <View className="flex-1 bg-paper" style={{ paddingTop: insets.top }}>
       <ScrollView contentContainerClassName="gap-6 p-6">
-        <Text className="text-3xl font-black tracking-tight text-text-primary">
+        <Text className="font-serif-bold text-[28px] leading-9 text-ink">
           {t('disclosureTitle')}
         </Text>
         <Point icon={ShieldCheck} text={t('disclosureWhy')} />
         <Point icon={Hand} text={t('disclosureDoes')} />
         <Point icon={EyeOff} text={t('disclosureDoesNot')} />
-        <Text className="text-sm leading-5 text-text-muted">{t('disclosureRestricted')}</Text>
+        <Text className="text-sm leading-5 text-faint">{t('disclosureRestricted')}</Text>
       </ScrollView>
       <ScreenFooter>
         <Button title={t('agree')} onPress={agree} />
-        <Button title={t('notNow')} variant="ghost" onPress={() => router.back()} />
+        <Button title={t('notNow')} variant="quiet" onPress={() => router.back()} />
       </ScreenFooter>
     </View>
   )

@@ -26,10 +26,10 @@ export default function PreviewScreen() {
 
   return (
     <>
-      <ScrollView className="flex-1 bg-bg-primary" contentContainerClassName="gap-5 px-6 py-6">
-        <Text className="text-2xl font-black text-text-primary">{t('previewTitle')}</Text>
+      <ScrollView className="flex-1 bg-paper" contentContainerClassName="gap-5 px-6 py-6">
+        <Text className="font-serif-bold text-[26px] leading-9 text-ink">{t('previewTitle')}</Text>
         {paragraphs.map((paragraph, index) => (
-          <Text key={index} className="text-lg leading-8 text-text-primary">
+          <Text key={index} className="font-serif text-[18px] leading-8 text-ink">
             {paragraph}
           </Text>
         ))}
@@ -37,7 +37,7 @@ export default function PreviewScreen() {
       <ScreenFooter>
         <Button
           title={engine.running ? t('pause') : t('start')}
-          variant={engine.running ? 'danger' : 'primary'}
+          variant={engine.running ? 'marker' : 'ink'}
           onPress={toggle}
         />
       </ScreenFooter>

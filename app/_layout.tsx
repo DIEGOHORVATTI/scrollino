@@ -19,10 +19,11 @@ export default function RootLayout() {
       <Stack
         key={language}
         screenOptions={{
-          headerStyle: { backgroundColor: colors.background },
-          headerTintColor: colors.text,
+          headerStyle: { backgroundColor: colors.paper },
+          headerTintColor: colors.ink,
+          headerTitleStyle: { fontFamily: 'Literata_600SemiBold' },
           headerShadowVisible: false,
-          contentStyle: { backgroundColor: colors.background },
+          contentStyle: { backgroundColor: colors.paper },
         }}
       >
         <Stack.Screen name="index" options={{ headerShown: false }} />

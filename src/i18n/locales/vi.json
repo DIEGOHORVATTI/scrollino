@@ -1,13 +1,7 @@
 {
   "tagline": "Đọc rảnh tay. Màn hình tự cuộn.",
-  "serviceTitle": "Dịch vụ hỗ trợ tiếp cận",
-  "serviceOn": "Bật",
-  "serviceOff": "Tắt",
-  "serviceEnable": "Nhấn để bật",
   "serviceRequired": "Hãy bật dịch vụ hỗ trợ tiếp cận trước",
   "speed": "Tốc độ",
-  "secondsPerScreen": "giây mỗi màn hình",
-  "screensPerMinute": "{n} màn hình mỗi phút",
   "slow": "Chậm",
   "standard": "Chuẩn",
   "fast": "Nhanh",
@@ -21,7 +15,6 @@
   "start": "Bắt đầu cuộn",
   "pause": "Tạm dừng",
   "tryPreview": "Thử trên trang mẫu",
-  "tip": "Mẹo: nhấn giữ nút nổi để đổi tốc độ mà không cần rời khỏi sách.",
   "buttonHint": "Nhấn để bắt đầu hoặc tạm dừng, nhấn giữ để đổi tốc độ, kéo để di chuyển",
   "buttonDescription": "Bắt đầu hoặc tạm dừng cuộn",
   "autoStopped": "Scrollino đã dừng sau 60 phút",
@@ -46,5 +39,9 @@
   "version": "Phiên bản",
   "credits": "Bộ máy cuộn dựa trên auto-scroll-android của XiuXianInk, giấy phép MIT.",
   "privacy": "Chính sách quyền riêng tư",
-  "license": "Scrollino miễn phí và mã nguồn mở."
+  "license": "Scrollino miễn phí và mã nguồn mở.",
+  "speedSentence": "Cứ {n} giây một màn hình",
+  "scrollsIn": "Cuộn trong",
+  "serviceOffNotice": "Dịch vụ trợ năng đang tắt nên Scrollino chưa thể cuộn.",
+  "serviceTurnOn": "Bật"
 }

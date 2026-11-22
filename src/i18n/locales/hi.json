@@ -1,13 +1,7 @@
 {
   "tagline": "हाथ लगाए बिना पढ़ें। स्क्रीन अपने आप स्क्रॉल होती है।",
-  "serviceTitle": "सुलभता सेवा",
-  "serviceOn": "चालू",
-  "serviceOff": "बंद",
-  "serviceEnable": "चालू करने के लिए टैप करें",
   "serviceRequired": "पहले सुलभता सेवा चालू करें",
   "speed": "गति",
-  "secondsPerScreen": "सेकंड प्रति स्क्रीन",
-  "screensPerMinute": "{n} स्क्रीन प्रति मिनट",
   "slow": "धीमी",
   "standard": "सामान्य",
   "fast": "तेज़",
@@ -21,7 +15,6 @@
   "start": "स्क्रॉल शुरू करें",
   "pause": "रोकें",
   "tryPreview": "नमूना पेज पर आज़माएँ",
-  "tip": "सुझाव: अपनी किताब छोड़े बिना गति बदलने के लिए फ़्लोटिंग बटन को दबाए रखें।",
   "buttonHint": "शुरू या रोकने के लिए टैप करें, गति बदलने के लिए दबाए रखें, हिलाने के लिए खींचें",
   "buttonDescription": "स्क्रॉल शुरू करें या रोकें",
   "autoStopped": "Scrollino 60 मिनट बाद रुक गया",
@@ -46,5 +39,9 @@
   "version": "संस्करण",
   "credits": "स्क्रॉलिंग इंजन XiuXianInk के auto-scroll-android पर आधारित, MIT लाइसेंस।",
   "privacy": "गोपनीयता नीति",
-  "license": "Scrollino मुफ़्त और ओपन सोर्स है।"
+  "license": "Scrollino मुफ़्त और ओपन सोर्स है।",
+  "speedSentence": "हर {n} सेकंड में एक स्क्रीन",
+  "scrollsIn": "स्क्रॉल होता है",
+  "serviceOffNotice": "एक्सेसिबिलिटी सेवा बंद है, इसलिए Scrollino अभी स्क्रॉल नहीं कर सकता।",
+  "serviceTurnOn": "चालू करें"
 }

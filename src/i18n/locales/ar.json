@@ -1,13 +1,7 @@
 {
   "tagline": "قراءة بلا استخدام اليدين. الشاشة تتمرّر وحدها.",
-  "serviceTitle": "خدمة إمكانية الوصول",
-  "serviceOn": "مفعّلة",
-  "serviceOff": "متوقفة",
-  "serviceEnable": "انقر للتفعيل",
   "serviceRequired": "فعّل خدمة إمكانية الوصول أولاً",
   "speed": "السرعة",
-  "secondsPerScreen": "ث لكل شاشة",
-  "screensPerMinute": "{n} شاشة في الدقيقة",
   "slow": "بطيء",
   "standard": "عادي",
   "fast": "سريع",
@@ -21,7 +15,6 @@
   "start": "ابدأ التمرير",
   "pause": "إيقاف مؤقت",
   "tryPreview": "جرّبه على صفحة نموذجية",
-  "tip": "نصيحة: اضغط مطولاً على الزر العائم لتغيير السرعة دون مغادرة كتابك.",
   "buttonHint": "انقر للبدء أو الإيقاف المؤقت، واضغط مطولاً لتغيير السرعة، واسحب لنقله",
   "buttonDescription": "بدء التمرير أو إيقافه مؤقتاً",
   "autoStopped": "توقف Scrollino بعد 60 دقيقة",
@@ -46,5 +39,9 @@
   "version": "الإصدار",
   "credits": "محرك التمرير مبني على auto-scroll-android من XiuXianInk، بترخيص MIT.",
   "privacy": "سياسة الخصوصية",
-  "license": "Scrollino مجاني ومفتوح المصدر."
+  "license": "Scrollino مجاني ومفتوح المصدر.",
+  "speedSentence": "شاشة واحدة كل {n} ثوانٍ",
+  "scrollsIn": "يتمرّر في",
+  "serviceOffNotice": "خدمة إمكانية الوصول متوقفة، لذا لا يستطيع Scrollino التمرير بعد.",
+  "serviceTurnOn": "تشغيل"
 }

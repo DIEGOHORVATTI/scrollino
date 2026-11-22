@@ -1,7 +1,7 @@
 import Constants from 'expo-constants'
 import { Linking, Pressable, ScrollView, Text, View } from 'react-native'
 
-import { Card } from '@/src/components/ui/card'
+import { Section } from '@/src/components/ui/section'
 import { LanguageField, ThemeField } from '@/src/features/preferences/components/preference-fields'
 import { t } from '@/src/i18n'
 
@@ -10,24 +10,24 @@ const SOURCE_URL = 'https://github.com/DIEGOHORVATTI/scrollino'
 
 export default function SettingsScreen() {
   return (
-    <ScrollView className="flex-1 bg-bg-primary" contentContainerClassName="gap-4 p-4 pb-12">
-      <Card title={t('appearance')}>
+    <ScrollView className="flex-1 bg-paper" contentContainerClassName="gap-8 px-6 pb-12 pt-2">
+      <Section title={t('appearance')}>
         <LanguageField />
         <ThemeField />
-      </Card>
-      <Card title={t('about')}>
+      </Section>
+      <Section title={t('about')}>
         <View className="flex-row justify-between">
-          <Text className="text-sm text-text-secondary">{t('version')}</Text>
-          <Text className="text-sm text-text-primary">{Constants.expoConfig?.version}</Text>
+          <Text className="text-base text-pencil">{t('version')}</Text>
+          <Text className="text-base text-ink">{Constants.expoConfig?.version}</Text>
         </View>
-        <Pressable onPress={() => Linking.openURL(PRIVACY_URL)}>
-          <Text className="text-sm font-semibold text-primary">{t('privacy')}</Text>
+        <Pressable accessibilityRole="link" onPress={() => Linking.openURL(PRIVACY_URL)}>
+          <Text className="text-base text-ink underline">{t('privacy')}</Text>
         </Pressable>
-        <Pressable onPress={() => Linking.openURL(SOURCE_URL)}>
-          <Text className="text-sm leading-5 text-text-secondary">{t('license')}</Text>
+        <Pressable accessibilityRole="link" onPress={() => Linking.openURL(SOURCE_URL)}>
+          <Text className="text-base text-ink underline">{t('license')}</Text>
         </Pressable>
-        <Text className="text-xs leading-5 text-text-muted">{t('credits')}</Text>
-      </Card>
+        <Text className="text-sm leading-5 text-faint">{t('credits')}</Text>
+      </Section>
     </ScrollView>
   )
 }

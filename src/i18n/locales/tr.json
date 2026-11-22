@@ -1,13 +1,7 @@
 {
   "tagline": "Eller serbest okuma. Ekran kendiliğinden kayar.",
-  "serviceTitle": "Erişilebilirlik hizmeti",
-  "serviceOn": "Açık",
-  "serviceOff": "Kapalı",
-  "serviceEnable": "Açmak için dokunun",
   "serviceRequired": "Önce erişilebilirlik hizmetini açın",
   "speed": "Hız",
-  "secondsPerScreen": "sn/ekran",
-  "screensPerMinute": "Dakikada {n} ekran",
   "slow": "Yavaş",
   "standard": "Standart",
   "fast": "Hızlı",
@@ -21,7 +15,6 @@
   "start": "Kaydırmayı başlat",
   "pause": "Duraklat",
   "tryPreview": "Örnek sayfada deneyin",
-  "tip": "İpucu: kitabınızdan çıkmadan hızı değiştirmek için kayan düğmeye basılı tutun.",
   "buttonHint": "Başlatmak veya duraklatmak için dokunun, hızı değiştirmek için basılı tutun, taşımak için sürükleyin",
   "buttonDescription": "Kaydırmayı başlat veya duraklat",
   "autoStopped": "Scrollino 60 dakika sonra durdu",
@@ -46,5 +39,9 @@
   "version": "Sürüm",
   "credits": "Kaydırma motoru, XiuXianInk'in auto-scroll-android projesine dayanır, MIT lisansı.",
   "privacy": "Gizlilik politikası",
-  "license": "Scrollino ücretsiz ve açık kaynaklıdır."
+  "license": "Scrollino ücretsiz ve açık kaynaklıdır.",
+  "speedSentence": "Her {n} saniyede bir ekran",
+  "scrollsIn": "Kaydırılan yer",
+  "serviceOffNotice": "Erişilebilirlik hizmeti kapalı, bu yüzden Scrollino henüz kaydıramıyor.",
+  "serviceTurnOn": "Aç"
 }

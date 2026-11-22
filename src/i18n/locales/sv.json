@@ -1,13 +1,7 @@
 {
   "tagline": "Läsning utan händer. Skärmen rullar av sig själv.",
-  "serviceTitle": "Tillgänglighetstjänst",
-  "serviceOn": "På",
-  "serviceOff": "Av",
-  "serviceEnable": "Tryck för att aktivera",
   "serviceRequired": "Aktivera tillgänglighetstjänsten först",
   "speed": "Hastighet",
-  "secondsPerScreen": "s per skärm",
-  "screensPerMinute": "{n} skärmar per minut",
   "slow": "Långsam",
   "standard": "Standard",
   "fast": "Snabb",
@@ -21,7 +15,6 @@
   "start": "Starta rullning",
   "pause": "Pausa",
   "tryPreview": "Prova på en exempelsida",
-  "tip": "Tips: håll in den flytande knappen för att ändra hastighet utan att lämna din bok.",
   "buttonHint": "Tryck för att starta eller pausa, håll in för att ändra hastighet, dra för att flytta",
   "buttonDescription": "Starta eller pausa rullning",
   "autoStopped": "Scrollino stannade efter 60 minuter",
@@ -46,5 +39,9 @@
   "version": "Version",
   "credits": "Rullningsmotor baserad på auto-scroll-android av XiuXianInk, MIT-licens.",
   "privacy": "Integritetspolicy",
-  "license": "Scrollino är gratis och öppen källkod."
+  "license": "Scrollino är gratis och öppen källkod.",
+  "speedSentence": "En skärm var {n}:e sekund",
+  "scrollsIn": "Rullar i",
+  "serviceOffNotice": "Tillgänglighetstjänsten är avstängd, så Scrollino kan inte rulla än.",
+  "serviceTurnOn": "Slå på"
 }

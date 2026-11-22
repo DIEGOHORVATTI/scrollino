@@ -1,13 +1,7 @@
 {
   "tagline": "Membaca tanpa tangan. Layar bergulir sendiri.",
-  "serviceTitle": "Layanan aksesibilitas",
-  "serviceOn": "Aktif",
-  "serviceOff": "Nonaktif",
-  "serviceEnable": "Ketuk untuk mengaktifkan",
   "serviceRequired": "Aktifkan layanan aksesibilitas terlebih dahulu",
   "speed": "Kecepatan",
-  "secondsPerScreen": "dtk per layar",
-  "screensPerMinute": "{n} layar per menit",
   "slow": "Lambat",
   "standard": "Standar",
   "fast": "Cepat",
@@ -21,7 +15,6 @@
   "start": "Mulai menggulir",
   "pause": "Jeda",
   "tryPreview": "Coba di halaman contoh",
-  "tip": "Tips: tahan tombol mengambang untuk mengubah kecepatan tanpa meninggalkan buku Anda.",
   "buttonHint": "Ketuk untuk memulai atau menjeda, tahan untuk mengubah kecepatan, seret untuk memindahkan",
   "buttonDescription": "Mulai atau jeda pengguliran",
   "autoStopped": "Scrollino berhenti setelah 60 menit",
@@ -46,5 +39,9 @@
   "version": "Versi",
   "credits": "Mesin penggulir berbasis auto-scroll-android oleh XiuXianInk, lisensi MIT.",
   "privacy": "Kebijakan privasi",
-  "license": "Scrollino gratis dan bersumber terbuka."
+  "license": "Scrollino gratis dan bersumber terbuka.",
+  "speedSentence": "Satu layar setiap {n} detik",
+  "scrollsIn": "Menggulir di",
+  "serviceOffNotice": "Layanan aksesibilitas nonaktif, jadi Scrollino belum bisa menggulir.",
+  "serviceTurnOn": "Aktifkan"
 }

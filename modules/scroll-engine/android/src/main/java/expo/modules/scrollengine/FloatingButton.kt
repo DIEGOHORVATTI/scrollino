@@ -1,7 +1,6 @@
 package expo.modules.scrollengine
 
 import android.annotation.SuppressLint
-import android.graphics.Color
 import android.graphics.PixelFormat
 import android.graphics.Typeface
 import android.graphics.drawable.GradientDrawable
@@ -29,9 +28,9 @@ class FloatingButton(private val service: ScrollService) {
     private const val LONG_PRESS_MS = 450L
     private const val PANEL_HIDE_MS = 3000L
     private const val DEFAULT_Y_RATIO = 0.62f
-    private const val ACCENT = 0xFFD97706.toInt()
-    private const val IDLE = 0xE62D2720.toInt()
-    private const val PANEL_BG = 0xF0221D17.toInt()
+    private const val MARKER = 0xFFE4EC5C.toInt()
+    private const val INK = 0xF21B2430.toInt()
+    private const val PAPER = 0xFFEEF0EB.toInt()
   }
 
   private val windowManager = service.getSystemService(WindowManager::class.java)
@@ -44,7 +43,6 @@ class FloatingButton(private val service: ScrollService) {
   private val longPressTask = Runnable { onLongPress() }
 
   private val ball = TextView(service).apply {
-    setTextColor(Color.WHITE)
     textSize = 16f
     gravity = Gravity.CENTER
     typeface = Typeface.DEFAULT_BOLD
@@ -52,7 +50,7 @@ class FloatingButton(private val service: ScrollService) {
   private val ballParams = overlayParams(size, size)
 
   private val speedLabel = TextView(service).apply {
-    setTextColor(Color.WHITE)
+    setTextColor(PAPER)
     textSize = 15f
     gravity = Gravity.CENTER
     typeface = Typeface.DEFAULT_BOLD
@@ -63,7 +61,7 @@ class FloatingButton(private val service: ScrollService) {
     gravity = Gravity.CENTER_VERTICAL
     background = GradientDrawable().apply {
       cornerRadius = dp(27).toFloat()
-      setColor(PANEL_BG)
+      setColor(INK)
     }
     addView(stepButton("−", +1))
     addView(speedLabel)
@@ -96,10 +94,11 @@ class FloatingButton(private val service: ScrollService) {
   fun update(isRunning: Boolean, secs: Int) {
     running = isRunning
     ball.text = if (isRunning) "❚❚" else "▶"
+    ball.setTextColor(if (isRunning) INK else PAPER)
     ball.background = GradientDrawable().apply {
       shape = GradientDrawable.OVAL
-      setColor(if (isRunning) ACCENT else IDLE)
-      if (!isRunning) setStroke((1.5f * density).roundToInt(), 0x55FFFFFF)
+      setColor(if (isRunning) MARKER else INK)
+      setStroke((1.5f * density).roundToInt(), if (isRunning) INK else 0x55FFFFFF)
     }
     speedLabel.text = "$secs s"
     if (isRunning) scheduleFade() else wake()
@@ -179,7 +178,7 @@ class FloatingButton(private val service: ScrollService) {
 
   private fun stepButton(symbol: String, delta: Int) = TextView(service).apply {
     text = symbol
-    setTextColor(Color.WHITE)
+    setTextColor(PAPER)
     textSize = 22f
     gravity = Gravity.CENTER
     layoutParams = LinearLayout.LayoutParams(size, size)

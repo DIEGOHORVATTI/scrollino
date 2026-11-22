@@ -1,13 +1,7 @@
 {
   "tagline": "Czytanie bez rąk. Ekran przewija się sam.",
-  "serviceTitle": "Usługa dostępności",
-  "serviceOn": "Włączona",
-  "serviceOff": "Wyłączona",
-  "serviceEnable": "Dotknij, aby włączyć",
   "serviceRequired": "Najpierw włącz usługę dostępności",
   "speed": "Prędkość",
-  "secondsPerScreen": "s na ekran",
-  "screensPerMinute": "{n} ekranów na minutę",
   "slow": "Wolno",
   "standard": "Standardowo",
   "fast": "Szybko",
@@ -21,7 +15,6 @@
   "start": "Rozpocznij przewijanie",
   "pause": "Wstrzymaj",
   "tryPreview": "Wypróbuj na stronie przykładowej",
-  "tip": "Wskazówka: przytrzymaj pływający przycisk, aby zmienić prędkość bez opuszczania książki.",
   "buttonHint": "Dotknij, aby rozpocząć lub wstrzymać, przytrzymaj, aby zmienić prędkość, przeciągnij, aby przesunąć",
   "buttonDescription": "Rozpocznij lub wstrzymaj przewijanie",
   "autoStopped": "Scrollino zatrzymało się po 60 minutach",
@@ -46,5 +39,9 @@
   "version": "Wersja",
   "credits": "Silnik przewijania oparty na auto-scroll-android autorstwa XiuXianInk, licencja MIT.",
   "privacy": "Polityka prywatności",
-  "license": "Scrollino jest darmowe i open source."
+  "license": "Scrollino jest darmowe i open source.",
+  "speedSentence": "Jeden ekran co {n} s",
+  "scrollsIn": "Przewija w",
+  "serviceOffNotice": "Usługa dostępności jest wyłączona, więc Scrollino nie może jeszcze przewijać.",
+  "serviceTurnOn": "Włącz"
 }

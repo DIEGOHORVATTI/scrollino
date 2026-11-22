@@ -1,13 +1,7 @@
 {
   "tagline": "Lecture mains libres. L'écran défile tout seul.",
-  "serviceTitle": "Service d'accessibilité",
-  "serviceOn": "Activé",
-  "serviceOff": "Désactivé",
-  "serviceEnable": "Appuyez pour activer",
   "serviceRequired": "Activez d'abord le service d'accessibilité",
   "speed": "Vitesse",
-  "secondsPerScreen": "s par écran",
-  "screensPerMinute": "{n} écrans par minute",
   "slow": "Lente",
   "standard": "Standard",
   "fast": "Rapide",
@@ -21,7 +15,6 @@
   "start": "Démarrer le défilement",
   "pause": "Pause",
   "tryPreview": "Essayer sur une page d'exemple",
-  "tip": "Astuce : maintenez le bouton flottant pour changer la vitesse sans quitter votre livre.",
   "buttonHint": "Appuyez pour démarrer ou mettre en pause, maintenez pour changer la vitesse, faites glisser pour déplacer",
   "buttonDescription": "Démarrer ou mettre en pause le défilement",
   "autoStopped": "Scrollino s'est arrêté après 60 minutes",
@@ -46,5 +39,9 @@
   "version": "Version",
   "credits": "Moteur de défilement basé sur auto-scroll-android de XiuXianInk, licence MIT.",
   "privacy": "Politique de confidentialité",
-  "license": "Scrollino est gratuit et open source."
+  "license": "Scrollino est gratuit et open source.",
+  "speedSentence": "Un écran toutes les {n} secondes",
+  "scrollsIn": "Défile dans",
+  "serviceOffNotice": "Le service d’accessibilité est désactivé, Scrollino ne peut donc pas encore faire défiler.",
+  "serviceTurnOn": "Activer"
 }

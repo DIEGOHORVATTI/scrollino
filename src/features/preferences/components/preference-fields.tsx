@@ -17,7 +17,7 @@ type LabeledProps = {
 export function Labeled({ label, children }: LabeledProps) {
   return (
     <View className="gap-2">
-      <Text className="text-sm text-text-secondary">{label}</Text>
+      <Text className="text-sm text-pencil">{label}</Text>
       {children}
     </View>
   )
@@ -65,11 +65,13 @@ export function ThemeField() {
               accessibilityState={{ selected }}
               onPress={() => selectTheme(value)}
               className={`flex-1 items-center gap-2 rounded-2xl border-2 px-2 py-4 ${
-                selected ? 'border-primary bg-primary/10' : 'border-border bg-bg-card'
+                selected ? 'border-ink bg-marker' : 'border-rule'
               }`}
             >
-              <Icon size={22} color={colors.accent} />
-              <Text className="text-sm font-semibold text-text-primary">{t(labelKey)}</Text>
+              <Icon size={22} color={selected ? colors.onMarker : colors.pencil} />
+              <Text className={`text-sm font-semibold ${selected ? 'text-on-marker' : 'text-ink'}`}>
+                {t(labelKey)}
+              </Text>
             </Pressable>
           )
         })}

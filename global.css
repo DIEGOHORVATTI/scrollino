@@ -5,35 +5,31 @@
 @import 'nativewind/theme';
 
 @theme {
-  --color-primary: #f59e0b;
-  --color-button: #d97706;
-  --color-on-accent: #ffffff;
-  --color-danger: #ef4444;
+  --font-serif: 'Literata_400Regular';
+  --font-serif-italic: 'Literata_400Regular_Italic';
+  --font-serif-bold: 'Literata_600SemiBold';
 
-  --color-bg-primary: #14110d;
-  --color-bg-card: #221d17;
-  --color-bg-input: #2d2720;
-
-  --color-text-primary: #fdf8f0;
-  --color-text-secondary: #b8ad9e;
-  --color-text-muted: #7d7365;
-
-  --color-border: #3a3229;
+  --color-paper: #12171e;
+  --color-paper-deep: #1a212b;
+  --color-ink: #e6e8e3;
+  --color-pencil: #98a0aa;
+  --color-faint: #5f6873;
+  --color-rule: #2a323d;
+  --color-marker: #c9d15a;
+  --color-on-marker: #12171e;
+  --color-stop: #f08a6c;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --color-primary: #b45309;
-    --color-button: #b45309;
-
-    --color-bg-primary: #faf6ef;
-    --color-bg-card: #ffffff;
-    --color-bg-input: #f1ebe1;
-
-    --color-text-primary: #1c1712;
-    --color-text-secondary: #5c5247;
-    --color-text-muted: #948a7d;
-
-    --color-border: #e7dfd3;
+    --color-paper: #eef0eb;
+    --color-paper-deep: #e3e6df;
+    --color-ink: #1b2430;
+    --color-pencil: #5d6672;
+    --color-faint: #9aa19a;
+    --color-rule: #d3d8cf;
+    --color-marker: #e4ec5c;
+    --color-on-marker: #1b2430;
+    --color-stop: #b8442a;
   }
 }

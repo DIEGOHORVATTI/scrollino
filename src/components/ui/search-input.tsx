@@ -20,20 +20,20 @@ export function SearchInput({
 
   return (
     <View
-      className={`h-12 flex-row items-center gap-3 rounded-xl border border-border bg-bg-input px-4 ${containerClassName ?? ''}`}
+      className={`h-12 flex-row items-center gap-3 rounded-xl border border-rule bg-paper-deep px-4 ${containerClassName ?? ''}`}
     >
-      <Search size={18} color={colors.muted} />
+      <Search size={18} color={colors.faint} />
       <TextInput
-        className="flex-1 text-base text-text-primary"
-        placeholderTextColor={colors.muted}
+        className="flex-1 text-base text-ink"
+        placeholderTextColor={colors.faint}
         underlineColorAndroid="transparent"
         value={value}
         {...props}
       />
-      {loading ? <ActivityIndicator size="small" color={colors.muted} /> : null}
+      {loading ? <ActivityIndicator size="small" color={colors.faint} /> : null}
       {onClear && value ? (
         <Pressable onPress={onClear} hitSlop={8}>
-          <X size={18} color={colors.muted} />
+          <X size={18} color={colors.faint} />
         </Pressable>
       ) : null}
     </View>

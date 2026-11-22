@@ -1,13 +1,7 @@
 {
   "tagline": "손이 필요 없는 독서. 화면이 알아서 스크롤됩니다.",
-  "serviceTitle": "접근성 서비스",
-  "serviceOn": "사용 중",
-  "serviceOff": "사용 안 함",
-  "serviceEnable": "탭하여 켜기",
   "serviceRequired": "먼저 접근성 서비스를 켜세요",
   "speed": "속도",
-  "secondsPerScreen": "초/화면",
-  "screensPerMinute": "분당 {n}화면",
   "slow": "느리게",
   "standard": "보통",
   "fast": "빠르게",
@@ -21,7 +15,6 @@
   "start": "스크롤 시작",
   "pause": "일시중지",
   "tryPreview": "샘플 페이지로 체험하기",
-  "tip": "팁: 플로팅 버튼을 길게 누르면 책을 떠나지 않고 속도를 바꿀 수 있습니다.",
   "buttonHint": "탭하여 시작 또는 일시중지, 길게 눌러 속도 변경, 드래그하여 이동",
   "buttonDescription": "스크롤 시작 또는 일시중지",
   "autoStopped": "Scrollino가 60분 후에 중지되었습니다",
@@ -46,5 +39,9 @@
   "version": "버전",
   "credits": "스크롤 엔진은 XiuXianInk의 auto-scroll-android를 기반으로 하며 MIT 라이선스를 따릅니다.",
   "privacy": "개인정보처리방침",
-  "license": "Scrollino는 무료 오픈소스입니다."
+  "license": "Scrollino는 무료 오픈소스입니다.",
+  "speedSentence": "{n}초마다 한 화면",
+  "scrollsIn": "스크롤 대상",
+  "serviceOffNotice": "접근성 서비스가 꺼져 있어 Scrollino가 아직 스크롤할 수 없습니다.",
+  "serviceTurnOn": "켜기"
 }

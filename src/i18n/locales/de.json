@@ -1,13 +1,7 @@
 {
   "tagline": "Lesen ohne Hände. Der Bildschirm scrollt von selbst.",
-  "serviceTitle": "Bedienungshilfen-Dienst",
-  "serviceOn": "An",
-  "serviceOff": "Aus",
-  "serviceEnable": "Zum Aktivieren tippen",
   "serviceRequired": "Aktiviere zuerst den Bedienungshilfen-Dienst",
   "speed": "Geschwindigkeit",
-  "secondsPerScreen": "s pro Bildschirm",
-  "screensPerMinute": "{n} Bildschirme pro Minute",
   "slow": "Langsam",
   "standard": "Standard",
   "fast": "Schnell",
@@ -21,7 +15,6 @@
   "start": "Scrollen starten",
   "pause": "Pause",
   "tryPreview": "Auf einer Beispielseite ausprobieren",
-  "tip": "Tipp: Halte die schwebende Schaltfläche gedrückt, um die Geschwindigkeit zu ändern, ohne dein Buch zu verlassen.",
   "buttonHint": "Tippen zum Starten oder Pausieren, halten zum Ändern der Geschwindigkeit, ziehen zum Verschieben",
   "buttonDescription": "Scrollen starten oder pausieren",
   "autoStopped": "Scrollino wurde nach 60 Minuten gestoppt",
@@ -46,5 +39,9 @@
   "version": "Version",
   "credits": "Scroll-Engine auf Basis von auto-scroll-android von XiuXianInk, MIT-Lizenz.",
   "privacy": "Datenschutzerklärung",
-  "license": "Scrollino ist kostenlos und Open Source."
+  "license": "Scrollino ist kostenlos und Open Source.",
+  "speedSentence": "Alle {n} Sekunden ein Bildschirm",
+  "scrollsIn": "Scrollt in",
+  "serviceOffNotice": "Der Bedienungshilfen-Dienst ist aus, daher kann Scrollino noch nicht scrollen.",
+  "serviceTurnOn": "Einschalten"
 }

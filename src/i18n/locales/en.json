@@ -1,13 +1,7 @@
 {
   "tagline": "Hands-free reading. The screen scrolls by itself.",
-  "serviceTitle": "Accessibility service",
-  "serviceOn": "On",
-  "serviceOff": "Off",
-  "serviceEnable": "Tap to turn on",
   "serviceRequired": "Turn on the accessibility service first",
   "speed": "Speed",
-  "secondsPerScreen": "s per screen",
-  "screensPerMinute": "{n} screens per minute",
   "slow": "Slow",
   "standard": "Standard",
   "fast": "Fast",
@@ -21,7 +15,6 @@
   "start": "Start scrolling",
   "pause": "Pause",
   "tryPreview": "Try it on a sample page",
-  "tip": "Tip: hold the floating button to change the speed without leaving your book.",
   "buttonHint": "Tap to start or pause, hold to change speed, drag to move",
   "buttonDescription": "Start or pause scrolling",
   "autoStopped": "Scrollino stopped after 60 minutes",
@@ -46,5 +39,9 @@
   "version": "Version",
   "credits": "Scrolling engine based on auto-scroll-android by XiuXianInk, MIT license.",
   "privacy": "Privacy policy",
-  "license": "Scrollino is free and open source."
+  "license": "Scrollino is free and open source.",
+  "speedSentence": "One screen every {n} seconds",
+  "scrollsIn": "Scrolls in",
+  "serviceOffNotice": "The accessibility service is off, so Scrollino can’t scroll yet.",
+  "serviceTurnOn": "Turn on"
 }

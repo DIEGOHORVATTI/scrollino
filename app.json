@@ -12,7 +12,7 @@
       "package": "com.diegohorvatti.scrollino",
       "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#14110d",
+        "backgroundColor": "#1b2430",
         "foregroundImage": "./assets/images/adaptive-foreground.png",
         "monochromeImage": "./assets/images/adaptive-monochrome.png"
       },
@@ -37,7 +37,21 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#14110D"
+          "backgroundColor": "#EEF0EB",
+          "dark": {
+            "backgroundColor": "#12171E",
+            "image": "./assets/images/splash-icon.png"
+          }
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./node_modules/@expo-google-fonts/literata/400Regular/Literata_400Regular.ttf",
+            "./node_modules/@expo-google-fonts/literata/400Regular_Italic/Literata_400Regular_Italic.ttf",
+            "./node_modules/@expo-google-fonts/literata/600SemiBold/Literata_600SemiBold.ttf"
+          ]
         }
       ]
     ],

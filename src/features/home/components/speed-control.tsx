@@ -3,16 +3,17 @@ import Slider from '@react-native-community/slider'
 import { Pressable, Text, View } from 'react-native'
 
 import { ScrollEngine } from '@/modules/scroll-engine'
-import { Card } from '@/src/components/ui/card'
 import { t, tn } from '@/src/i18n'
-import { PRESETS, progressToSecs, screensPerMinute, secsToProgress } from '@/src/lib/speed'
+import { PRESETS, progressToSecs, secsToProgress } from '@/src/lib/speed'
 import { useThemeColors } from '@/src/theme/colors'
 
-type SpeedCardProps = {
+import { ReadingWindow } from './reading-window'
+
+type SpeedControlProps = {
   secs: number
 }
 
-export function SpeedCard({ secs }: SpeedCardProps) {
+export function SpeedControl({ secs }: SpeedControlProps) {
   const colors = useThemeColors()
   const [dragging, setDragging] = useState<number | null>(null)
   const shown = dragging ?? secs
@@ -23,28 +24,25 @@ export function SpeedCard({ secs }: SpeedCardProps) {
   }
 
   return (
-    <Card title={t('speed')}>
-      <View className="flex-row items-end justify-between">
-        <View className="flex-row items-baseline gap-1">
-          <Text className="text-5xl font-black text-text-primary">{shown}</Text>
-          <Text className="text-base text-text-secondary">{t('secondsPerScreen')}</Text>
-        </View>
-        <Text className="pb-2 text-sm text-text-muted">
-          {tn('screensPerMinute', screensPerMinute(shown))}
-        </Text>
-      </View>
+    <View className="gap-5">
+      <ReadingWindow secs={shown} />
+      <Text className="font-serif text-[26px] leading-9 text-ink">
+        {tn('speedSentence', shown)}
+      </Text>
       <Slider
         value={secsToProgress(secs)}
         minimumValue={0}
         maximumValue={1}
         inverted
-        minimumTrackTintColor={colors.accent}
-        thumbTintColor={colors.accent}
+        minimumTrackTintColor={colors.ink}
+        maximumTrackTintColor={colors.faint}
+        thumbTintColor={colors.ink}
         onValueChange={(progress) => setDragging(progressToSecs(progress))}
         onSlidingComplete={(progress) => commit(progressToSecs(progress))}
         accessibilityLabel={t('speed')}
+        style={{ marginHorizontal: -12 }}
       />
-      <View className="flex-row gap-2">
+      <View className="flex-row gap-1" accessibilityRole="radiogroup">
         {PRESETS.map(({ key, secs: preset }) => {
           const selected = shown === preset
           return (
@@ -53,16 +51,17 @@ export function SpeedCard({ secs }: SpeedCardProps) {
               accessibilityRole="radio"
               accessibilityState={{ selected }}
               onPress={() => commit(preset)}
-              className={`flex-1 items-center rounded-xl border py-2.5 active:opacity-70 ${
-                selected ? 'border-primary bg-primary/15' : 'border-border'
-              }`}
+              className={`rounded-full px-4 py-2 active:opacity-60 ${selected ? 'bg-marker' : ''}`}
             >
-              <Text className="text-sm font-semibold text-text-primary">{t(key)}</Text>
-              <Text className="text-xs text-text-muted">{preset} s</Text>
+              <Text
+                className={`text-[15px] ${selected ? 'font-semibold text-on-marker' : 'text-pencil'}`}
+              >
+                {t(key)}
+              </Text>
             </Pressable>
           )
         })}
       </View>
-    </Card>
+    </View>
   )
 }

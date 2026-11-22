@@ -1,13 +1,7 @@
 {
   "tagline": "Leitura sem as mãos. O ecrã desloca-se sozinho.",
-  "serviceTitle": "Serviço de acessibilidade",
-  "serviceOn": "Ativo",
-  "serviceOff": "Desligado",
-  "serviceEnable": "Toque para ativar",
   "serviceRequired": "Ative primeiro o serviço de acessibilidade",
   "speed": "Velocidade",
-  "secondsPerScreen": "s por ecrã",
-  "screensPerMinute": "{n} ecrãs por minuto",
   "slow": "Lento",
   "standard": "Padrão",
   "fast": "Rápido",
@@ -21,7 +15,6 @@
   "start": "Iniciar deslocamento",
   "pause": "Pausar",
   "tryPreview": "Experimentar numa página de exemplo",
-  "tip": "Dica: mantenha premido o botão flutuante para mudar a velocidade sem sair do livro.",
   "buttonHint": "Toque para iniciar ou pausar, mantenha premido para mudar a velocidade, arraste para mover",
   "buttonDescription": "Iniciar ou pausar o deslocamento",
   "autoStopped": "O Scrollino parou ao fim de 60 minutos",
@@ -46,5 +39,9 @@
   "version": "Versão",
   "credits": "Motor de deslocamento baseado no auto-scroll-android, de XiuXianInk, licença MIT.",
   "privacy": "Política de privacidade",
-  "license": "O Scrollino é livre e de código aberto."
+  "license": "O Scrollino é livre e de código aberto.",
+  "speedSentence": "Um ecrã a cada {n} segundos",
+  "scrollsIn": "Desloca em",
+  "serviceOffNotice": "O serviço de acessibilidade está desligado, por isso o Scrollino ainda não consegue deslocar o ecrã.",
+  "serviceTurnOn": "Ativar"
 }

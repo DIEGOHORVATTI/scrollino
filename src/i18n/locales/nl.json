@@ -1,13 +1,7 @@
 {
   "tagline": "Lezen zonder handen. Het scherm scrolt vanzelf.",
-  "serviceTitle": "Toegankelijkheidsservice",
-  "serviceOn": "Aan",
-  "serviceOff": "Uit",
-  "serviceEnable": "Tik om in te schakelen",
   "serviceRequired": "Schakel eerst de toegankelijkheidsservice in",
   "speed": "Snelheid",
-  "secondsPerScreen": "s per scherm",
-  "screensPerMinute": "{n} schermen per minuut",
   "slow": "Langzaam",
   "standard": "Standaard",
   "fast": "Snel",
@@ -21,7 +15,6 @@
   "start": "Scrollen starten",
   "pause": "Pauzeren",
   "tryPreview": "Probeer het op een voorbeeldpagina",
-  "tip": "Tip: houd de zwevende knop ingedrukt om de snelheid te wijzigen zonder je boek te verlaten.",
   "buttonHint": "Tik om te starten of te pauzeren, houd ingedrukt om de snelheid te wijzigen, sleep om te verplaatsen",
   "buttonDescription": "Scrollen starten of pauzeren",
   "autoStopped": "Scrollino is gestopt na 60 minuten",
@@ -46,5 +39,9 @@
   "version": "Versie",
   "credits": "Scrollengine gebaseerd op auto-scroll-android van XiuXianInk, MIT-licentie.",
   "privacy": "Privacybeleid",
-  "license": "Scrollino is gratis en open source."
+  "license": "Scrollino is gratis en open source.",
+  "speedSentence": "Elke {n} seconden één scherm",
+  "scrollsIn": "Scrolt in",
+  "serviceOffNotice": "De toegankelijkheidsservice staat uit, dus Scrollino kan nog niet scrollen.",
+  "serviceTurnOn": "Inschakelen"
 }
